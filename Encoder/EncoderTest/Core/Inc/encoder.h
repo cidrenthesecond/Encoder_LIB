@@ -28,6 +28,18 @@ for this method to work you need:
  in given time
 
 */
+struct Encoder_Info {
+	int Encoder_Poles1;
+	const int Encoder_Edges_Counted1;
+	int Encoder_Channels_Counted1;
+	int Encoder_PulsesPerRevolution1;
+};
+
+struct Encoder_PulseMeas {
+	TIM_TypeDef TIM_Used;
+	void (*Constructor)(struct Encoder_PulseMeas* this);
+	int16_t (*CalculateVelocity)(struct Encoder_PulseMeas* this);
+};
 
 typedef struct {
 	int16_t pulses;

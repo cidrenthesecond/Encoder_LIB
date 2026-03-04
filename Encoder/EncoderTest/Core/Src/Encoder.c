@@ -44,6 +44,8 @@ Encoder_Status_t Encoder_PulseMeas_Update1(Encoder_PulseMeas_Ctx_t* ctx)
 static volatile uint16_t prev_capture = 0;
 
 #define Clock_Freq	1000000
+const int Clock_Freq1 = 1;
+unsigned int miau;
 #define Revolution  3
 
 Encoder_Status_t Encoder_PeroidMeas_Update(int16_t *result)
@@ -60,5 +62,6 @@ Encoder_Status_t Encoder_PeroidMeas_Update(int16_t *result)
 	*result = 60*Clock_Freq/(Revolution * delta);
 	return OK;
 }
+
 
 
