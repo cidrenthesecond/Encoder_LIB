@@ -5,8 +5,8 @@
  *      Author: 1
  */
 
-#ifndef INC_ENCODER_H_
-#define INC_ENCODER_H_
+#ifndef INC_PULSEMEAS_H_
+#define INC_PULSEMEAS_H_
 
 #include "main.h"
 
@@ -48,30 +48,8 @@ struct Encoder_PulseMeas {
 uint8_t Calculate_pulsesPerRevolution(Encoder_Info_t* info);
 uint32_t Calculate_measurementFactor(Encoder_Info_t* info);
 
-typedef struct {
-	int16_t pulses;
-	int16_t old_pulses;
-	int callbacks_elapsed;
-	int result;
-	const int constat;
-} Encoder_PulseMeas_Ctx_t;
+void Encoder_PulseMeas_Update(int16_t* result);
 
-typedef struct {
-	uint8_t encoder_poles;
-	uint8_t encoder_edges_counted;
-	uint8_t encoder_channels_counted;
-	int measurement_frequency;
-} Encoder_PulseMeas_Config_t;
+void Encoder_PeroidMeas_Update(int16_t *result);
 
-typedef enum {
-	OK = 1,
-	NO_PULSE
-} Encoder_Status_t;
-
-Encoder_Status_t Encoder_PulseMeas_Update(int16_t* result);
-Encoder_Status_t M_Method_Init(Encoder_PulseMeas_Ctx_t* ctx);
-Encoder_Status_t Encoder_PulseMeas_Update1(Encoder_PulseMeas_Ctx_t* ctx);
-
-Encoder_Status_t Encoder_PeroidMeas_Update(int16_t *result);
-
-#endif /* INC_ENCODER_H_ */
+#endif /* INC_PULSEMEAS_H_ */

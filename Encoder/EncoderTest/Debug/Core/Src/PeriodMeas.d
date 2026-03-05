@@ -1,4 +1,4 @@
-Core/Src/Encoder.o: ../Core/Src/Encoder.c ../Core/Inc/main.h \
+Core/Src/PeriodMeas.o: ../Core/Src/PeriodMeas.c ../Core/Inc/main.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_rcc.h \
  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f439xx.h \
@@ -17,7 +17,7 @@ Core/Src/Encoder.o: ../Core/Src/Encoder.c ../Core/Inc/main.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_gpio.h \
- ../Core/Inc/encoder.h ../Core/Inc/main.h
+ ../Core/Inc/PeriodMeas.h
 ../Core/Inc/main.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_rcc.h:
 ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:
@@ -37,5 +37,4 @@ Core/Src/Encoder.o: ../Core/Src/Encoder.c ../Core/Inc/main.h \
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_gpio.h:
-../Core/Inc/encoder.h:
-../Core/Inc/main.h:
+../Core/Inc/PeriodMeas.h:
