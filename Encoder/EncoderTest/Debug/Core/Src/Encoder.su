@@ -1,5 +1,0 @@
-../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:1382:26:LL_TIM_GetCounter	16	static
-../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:2575:26:LL_TIM_IC_GetCaptureCH1	16	static
-../Core/Src/Encoder.c:13:18:Encoder_PulseMeas_Update	24	static
-../Core/Src/Encoder.c:27:18:Encoder_PulseMeas_Update1	24	static
-../Core/Src/Encoder.c:51:18:Encoder_PeroidMeas_Update	24	static

@@ -28,18 +28,25 @@ for this method to work you need:
  in given time
 
 */
-struct Encoder_Info {
-	int Encoder_Poles1;
-	const int Encoder_Edges_Counted1;
-	int Encoder_Channels_Counted1;
-	int Encoder_PulsesPerRevolution1;
-};
+typedef struct {
+	TIM_TypeDef *Tim_Used;
+	uint32_t Measurement_Frequency1;
+	uint8_t Encoder_Poles1;
+	uint8_t Encoder_Edges_Counted1;
+	uint8_t Encoder_Channels_Counted1;
+}Encoder_Info_t;
 
 struct Encoder_PulseMeas {
-	TIM_TypeDef TIM_Used;
-	void (*Constructor)(struct Encoder_PulseMeas* this);
+	Encoder_Info_t Encoder_Info;
+	uint8_t Pulses_Per_Revolution;
+	uint8_t oldNumPulses;
+	uint32_t Measurement_Factor1;
+
 	int16_t (*CalculateVelocity)(struct Encoder_PulseMeas* this);
 };
+
+uint8_t Calculate_pulsesPerRevolution(Encoder_Info_t* info);
+uint32_t Calculate_measurementFactor(Encoder_Info_t* info);
 
 typedef struct {
 	int16_t pulses;
