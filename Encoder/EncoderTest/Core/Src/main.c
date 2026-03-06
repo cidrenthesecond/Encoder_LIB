@@ -23,7 +23,8 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "PulseCountVelocity_static.h"
+#include "PulseCountVelocity_object.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -55,11 +56,26 @@ void SystemClock_Config(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-uint32_t value = 0;
-int16_t test = 0;
-uint16_t test1 = 0;
-int16_t result1 = 0;
-int16_t result2 = 0;
+uint16_t test = 0;
+volatile int32_t result1 = 0;
+volatile int32_t result2 = 0;
+
+uint16_t counter1;
+uint16_t counter2;
+
+PCVo_Config_t config = {
+	.Encoder_Channels_Counted = 1,
+	.Encoder_Edges_Counted = 2,
+	.Encoder_Poles = 3,
+	.Measurement_Frequency_hz = 10
+};
+
+PCVo_Timers_t timers = {
+	.Encoder_Timer = TIM1,
+	.MeasurementFrame_Timer = TIM6
+};
+
+volatile PCVo_object obj;
 
 /* USER CODE END 0 */
 
@@ -102,25 +118,36 @@ int main(void)
   MX_TIM6_Init();
   MX_TIM4_Init();
   /* USER CODE BEGIN 2 */
+  PCVo_Init(&obj, &config, &timers);
+  PCVo_Start(&obj);
+
+  LL_TIM_EnableIT_UPDATE(TIM6);
+
+  LL_TIM_GenerateEvent_UPDATE(TIM2);
+  LL_TIM_GenerateEvent_UPDATE(TIM3);
+
+  LL_TIM_ClearFlag_UPDATE(TIM2);
+  LL_TIM_ClearFlag_UPDATE(TIM3);
+
   LL_TIM_CC_EnableChannel(TIM2, LL_TIM_CHANNEL_CH1);
   LL_TIM_CC_EnableChannel(TIM2, LL_TIM_CHANNEL_CH2);
 
   LL_TIM_CC_EnableChannel(TIM3, LL_TIM_CHANNEL_CH1);
 
   LL_TIM_EnableCounter(TIM2);
-  LL_TIM_SetCounter(TIM2, 0);
 
-  LL_TIM_GenerateEvent_UPDATE(TIM2);
-  LL_TIM_ClearFlag_UPDATE(TIM2);
 
-  LL_TIM_EnableCounter(TIM1);
+  PCVs_Start();
 
-  LL_TIM_EnableCounter(TIM6);
 
-  LL_TIM_CC_EnableChannel(TIM4, LL_TIM_CHANNEL_CH1);
-  LL_TIM_EnableCounter(TIM4);
-  LL_TIM_GenerateEvent_UPDATE(TIM4);
-  LL_TIM_ClearFlag_UPDATE(TIM4);
+  //LL_TIM_EnableCounter(TIM1);
+
+  //LL_TIM_EnableCounter(TIM6);
+
+  //LL_TIM_CC_EnableChannel(TIM4, LL_TIM_CHANNEL_CH1);
+  //LL_TIM_EnableCounter(TIM4);
+  //LL_TIM_GenerateEvent_UPDATE(TIM4);
+  //LL_TIM_ClearFlag_UPDATE(TIM4);
 
 
   /* USER CODE END 2 */
@@ -133,15 +160,9 @@ int main(void)
 	  //if(value % 2 ==0) LL_GPIO_SetOutputPin(LD1_GPIO_Port, LD1_Pin);
 	  //else LL_GPIO_ResetOutputPin(LD1_GPIO_Port, LD1_Pin);
 
-	  test = (int16_t)LL_TIM_GetCounter(TIM1);
-	  test1 = LL_TIM_GetCounter(TIM4);
-
-
-	  if(LL_TIM_GetCounter(TIM2) < 5000) LL_GPIO_SetOutputPin(LD1_GPIO_Port, LD1_Pin);
-	  else LL_GPIO_ResetOutputPin(LD1_GPIO_Port, LD1_Pin);
-
-	  if(LL_TIM_GetCounter(TIM3) < 5000)LL_GPIO_SetOutputPin(LD2_GPIO_Port, LD2_Pin);
-	  else LL_GPIO_ResetOutputPin(LD2_GPIO_Port, LD2_Pin);
+	  test = LL_TIM_GetCounter(TIM1);
+	  counter1 = LL_TIM_GetCounter(TIM2);
+	  counter2 = LL_TIM_GetCounter(TIM3);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

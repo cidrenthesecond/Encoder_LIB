@@ -17,7 +17,9 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_gpio.h \
- ../Core/Inc/tim.h ../Core/Inc/main.h ../Core/Inc/gpio.h
+ ../Core/Inc/tim.h ../Core/Inc/main.h ../Core/Inc/gpio.h \
+ ../Core/Inc/PulseCountVelocity_static.h \
+ ../Core/Inc/PulseCountVelocity_object.h
 ../Core/Inc/main.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_rcc.h:
 ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:
@@ -40,3 +42,5 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Core/Inc/tim.h:
 ../Core/Inc/main.h:
 ../Core/Inc/gpio.h:
+../Core/Inc/PulseCountVelocity_static.h:
+../Core/Inc/PulseCountVelocity_object.h:

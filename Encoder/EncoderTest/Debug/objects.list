@@ -1,5 +1,6 @@
-"./Core/Src/PeriodMeas.o"
-"./Core/Src/PulseMeas.o"
+"./Core/Src/PulseCountVelocity_object.o"
+"./Core/Src/PulseCountVelocity_static.o"
+"./Core/Src/TimeIntervalVelocity_static.o"
 "./Core/Src/gpio.o"
 "./Core/Src/main.o"
 "./Core/Src/stm32f4xx_it.o"

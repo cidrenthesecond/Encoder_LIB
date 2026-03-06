@@ -4,8 +4,8 @@
  *  Created on: Mar 5, 2026
  *      Author: 1
  */
+#include <TimeIntervalVelocity_static.h>
 #include "main.h"
-#include "PeriodMeas.h"
 
 static const uint32_t Clock_Freq = 1000000;
 static const uint32_t PulsesPerRevolution = 3;

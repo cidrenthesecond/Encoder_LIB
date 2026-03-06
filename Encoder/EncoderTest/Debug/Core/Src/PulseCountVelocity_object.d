@@ -1,4 +1,6 @@
-Core/Src/PeriodMeas.o: ../Core/Src/PeriodMeas.c ../Core/Inc/main.h \
+Core/Src/PulseCountVelocity_object.o: \
+ ../Core/Src/PulseCountVelocity_object.c \
+ ../Core/Inc/PulseCountVelocity_object.h ../Core/Inc/main.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_rcc.h \
  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f439xx.h \
@@ -16,8 +18,8 @@ Core/Src/PeriodMeas.o: ../Core/Src/PeriodMeas.c ../Core/Inc/main.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_pwr.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h \
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_gpio.h \
- ../Core/Inc/PeriodMeas.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_gpio.h
+../Core/Inc/PulseCountVelocity_object.h:
 ../Core/Inc/main.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_rcc.h:
 ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:
@@ -37,4 +39,3 @@ Core/Src/PeriodMeas.o: ../Core/Src/PeriodMeas.c ../Core/Inc/main.h \
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_gpio.h:
-../Core/Inc/PeriodMeas.h:

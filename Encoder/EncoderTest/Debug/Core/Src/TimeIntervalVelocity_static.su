@@ -1,2 +1,2 @@
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:2575:26:LL_TIM_IC_GetCaptureCH1	16	static
-../Core/Src/PeriodMeas.c:16:6:Encoder_PeroidMeas_Update	24	static
+../Core/Src/TimeIntervalVelocity_static.c:16:6:Encoder_PeroidMeas_Update	24	static

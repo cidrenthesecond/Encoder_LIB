@@ -1,5 +1,6 @@
-Core/Src/PulseMeas.o: ../Core/Src/PulseMeas.c ../Core/Inc/PulseMeas.h \
- ../Core/Inc/main.h \
+Core/Src/TimeIntervalVelocity_static.o: \
+ ../Core/Src/TimeIntervalVelocity_static.c \
+ ../Core/Inc/TimeIntervalVelocity_static.h ../Core/Inc/main.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_rcc.h \
  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f439xx.h \
@@ -19,7 +20,7 @@ Core/Src/PulseMeas.o: ../Core/Src/PulseMeas.c ../Core/Inc/PulseMeas.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_gpio.h \
  ../Core/Inc/main.h
-../Core/Inc/PulseMeas.h:
+../Core/Inc/TimeIntervalVelocity_static.h:
 ../Core/Inc/main.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_rcc.h:
 ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:
