@@ -23,7 +23,8 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "PulseCountVelocity_static.h"
+#include "PulseCountVelocity_object.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -55,11 +56,26 @@ void SystemClock_Config(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-uint32_t value = 0;
-int16_t test = 0;
-uint16_t test1 = 0;
-int16_t result1 = 0;
-int16_t result2 = 0;
+uint16_t test = 0;
+volatile int32_t result1 = 0;
+volatile int32_t result2 = 0;
+
+uint16_t counter1;
+uint16_t counter2;
+
+PCVo_Config_t config = {
+	.Encoder_Channels_Counted = 1,
+	.Encoder_Edges_Counted = 2,
+	.Encoder_Poles = 3,
+	.Measurement_Frequency_hz = 10
+};
+
+PCVo_Timers_t timers = {
+	.Encoder_Timer = TIM1,
+	.MeasurementFrame_Timer = TIM6
+};
+
+volatile PCVo_object obj;
 
 /* USER CODE END 0 */
 
@@ -77,11 +93,7 @@ int main(void)
   /* MCU Configuration--------------------------------------------------------*/
 
   /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
-  LL_APB2_GRP1_EnableClock(LL_APB2_GRP1_PERIPH_SYSCFG);
-  LL_APB1_GRP1_EnableClock(LL_APB1_GRP1_PERIPH_PWR);
-
-  /* System interrupt init*/
-  NVIC_SetPriorityGrouping(NVIC_PRIORITYGROUP_4);
+  HAL_Init();
 
   /* USER CODE BEGIN Init */
 
@@ -101,26 +113,36 @@ int main(void)
   MX_TIM3_Init();
   MX_TIM6_Init();
   MX_TIM4_Init();
+  MX_TIM5_Init();
   /* USER CODE BEGIN 2 */
+
+  LL_TIM_EnableIT_UPDATE(TIM6);
+
+  LL_TIM_GenerateEvent_UPDATE(TIM2);
+  LL_TIM_GenerateEvent_UPDATE(TIM3);
+
+  LL_TIM_ClearFlag_UPDATE(TIM2);
+  LL_TIM_ClearFlag_UPDATE(TIM3);
+
   LL_TIM_CC_EnableChannel(TIM2, LL_TIM_CHANNEL_CH1);
   LL_TIM_CC_EnableChannel(TIM2, LL_TIM_CHANNEL_CH2);
 
   LL_TIM_CC_EnableChannel(TIM3, LL_TIM_CHANNEL_CH1);
 
   LL_TIM_EnableCounter(TIM2);
-  LL_TIM_SetCounter(TIM2, 0);
 
-  LL_TIM_GenerateEvent_UPDATE(TIM2);
-  LL_TIM_ClearFlag_UPDATE(TIM2);
 
-  LL_TIM_EnableCounter(TIM1);
+  PCVs_Start();
 
-  LL_TIM_EnableCounter(TIM6);
 
-  LL_TIM_CC_EnableChannel(TIM4, LL_TIM_CHANNEL_CH1);
-  LL_TIM_EnableCounter(TIM4);
-  LL_TIM_GenerateEvent_UPDATE(TIM4);
-  LL_TIM_ClearFlag_UPDATE(TIM4);
+  //LL_TIM_EnableCounter(TIM1);
+
+  //LL_TIM_EnableCounter(TIM6);
+
+  //LL_TIM_CC_EnableChannel(TIM4, LL_TIM_CHANNEL_CH1);
+  //LL_TIM_EnableCounter(TIM4);
+  //LL_TIM_GenerateEvent_UPDATE(TIM4);
+  //LL_TIM_ClearFlag_UPDATE(TIM4);
 
 
   /* USER CODE END 2 */
@@ -129,19 +151,7 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	  //value = LL_TIM_GetCounter(TIM1);
-	  //if(value % 2 ==0) LL_GPIO_SetOutputPin(LD1_GPIO_Port, LD1_Pin);
-	  //else LL_GPIO_ResetOutputPin(LD1_GPIO_Port, LD1_Pin);
 
-	  test = (int16_t)LL_TIM_GetCounter(TIM1);
-	  test1 = LL_TIM_GetCounter(TIM4);
-
-
-	  if(LL_TIM_GetCounter(TIM2) < 5000) LL_GPIO_SetOutputPin(LD1_GPIO_Port, LD1_Pin);
-	  else LL_GPIO_ResetOutputPin(LD1_GPIO_Port, LD1_Pin);
-
-	  if(LL_TIM_GetCounter(TIM3) < 5000)LL_GPIO_SetOutputPin(LD2_GPIO_Port, LD2_Pin);
-	  else LL_GPIO_ResetOutputPin(LD2_GPIO_Port, LD2_Pin);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -190,8 +200,13 @@ void SystemClock_Config(void)
   {
 
   }
-  LL_Init1msTick(80000000);
   LL_SetSystemCoreClock(80000000);
+
+   /* Update the time base */
+  if (HAL_InitTick (TICK_INT_PRIORITY) != HAL_OK)
+  {
+    Error_Handler();
+  }
   LL_RCC_SetTIMPrescaler(LL_RCC_TIM_PRESCALER_TWICE);
 }
 
