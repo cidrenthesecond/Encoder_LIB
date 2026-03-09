@@ -115,8 +115,6 @@ int main(void)
   MX_TIM4_Init();
   MX_TIM5_Init();
   /* USER CODE BEGIN 2 */
-  PCVo_Init(&obj, &config, &timers);
-  PCVo_Start(&obj);
 
   LL_TIM_EnableIT_UPDATE(TIM6);
 
@@ -153,13 +151,7 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	  //value = LL_TIM_GetCounter(TIM1);
-	  //if(value % 2 ==0) LL_GPIO_SetOutputPin(LD1_GPIO_Port, LD1_Pin);
-	  //else LL_GPIO_ResetOutputPin(LD1_GPIO_Port, LD1_Pin);
 
-	  test = LL_TIM_GetCounter(TIM1);
-	  counter1 = LL_TIM_GetCounter(TIM2);
-	  counter2 = LL_TIM_GetCounter(TIM3);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

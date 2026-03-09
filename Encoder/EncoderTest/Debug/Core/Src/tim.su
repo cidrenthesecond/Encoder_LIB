@@ -22,8 +22,11 @@
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:3493:22:LL_TIM_EnableIT_CC1	16	static
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:3669:22:LL_TIM_DisableIT_TRIG	16	static
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:3940:22:LL_TIM_DisableDMAReq_TRIG	16	static
-../Core/Src/tim.c:28:6:MX_TIM1_Init	56	static
-../Core/Src/tim.c:86:6:MX_TIM2_Init	88	static
-../Core/Src/tim.c:141:6:MX_TIM3_Init	88	static
-../Core/Src/tim.c:196:6:MX_TIM4_Init	56	static
-../Core/Src/tim.c:248:6:MX_TIM6_Init	32	static
+../Core/Src/tim.c:30:6:MX_TIM1_Init	56	static
+../Core/Src/tim.c:88:6:MX_TIM2_Init	88	static
+../Core/Src/tim.c:143:6:MX_TIM3_Init	88	static
+../Core/Src/tim.c:198:6:MX_TIM4_Init	56	static
+../Core/Src/tim.c:250:6:MX_TIM5_Init	32	static
+../Core/Src/tim.c:290:6:MX_TIM6_Init	32	static
+../Core/Src/tim.c:322:6:HAL_TIM_Base_MspInit	24	static
+../Core/Src/tim.c:338:6:HAL_TIM_Base_MspDeInit	16	static
