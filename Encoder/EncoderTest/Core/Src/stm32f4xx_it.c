@@ -23,7 +23,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "PulseCountVelocity_static.h"
-#include "PulseCountVelocity_object.h"
+#include "TimeIntervalVelocity_static.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -59,10 +59,8 @@
 /* External variables --------------------------------------------------------*/
 
 /* USER CODE BEGIN EV */
-extern int32_t result1;
-extern int16_t result2;
-extern PCVo_object obj;
-uint8_t flag = 0;
+extern volatile int32_t PCV_result;
+extern volatile int32_t TIV_result;
 /* USER CODE END EV */
 
 /******************************************************************************/
@@ -190,7 +188,7 @@ void SysTick_Handler(void)
   /* USER CODE BEGIN SysTick_IRQn 0 */
 
   /* USER CODE END SysTick_IRQn 0 */
-  HAL_IncTick();
+
   /* USER CODE BEGIN SysTick_IRQn 1 */
 
   /* USER CODE END SysTick_IRQn 1 */
@@ -225,7 +223,12 @@ void TIM4_IRQHandler(void)
 	if(LL_TIM_IsActiveFlag_CC1(TIM4))
 	{
 		LL_TIM_ClearFlag_CC1(TIM4);
-		//Encoder_PeriodMeas_Update(&result2);
+		TIV_result = TIVs_CalculateVelocity(TIV_CHANNEL_A);
+	}
+	if(LL_TIM_IsActiveFlag_CC2(TIM4))
+	{
+		LL_TIM_ClearFlag_CC2(TIM4);
+		TIV_result = TIVs_CalculateVelocity(TIV_CHANNEL_B);
 	}
   /* USER CODE END TIM4_IRQn 0 */
   /* USER CODE BEGIN TIM4_IRQn 1 */
@@ -242,12 +245,7 @@ void TIM6_DAC_IRQHandler(void)
 	if(LL_TIM_IsActiveFlag_UPDATE(TIM6))
 	{
 		LL_TIM_ClearFlag_UPDATE(TIM6);
-		if (flag == 0) flag = 1;
-		else
-		{
-		//result1 = PCVs_CalculateVelocity();
-		result2 = PCVo_CalculateVelocity(&obj);
-		}
+		PCV_result = PCVs_CalculateVelocity();
 	}
   /* USER CODE END TIM6_DAC_IRQn 0 */
   /* USER CODE BEGIN TIM6_DAC_IRQn 1 */

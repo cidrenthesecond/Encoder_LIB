@@ -24,7 +24,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "PulseCountVelocity_static.h"
-#include "PulseCountVelocity_object.h"
+#include "TimeIntervalVelocity_static.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -56,27 +56,10 @@ void SystemClock_Config(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-uint16_t test = 0;
-volatile int32_t result1 = 0;
-volatile int32_t result2 = 0;
+volatile int32_t PCV_result = 0;
+volatile int32_t TIV_result = 0;
 
-uint16_t counter1;
-uint16_t counter2;
-
-PCVo_Config_t config = {
-	.Encoder_Channels_Counted = 1,
-	.Encoder_Edges_Counted = 2,
-	.Encoder_Poles = 3,
-	.Measurement_Frequency_hz = 10
-};
-
-PCVo_Timers_t timers = {
-	.Encoder_Timer = TIM1,
-	.MeasurementFrame_Timer = TIM6
-};
-
-volatile PCVo_object obj;
-
+volatile uint32_t encoder_counter;
 /* USER CODE END 0 */
 
 /**
@@ -93,7 +76,11 @@ int main(void)
   /* MCU Configuration--------------------------------------------------------*/
 
   /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
-  HAL_Init();
+  LL_APB2_GRP1_EnableClock(LL_APB2_GRP1_PERIPH_SYSCFG);
+  LL_APB1_GRP1_EnableClock(LL_APB1_GRP1_PERIPH_PWR);
+
+  /* System interrupt init*/
+  NVIC_SetPriorityGrouping(NVIC_PRIORITYGROUP_4);
 
   /* USER CODE BEGIN Init */
 
@@ -113,10 +100,9 @@ int main(void)
   MX_TIM3_Init();
   MX_TIM6_Init();
   MX_TIM4_Init();
-  MX_TIM5_Init();
   /* USER CODE BEGIN 2 */
 
-  LL_TIM_EnableIT_UPDATE(TIM6);
+  //LL_TIM_EnableIT_UPDATE(TIM6);
 
   LL_TIM_GenerateEvent_UPDATE(TIM2);
   LL_TIM_GenerateEvent_UPDATE(TIM3);
@@ -133,7 +119,7 @@ int main(void)
 
 
   PCVs_Start();
-
+  TIVs_Start();
 
   //LL_TIM_EnableCounter(TIM1);
 
@@ -151,7 +137,7 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-
+	encoder_counter = LL_TIM_GetCounter(TIM1);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -200,13 +186,8 @@ void SystemClock_Config(void)
   {
 
   }
+  LL_Init1msTick(80000000);
   LL_SetSystemCoreClock(80000000);
-
-   /* Update the time base */
-  if (HAL_InitTick (TICK_INT_PRIORITY) != HAL_OK)
-  {
-    Error_Handler();
-  }
   LL_RCC_SetTIMPrescaler(LL_RCC_TIM_PRESCALER_TWICE);
 }
 
