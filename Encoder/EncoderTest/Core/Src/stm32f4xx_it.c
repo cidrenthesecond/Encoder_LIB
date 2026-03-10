@@ -250,7 +250,7 @@ void TIM6_DAC_IRQHandler(void)
 	if(LL_TIM_IsActiveFlag_UPDATE(TIM6))
 	{
 		LL_TIM_ClearFlag_UPDATE(TIM6);
-		PCV_result = PCVs_CalculateVelocity();
+		PCV_result = PCVs_CalculateVelocity1();
 	}
   /* USER CODE END TIM6_DAC_IRQn 0 */
   /* USER CODE BEGIN TIM6_DAC_IRQn 1 */

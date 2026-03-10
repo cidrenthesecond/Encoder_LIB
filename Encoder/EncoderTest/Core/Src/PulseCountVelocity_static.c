@@ -29,6 +29,22 @@ int32_t PCVs_CalculateVelocity()
 
 	int16_t delta = (int16_t)(num_pulses - old_num_pulses);
 
+	if(delta == 0) return 0;
+
+	int32_t result = delta*Measurement_Factor;
+
+	prev_velocity = result;
+	old_num_pulses = num_pulses;
+
+	return result;
+}
+
+int32_t PCVs_CalculateVelocity1()
+{
+	uint16_t num_pulses = LL_TIM_GetCounter(Encoder_Timer);
+
+	int16_t delta = (int16_t)(num_pulses - old_num_pulses);
+
 	if(delta == 0)
 	{
 		timeout_cycles++;
@@ -40,7 +56,7 @@ int32_t PCVs_CalculateVelocity()
 		}
 		else
 		{
-			prev_velocity = prev_velocity >> 1; // to chyba nie ma sensu ale zobaczym
+			//prev_velocity = prev_velocity >> 1; // to chyba nie ma sensu ale zobaczym
 			return prev_velocity;
 		}
 	}
