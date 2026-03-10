@@ -16,6 +16,7 @@ typedef enum {
 }TIV_Channel_t;
 
 int32_t TIVs_CalculateVelocity(TIV_Channel_t channel);
+int32_t TIVs_TimerOverflowISR();
 void TIVs_Start();
 
 #endif /* INC_TIMEINTERVALVELOCITY_STATIC_H_ */

@@ -230,6 +230,11 @@ void TIM4_IRQHandler(void)
 		LL_TIM_ClearFlag_CC2(TIM4);
 		TIV_result = TIVs_CalculateVelocity(TIV_CHANNEL_B);
 	}
+	if(LL_TIM_IsActiveFlag_UPDATE(TIM4))
+	{
+		LL_TIM_ClearFlag_UPDATE(TIM4);
+		TIV_result = TIVs_TimerOverflowISR();
+	}
   /* USER CODE END TIM4_IRQn 0 */
   /* USER CODE BEGIN TIM4_IRQn 1 */
 

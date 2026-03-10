@@ -17,6 +17,8 @@ static const uint8_t Encoder_Edges_Counted = 2;
 static const uint8_t Encoder_Channels_Counted = 2;
 static const uint16_t PulsesPerRevolution = Encoder_Poles*Encoder_Edges_Counted*Encoder_Channels_Counted;
 
+static uint8_t timeout_cycles_goal = 10;
+
 volatile uint16_t prev_capture = 0;
 volatile int32_t prev_velocity = 0;
 volatile uint16_t prev_num_pulses = 0;
@@ -38,25 +40,53 @@ void TIVs_Start()
 	LL_TIM_GenerateEvent_UPDATE(Timer_Used);
 	LL_TIM_ClearFlag_UPDATE(Timer_Used);
 
+	//LL_TIM_EnableIT_UPDATE(Timer_Used);
+}
+
+static volatile uint8_t timeout_cycles = 0;
+
+int32_t TIVs_TimerOverflowISR() {
+	timeout_cycles++;
+
+	if(timeout_cycles >= timeout_cycles_goal)
+	{
+		prev_velocity = 0;
+		return 0;
+	}
+
+	prev_velocity = prev_velocity >> 1;
+	return prev_velocity;
 }
 
 int32_t TIVs_CalculateVelocity(TIV_Channel_t channel)
 {
 	uint16_t current_capture = 0;
 
-	if(channel == TIV_CHANNEL_A) LL_TIM_IC_GetCaptureCH1(Timer_Used);
-	else LL_TIM_IC_GetCaptureCH2(Timer_Used);
+	if(channel == TIV_CHANNEL_A) current_capture = LL_TIM_IC_GetCaptureCH1(Timer_Used);
+	else current_capture = LL_TIM_IC_GetCaptureCH2(Timer_Used);
+
+	//LL_TIM_SetCounter(Timer_Used, 0);
 
 	uint16_t delta = current_capture - prev_capture;
+	//uint16_t delta = current_capture;
+
 	prev_capture = current_capture;
 
-	if(delta == 0)
+	if(delta == 0 )
 	{
-		return prev_velocity;
+		return 0;
 	}
 
-	int32_t result = 60*Clock_Freq/(PulsesPerRevolution * delta);
+	int32_t result;
+
+	if(timeout_cycles == 0) result = 60*Clock_Freq/(PulsesPerRevolution * delta);
+	else result = 60*Clock_Freq/(PulsesPerRevolution * (delta + 65535*timeout_cycles));
+
 	prev_velocity = result;
+	timeout_cycles = 0;
+
 	return result;
 }
+
+
 
