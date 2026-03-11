@@ -4,8 +4,15 @@
  *  Created on: Mar 5, 2026
  *      Author: 1
  */
+
+//TO DO:
+//Cleanup metody start
+//dodanie sprawdzania kierunku
+//dodanie ISR
+
 #include <TimeIntervalVelocity_static.h>
 #include "main.h"
+#include "Ease_of_life.h"
 
 static const uint32_t Clock_Freq = 1000000;
 static TIM_TypeDef* const Timer_Used = TIM4;
@@ -29,19 +36,19 @@ void TIVs_Start()
 	LL_TIM_SetCounter(Timer_Used, 0);
 
 	LL_TIM_CC_EnableChannel(Timer_Used, capture_compare_channelA);
-	LL_TIM_EnableIT_CC1(Timer_Used);
+	LL_TIM_EnableIT_CC(Timer_Used, capture_compare_channelA);
 
 	if(Encoder_Channels_Counted == 2)
 	{
 		LL_TIM_CC_EnableChannel(Timer_Used, capture_compare_channelB);
-		LL_TIM_EnableIT_CC2(Timer_Used);
+		LL_TIM_EnableIT_CC(Timer_Used, capture_compare_channelB);
 	}
 
 	LL_TIM_EnableCounter(Timer_Used);
 	LL_TIM_GenerateEvent_UPDATE(Timer_Used);
 	LL_TIM_ClearFlag_UPDATE(Timer_Used);
 
-	//LL_TIM_EnableIT_UPDATE(Timer_Used);
+	LL_TIM_EnableIT_UPDATE(Timer_Used);
 }
 
 int32_t TIVs_TimerOverflowISR() {
@@ -53,18 +60,19 @@ int32_t TIVs_TimerOverflowISR() {
 		return 0;
 	}
 
-	//prev_velocity = prev_velocity >> 1;
 	return prev_velocity;
 }
 
 int32_t TIVs_CalculateVelocity(TIV_Channel_t channel)
 {
 	uint16_t current_capture = 0;
+	const uint8_t timeout_num = timeout_cycles;
 
 	if(channel == TIV_CHANNEL_A) current_capture = LL_TIM_IC_GetCaptureCH1(Timer_Used);
 	else current_capture = LL_TIM_IC_GetCaptureCH2(Timer_Used);
 
-	uint16_t delta = current_capture - prev_capture;
+	//uint16_t delta = current_capture - prev_capture;
+	uint32_t delta = 65535*timeout_num - prev_capture + current_capture;
 
 	prev_capture = current_capture;
 
@@ -75,8 +83,9 @@ int32_t TIVs_CalculateVelocity(TIV_Channel_t channel)
 
 	int32_t result;
 
-	if(timeout_cycles == 0) result = 60*Clock_Freq/(PulsesPerRevolution * delta);
-	else result = 60*Clock_Freq/(PulsesPerRevolution * (delta + 65535*timeout_cycles));
+	//if(timeout_cycles == 0) result = 60*Clock_Freq/(PulsesPerRevolution * delta);
+	//else result = 60*Clock_Freq/(PulsesPerRevolution * (delta + 65535*timeout_cycles));
+	result = 60*Clock_Freq/(PulsesPerRevolution * delta);
 
 	prev_velocity = result;
 	timeout_cycles = 0;

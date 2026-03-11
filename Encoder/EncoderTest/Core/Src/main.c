@@ -60,6 +60,7 @@ volatile int32_t PCV_result = 0;
 volatile int32_t TIV_result = 0;
 
 volatile uint32_t encoder_counter;
+volatile uint32_t Is_Pin_Set = 0;
 /* USER CODE END 0 */
 
 /**
@@ -102,8 +103,6 @@ int main(void)
   MX_TIM4_Init();
   /* USER CODE BEGIN 2 */
 
-  //LL_TIM_EnableIT_UPDATE(TIM6);
-
   LL_TIM_GenerateEvent_UPDATE(TIM2);
   LL_TIM_GenerateEvent_UPDATE(TIM3);
 
@@ -121,16 +120,6 @@ int main(void)
   PCVs_Start();
   TIVs_Start();
 
-  //LL_TIM_EnableCounter(TIM1);
-
-  //LL_TIM_EnableCounter(TIM6);
-
-  //LL_TIM_CC_EnableChannel(TIM4, LL_TIM_CHANNEL_CH1);
-  //LL_TIM_EnableCounter(TIM4);
-  //LL_TIM_GenerateEvent_UPDATE(TIM4);
-  //LL_TIM_ClearFlag_UPDATE(TIM4);
-
-
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -138,6 +127,7 @@ int main(void)
   while (1)
   {
 	encoder_counter = LL_TIM_GetCounter(TIM1);
+
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

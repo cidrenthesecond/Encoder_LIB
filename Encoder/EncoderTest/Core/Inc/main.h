@@ -99,6 +99,8 @@ void Error_Handler(void);
 #define STLK_TX_GPIO_Port GPIOD
 #define DIR_Pin LL_GPIO_PIN_11
 #define DIR_GPIO_Port GPIOD
+#define TIM4_CH1_Pin LL_GPIO_PIN_12
+#define TIM4_CH1_GPIO_Port GPIOD
 #define USB_OverCurrent_Pin LL_GPIO_PIN_7
 #define USB_OverCurrent_GPIO_Port GPIOG
 #define USB_SOF_Pin LL_GPIO_PIN_8

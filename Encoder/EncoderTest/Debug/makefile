@@ -60,8 +60,8 @@ all: main-build
 main-build: EncoderTest.elf secondary-outputs
 
 # Tool invocations
-EncoderTest.elf EncoderTest.map: $(OBJS) $(USER_OBJS) C:\Users\1\Projects\Encoder\EncoderTest\STM32F439ZITX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "EncoderTest.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\1\Projects\Encoder\EncoderTest\STM32F439ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="EncoderTest.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+EncoderTest.elf EncoderTest.map: $(OBJS) $(USER_OBJS) X:\Projects\Encoder\Encoder_LIB\Encoder\EncoderTest\STM32F439ZITX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "EncoderTest.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"X:\Projects\Encoder\Encoder_LIB\Encoder\EncoderTest\STM32F439ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="EncoderTest.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

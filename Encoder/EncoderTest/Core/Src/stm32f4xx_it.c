@@ -61,6 +61,8 @@
 /* USER CODE BEGIN EV */
 extern volatile int32_t PCV_result;
 extern volatile int32_t TIV_result;
+extern volatile uint8_t cc_event;
+extern volatile uint32_t Is_Pin_Set;
 /* USER CODE END EV */
 
 /******************************************************************************/
@@ -230,11 +232,12 @@ void TIM4_IRQHandler(void)
 		LL_TIM_ClearFlag_CC2(TIM4);
 		TIV_result = TIVs_CalculateVelocity(TIV_CHANNEL_B);
 	}
-	if(LL_TIM_IsActiveFlag_UPDATE(TIM4))
+	if(LL_TIM_IsActiveFlag_UPDATE(TIM4) && LL_TIM_IsEnabledIT_UPDATE(TIM4))
 	{
 		LL_TIM_ClearFlag_UPDATE(TIM4);
 		TIV_result = TIVs_TimerOverflowISR();
 	}
+
   /* USER CODE END TIM4_IRQn 0 */
   /* USER CODE BEGIN TIM4_IRQn 1 */
 

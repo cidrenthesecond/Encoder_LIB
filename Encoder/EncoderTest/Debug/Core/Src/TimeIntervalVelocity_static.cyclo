@@ -4,9 +4,8 @@
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:2575:26:LL_TIM_IC_GetCaptureCH1	1
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:2591:26:LL_TIM_IC_GetCaptureCH2	1
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:3185:22:LL_TIM_ClearFlag_UPDATE	1
-../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:3493:22:LL_TIM_EnableIT_CC1	1
-../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:3526:22:LL_TIM_EnableIT_CC2	1
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:3460:22:LL_TIM_EnableIT_UPDATE	1
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:3969:22:LL_TIM_GenerateEvent_UPDATE	1
-../Core/Src/TimeIntervalVelocity_static.c:27:6:TIVs_Start	2
-../Core/Src/TimeIntervalVelocity_static.c:47:9:TIVs_TimerOverflowISR	2
-../Core/Src/TimeIntervalVelocity_static.c:60:9:TIVs_CalculateVelocity	4
+../Core/Src/TimeIntervalVelocity_static.c:34:6:TIVs_Start	2
+../Core/Src/TimeIntervalVelocity_static.c:54:9:TIVs_TimerOverflowISR	2
+../Core/Src/TimeIntervalVelocity_static.c:66:9:TIVs_CalculateVelocity	3

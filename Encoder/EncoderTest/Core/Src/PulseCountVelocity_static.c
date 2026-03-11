@@ -4,6 +4,12 @@
  *  Created on: Mar 6, 2026
  *      Author: pawluczenko
  */
+
+
+//TO DO:
+//cleanup startu
+//dodanie oblusgi ISR
+
 #include <PulseCountVelocity_static.h>
 
 static const uint8_t Encoder_Poles = 3;
@@ -86,4 +92,9 @@ void PCVs_Start()
 	LL_TIM_EnableIT_UPDATE(MeasurementFrame_Timer);
 
 	old_num_pulses = 0;
+}
+
+static void PCVs_EncoderTimer_Start()
+{
+
 }
