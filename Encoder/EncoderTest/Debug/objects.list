@@ -1,3 +1,5 @@
+"./Core/Src/Ease_of_life.o"
+"./Core/Src/HybridVelocity.o"
 "./Core/Src/PulseCountVelocity_object.o"
 "./Core/Src/PulseCountVelocity_static.o"
 "./Core/Src/TimeIntervalVelocity_static.o"

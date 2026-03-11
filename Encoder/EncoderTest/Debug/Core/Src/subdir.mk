@@ -5,6 +5,8 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
+../Core/Src/Ease_of_life.c \
+../Core/Src/HybridVelocity.c \
 ../Core/Src/PulseCountVelocity_object.c \
 ../Core/Src/PulseCountVelocity_static.c \
 ../Core/Src/TimeIntervalVelocity_static.c \
@@ -17,6 +19,8 @@ C_SRCS += \
 ../Core/Src/tim.c 
 
 OBJS += \
+./Core/Src/Ease_of_life.o \
+./Core/Src/HybridVelocity.o \
 ./Core/Src/PulseCountVelocity_object.o \
 ./Core/Src/PulseCountVelocity_static.o \
 ./Core/Src/TimeIntervalVelocity_static.o \
@@ -29,6 +33,8 @@ OBJS += \
 ./Core/Src/tim.o 
 
 C_DEPS += \
+./Core/Src/Ease_of_life.d \
+./Core/Src/HybridVelocity.d \
 ./Core/Src/PulseCountVelocity_object.d \
 ./Core/Src/PulseCountVelocity_static.d \
 ./Core/Src/TimeIntervalVelocity_static.d \
@@ -48,7 +54,7 @@ Core/Src/%.o Core/Src/%.su Core/Src/%.cyclo: ../Core/Src/%.c Core/Src/subdir.mk
 clean: clean-Core-2f-Src
 
 clean-Core-2f-Src:
-	-$(RM) ./Core/Src/PulseCountVelocity_object.cyclo ./Core/Src/PulseCountVelocity_object.d ./Core/Src/PulseCountVelocity_object.o ./Core/Src/PulseCountVelocity_object.su ./Core/Src/PulseCountVelocity_static.cyclo ./Core/Src/PulseCountVelocity_static.d ./Core/Src/PulseCountVelocity_static.o ./Core/Src/PulseCountVelocity_static.su ./Core/Src/TimeIntervalVelocity_static.cyclo ./Core/Src/TimeIntervalVelocity_static.d ./Core/Src/TimeIntervalVelocity_static.o ./Core/Src/TimeIntervalVelocity_static.su ./Core/Src/gpio.cyclo ./Core/Src/gpio.d ./Core/Src/gpio.o ./Core/Src/gpio.su ./Core/Src/main.cyclo ./Core/Src/main.d ./Core/Src/main.o ./Core/Src/main.su ./Core/Src/stm32f4xx_it.cyclo ./Core/Src/stm32f4xx_it.d ./Core/Src/stm32f4xx_it.o ./Core/Src/stm32f4xx_it.su ./Core/Src/syscalls.cyclo ./Core/Src/syscalls.d ./Core/Src/syscalls.o ./Core/Src/syscalls.su ./Core/Src/sysmem.cyclo ./Core/Src/sysmem.d ./Core/Src/sysmem.o ./Core/Src/sysmem.su ./Core/Src/system_stm32f4xx.cyclo ./Core/Src/system_stm32f4xx.d ./Core/Src/system_stm32f4xx.o ./Core/Src/system_stm32f4xx.su ./Core/Src/tim.cyclo ./Core/Src/tim.d ./Core/Src/tim.o ./Core/Src/tim.su
+	-$(RM) ./Core/Src/Ease_of_life.cyclo ./Core/Src/Ease_of_life.d ./Core/Src/Ease_of_life.o ./Core/Src/Ease_of_life.su ./Core/Src/HybridVelocity.cyclo ./Core/Src/HybridVelocity.d ./Core/Src/HybridVelocity.o ./Core/Src/HybridVelocity.su ./Core/Src/PulseCountVelocity_object.cyclo ./Core/Src/PulseCountVelocity_object.d ./Core/Src/PulseCountVelocity_object.o ./Core/Src/PulseCountVelocity_object.su ./Core/Src/PulseCountVelocity_static.cyclo ./Core/Src/PulseCountVelocity_static.d ./Core/Src/PulseCountVelocity_static.o ./Core/Src/PulseCountVelocity_static.su ./Core/Src/TimeIntervalVelocity_static.cyclo ./Core/Src/TimeIntervalVelocity_static.d ./Core/Src/TimeIntervalVelocity_static.o ./Core/Src/TimeIntervalVelocity_static.su ./Core/Src/gpio.cyclo ./Core/Src/gpio.d ./Core/Src/gpio.o ./Core/Src/gpio.su ./Core/Src/main.cyclo ./Core/Src/main.d ./Core/Src/main.o ./Core/Src/main.su ./Core/Src/stm32f4xx_it.cyclo ./Core/Src/stm32f4xx_it.d ./Core/Src/stm32f4xx_it.o ./Core/Src/stm32f4xx_it.su ./Core/Src/syscalls.cyclo ./Core/Src/syscalls.d ./Core/Src/syscalls.o ./Core/Src/syscalls.su ./Core/Src/sysmem.cyclo ./Core/Src/sysmem.d ./Core/Src/sysmem.o ./Core/Src/sysmem.su ./Core/Src/system_stm32f4xx.cyclo ./Core/Src/system_stm32f4xx.d ./Core/Src/system_stm32f4xx.o ./Core/Src/system_stm32f4xx.su ./Core/Src/tim.cyclo ./Core/Src/tim.d ./Core/Src/tim.o ./Core/Src/tim.su
 
 .PHONY: clean-Core-2f-Src
 

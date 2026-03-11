@@ -1,0 +1,17 @@
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:1116:22:LL_TIM_EnableCounter	16	static
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:1369:22:LL_TIM_SetCounter	16	static
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:1612:22:LL_TIM_CC_EnableChannel	16	static
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:2575:26:LL_TIM_IC_GetCaptureCH1	16	static
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:2591:26:LL_TIM_IC_GetCaptureCH2	16	static
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:3185:22:LL_TIM_ClearFlag_UPDATE	16	static
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:3207:22:LL_TIM_ClearFlag_CC1	16	static
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:3218:26:LL_TIM_IsActiveFlag_CC1	16	static
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:3229:22:LL_TIM_ClearFlag_CC2	16	static
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:3240:26:LL_TIM_IsActiveFlag_CC2	16	static
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:3460:22:LL_TIM_EnableIT_UPDATE	16	static
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:3493:22:LL_TIM_EnableIT_CC1	16	static
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:3526:22:LL_TIM_EnableIT_CC2	16	static
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:3969:22:LL_TIM_GenerateEvent_UPDATE	16	static
+../Core/Src/HybridVelocity.c:28:6:HV_Start	8	static
+../Core/Src/HybridVelocity.c:57:6:HV_CaptureCompare_ISR	8	static
+../Core/Src/HybridVelocity.c:73:9:HV_CalculateVelocity	4	static
