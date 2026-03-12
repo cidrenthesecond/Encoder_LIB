@@ -24,6 +24,7 @@
 /* USER CODE BEGIN Includes */
 #include "PulseCountVelocity_static.h"
 #include "TimeIntervalVelocity_static.h"
+#include "Algorithm_profiler.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -63,6 +64,7 @@ extern volatile int32_t PCV_result;
 extern volatile int32_t TIV_result;
 extern volatile uint8_t cc_event;
 extern volatile uint32_t Is_Pin_Set;
+extern volatile uint32_t Nanoseconds;
 /* USER CODE END EV */
 
 /******************************************************************************/
@@ -190,7 +192,7 @@ void SysTick_Handler(void)
   /* USER CODE BEGIN SysTick_IRQn 0 */
 
   /* USER CODE END SysTick_IRQn 0 */
-
+  HAL_IncTick();
   /* USER CODE BEGIN SysTick_IRQn 1 */
 
   /* USER CODE END SysTick_IRQn 1 */
@@ -222,6 +224,7 @@ void TIM1_UP_TIM10_IRQHandler(void)
 void TIM4_IRQHandler(void)
 {
   /* USER CODE BEGIN TIM4_IRQn 0 */
+
 	if(LL_TIM_IsActiveFlag_CC1(TIM4))
 	{
 		LL_TIM_ClearFlag_CC1(TIM4);
