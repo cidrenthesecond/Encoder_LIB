@@ -395,8 +395,6 @@ Discarded input sections
                 0x00000000        0x1 ./Core/Src/PulseCountVelocity_static.o
  .rodata.Encoder_Channels_Counted
                 0x00000000        0x1 ./Core/Src/PulseCountVelocity_static.o
- .rodata.Encoder_PulsesPerRevolution
-                0x00000000        0x2 ./Core/Src/PulseCountVelocity_static.o
  .rodata.Measurement_Frequency
                 0x00000000        0x4 ./Core/Src/PulseCountVelocity_static.o
  .rodata.Encoder_Timer
@@ -405,6 +403,8 @@ Discarded input sections
                 0x00000000        0x4 ./Core/Src/PulseCountVelocity_static.o
  .rodata.timeout_cycles_goal
                 0x00000000        0x1 ./Core/Src/PulseCountVelocity_static.o
+ .rodata.Encoder_PulsesPerRevolution
+                0x00000000        0x2 ./Core/Src/PulseCountVelocity_static.o
  .rodata.Measurement_Factor
                 0x00000000        0x4 ./Core/Src/PulseCountVelocity_static.o
  .text.PCVs_CalculateVelocity
