@@ -6,6 +6,9 @@
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:3185:22:LL_TIM_ClearFlag_UPDATE	16	static
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:3460:22:LL_TIM_EnableIT_UPDATE	16	static
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:3969:22:LL_TIM_GenerateEvent_UPDATE	16	static
-../Core/Src/TimeIntervalVelocity_static.c:34:6:TIVs_Start	8	static
-../Core/Src/TimeIntervalVelocity_static.c:54:9:TIVs_TimerOverflowISR	4	static
-../Core/Src/TimeIntervalVelocity_static.c:66:9:TIVs_CalculateVelocity	32	static
+../Core/Inc/Ease_of_life.h:13:23:LL_GPIO_GetState	16	static
+../Core/Src/TimeIntervalVelocity_static.c:41:6:TIVs_Start	8	static
+../Core/Src/TimeIntervalVelocity_static.c:61:9:TIVs_TimerOverflowISR	4	static
+../Core/Src/TimeIntervalVelocity_static.c:73:23:Are_pin_states_equal	8	static
+../Core/Src/TimeIntervalVelocity_static.c:80:16:TIVs_GetSign	16	static
+../Core/Src/TimeIntervalVelocity_static.c:95:9:TIVs_CalculateVelocity	32	static

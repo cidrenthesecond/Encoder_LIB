@@ -10,4 +10,9 @@
 
 void LL_TIM_EnableIT_CC(TIM_TypeDef *TIMX,uint32_t TIMX_Channelx);
 
+static inline uint8_t LL_GPIO_GetState(GPIO_TypeDef *GPIOx, uint32_t PinMask)
+{
+	return GPIOx -> IDR & (1 << PinMask);
+}
+
 #endif /* INC_EASE_OF_LIFE_H_ */

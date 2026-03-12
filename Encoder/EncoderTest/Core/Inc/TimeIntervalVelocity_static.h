@@ -10,6 +10,7 @@
 
 #include "main.h"
 
+
 typedef enum {
 	TIV_CHANNEL_A,
 	TIV_CHANNEL_B
