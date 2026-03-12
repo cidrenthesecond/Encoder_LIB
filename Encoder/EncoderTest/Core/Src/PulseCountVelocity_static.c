@@ -79,22 +79,27 @@ int32_t PCVs_CalculateVelocity1()
 	return result;
 }
 
-void PCVs_Start()
+static void PCVs_EncoderTimer_Start()
 {
 	LL_TIM_SetCounter(Encoder_Timer, 0);
-
 	LL_TIM_EnableCounter(Encoder_Timer);
+}
+
+static void PCVs_MeasFrameTimer_Start()
+{
 	LL_TIM_EnableCounter(MeasurementFrame_Timer);
 
 	LL_TIM_GenerateEvent_UPDATE(MeasurementFrame_Timer);
 	LL_TIM_ClearFlag_UPDATE(MeasurementFrame_Timer);
 
 	LL_TIM_EnableIT_UPDATE(MeasurementFrame_Timer);
+}
 
+void PCVs_Start()
+{
+	PCVs_EncoderTimer_Start();
+	PCVs_MeasFrameTimer_Start();
 	old_num_pulses = 0;
 }
 
-static void PCVs_EncoderTimer_Start()
-{
 
-}

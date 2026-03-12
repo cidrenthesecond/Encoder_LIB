@@ -6,5 +6,6 @@
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:3969:22:LL_TIM_GenerateEvent_UPDATE	16	static
 ../Core/Src/PulseCountVelocity_static.c:32:9:PCVs_CalculateVelocity	16	static
 ../Core/Src/PulseCountVelocity_static.c:48:9:PCVs_CalculateVelocity1	16	static
-../Core/Src/PulseCountVelocity_static.c:82:6:PCVs_Start	8	static
-../Core/Src/PulseCountVelocity_static.c:97:13:PCVs_EncoderTimer_Start	4	static
+../Core/Src/PulseCountVelocity_static.c:82:13:PCVs_EncoderTimer_Start	8	static
+../Core/Src/PulseCountVelocity_static.c:88:13:PCVs_MeasFrameTimer_Start	8	static
+../Core/Src/PulseCountVelocity_static.c:98:6:PCVs_Start	8	static
