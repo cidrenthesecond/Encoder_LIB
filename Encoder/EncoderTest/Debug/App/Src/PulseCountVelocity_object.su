@@ -3,8 +3,8 @@
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:1382:26:LL_TIM_GetCounter	16	static
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:3185:22:LL_TIM_ClearFlag_UPDATE	16	static
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:3969:22:LL_TIM_GenerateEvent_UPDATE	16	static
-../Core/Src/PulseCountVelocity_object.c:12:17:Calculate_pulsesPerRevolution	16	static
-../Core/Src/PulseCountVelocity_object.c:16:17:Calculate_measurementFactor	16	static
-../Core/Src/PulseCountVelocity_object.c:22:9:PCVo_CalculateVelocity	24	static
-../Core/Src/PulseCountVelocity_object.c:32:6:PCVo_Init	24	static
-../Core/Src/PulseCountVelocity_object.c:43:6:PCVo_Start	16	static
+../App/Src/PulseCountVelocity_object.c:12:17:Calculate_pulsesPerRevolution	16	static
+../App/Src/PulseCountVelocity_object.c:16:17:Calculate_measurementFactor	16	static
+../App/Src/PulseCountVelocity_object.c:22:9:PCVo_CalculateVelocity	24	static
+../App/Src/PulseCountVelocity_object.c:32:6:PCVo_Init	24	static
+../App/Src/PulseCountVelocity_object.c:43:6:PCVo_Start	16	static

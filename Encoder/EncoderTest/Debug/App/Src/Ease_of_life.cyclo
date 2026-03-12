@@ -2,4 +2,4 @@
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:3526:22:LL_TIM_EnableIT_CC2	1
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:3559:22:LL_TIM_EnableIT_CC3	1
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:3592:22:LL_TIM_EnableIT_CC4	1
-../Core/Src/Ease_of_life.c:10:6:LL_TIM_EnableIT_CC	5
+../App/Src/Ease_of_life.c:10:6:LL_TIM_EnableIT_CC	5

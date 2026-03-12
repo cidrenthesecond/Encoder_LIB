@@ -1,4 +1,6 @@
-Core/Src/HybridVelocity.o: ../Core/Src/HybridVelocity.c \
+App/Src/PulseCountVelocity_object.o: \
+ ../App/Src/PulseCountVelocity_object.c \
+ X:/Projects/Encoder/Encoder_LIB/Encoder/EncoderTest/App/Inc/PulseCountVelocity_object.h \
  ../Core/Inc/main.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_rcc.h \
  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
@@ -18,6 +20,7 @@ Core/Src/HybridVelocity.o: ../Core/Src/HybridVelocity.c \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_gpio.h
+X:/Projects/Encoder/Encoder_LIB/Encoder/EncoderTest/App/Inc/PulseCountVelocity_object.h:
 ../Core/Inc/main.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_rcc.h:
 ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:

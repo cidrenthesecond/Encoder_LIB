@@ -53,488 +53,488 @@ Discarded input sections
  .ARM.exidx     0x00000000       0x10 X:/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
  .ARM.attributes
                 0x00000000       0x20 X:/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
- .group         0x00000000        0xc ./Core/Src/Ease_of_life.o
- .group         0x00000000        0xc ./Core/Src/Ease_of_life.o
- .group         0x00000000        0xc ./Core/Src/Ease_of_life.o
- .group         0x00000000        0xc ./Core/Src/Ease_of_life.o
- .group         0x00000000        0xc ./Core/Src/Ease_of_life.o
- .group         0x00000000        0xc ./Core/Src/Ease_of_life.o
- .group         0x00000000        0xc ./Core/Src/Ease_of_life.o
- .group         0x00000000        0xc ./Core/Src/Ease_of_life.o
- .group         0x00000000        0xc ./Core/Src/Ease_of_life.o
- .group         0x00000000        0xc ./Core/Src/Ease_of_life.o
- .group         0x00000000        0xc ./Core/Src/Ease_of_life.o
- .group         0x00000000        0xc ./Core/Src/Ease_of_life.o
- .group         0x00000000        0xc ./Core/Src/Ease_of_life.o
- .group         0x00000000        0xc ./Core/Src/Ease_of_life.o
- .group         0x00000000        0xc ./Core/Src/Ease_of_life.o
- .group         0x00000000        0xc ./Core/Src/Ease_of_life.o
- .group         0x00000000        0xc ./Core/Src/Ease_of_life.o
- .group         0x00000000        0xc ./Core/Src/Ease_of_life.o
- .group         0x00000000        0xc ./Core/Src/Ease_of_life.o
- .group         0x00000000        0xc ./Core/Src/Ease_of_life.o
- .group         0x00000000        0xc ./Core/Src/Ease_of_life.o
- .group         0x00000000        0xc ./Core/Src/Ease_of_life.o
- .group         0x00000000        0xc ./Core/Src/Ease_of_life.o
- .group         0x00000000        0xc ./Core/Src/Ease_of_life.o
- .group         0x00000000        0xc ./Core/Src/Ease_of_life.o
- .group         0x00000000        0xc ./Core/Src/Ease_of_life.o
- .group         0x00000000        0xc ./Core/Src/Ease_of_life.o
- .text          0x00000000        0x0 ./Core/Src/Ease_of_life.o
- .data          0x00000000        0x0 ./Core/Src/Ease_of_life.o
- .bss           0x00000000        0x0 ./Core/Src/Ease_of_life.o
+ .group         0x00000000        0xc ./App/Src/Ease_of_life.o
+ .group         0x00000000        0xc ./App/Src/Ease_of_life.o
+ .group         0x00000000        0xc ./App/Src/Ease_of_life.o
+ .group         0x00000000        0xc ./App/Src/Ease_of_life.o
+ .group         0x00000000        0xc ./App/Src/Ease_of_life.o
+ .group         0x00000000        0xc ./App/Src/Ease_of_life.o
+ .group         0x00000000        0xc ./App/Src/Ease_of_life.o
+ .group         0x00000000        0xc ./App/Src/Ease_of_life.o
+ .group         0x00000000        0xc ./App/Src/Ease_of_life.o
+ .group         0x00000000        0xc ./App/Src/Ease_of_life.o
+ .group         0x00000000        0xc ./App/Src/Ease_of_life.o
+ .group         0x00000000        0xc ./App/Src/Ease_of_life.o
+ .group         0x00000000        0xc ./App/Src/Ease_of_life.o
+ .group         0x00000000        0xc ./App/Src/Ease_of_life.o
+ .group         0x00000000        0xc ./App/Src/Ease_of_life.o
+ .group         0x00000000        0xc ./App/Src/Ease_of_life.o
+ .group         0x00000000        0xc ./App/Src/Ease_of_life.o
+ .group         0x00000000        0xc ./App/Src/Ease_of_life.o
+ .group         0x00000000        0xc ./App/Src/Ease_of_life.o
+ .group         0x00000000        0xc ./App/Src/Ease_of_life.o
+ .group         0x00000000        0xc ./App/Src/Ease_of_life.o
+ .group         0x00000000        0xc ./App/Src/Ease_of_life.o
+ .group         0x00000000        0xc ./App/Src/Ease_of_life.o
+ .group         0x00000000        0xc ./App/Src/Ease_of_life.o
+ .group         0x00000000        0xc ./App/Src/Ease_of_life.o
+ .group         0x00000000        0xc ./App/Src/Ease_of_life.o
+ .group         0x00000000        0xc ./App/Src/Ease_of_life.o
+ .text          0x00000000        0x0 ./App/Src/Ease_of_life.o
+ .data          0x00000000        0x0 ./App/Src/Ease_of_life.o
+ .bss           0x00000000        0x0 ./App/Src/Ease_of_life.o
  .rodata.aRCC_PLLSAIDIVRPrescTable
-                0x00000000        0x4 ./Core/Src/Ease_of_life.o
+                0x00000000        0x4 ./App/Src/Ease_of_life.o
  .rodata.STREAM_OFFSET_TAB
-                0x00000000        0x8 ./Core/Src/Ease_of_life.o
+                0x00000000        0x8 ./App/Src/Ease_of_life.o
  .rodata.OFFSET_TAB_CCMRx
-                0x00000000        0x7 ./Core/Src/Ease_of_life.o
+                0x00000000        0x7 ./App/Src/Ease_of_life.o
  .rodata.SHIFT_TAB_OCxx
-                0x00000000        0x7 ./Core/Src/Ease_of_life.o
+                0x00000000        0x7 ./App/Src/Ease_of_life.o
  .rodata.SHIFT_TAB_ICxx
-                0x00000000        0x7 ./Core/Src/Ease_of_life.o
+                0x00000000        0x7 ./App/Src/Ease_of_life.o
  .rodata.SHIFT_TAB_CCxP
-                0x00000000        0x7 ./Core/Src/Ease_of_life.o
+                0x00000000        0x7 ./App/Src/Ease_of_life.o
  .rodata.SHIFT_TAB_OISx
-                0x00000000        0x7 ./Core/Src/Ease_of_life.o
- .group         0x00000000        0xc ./Core/Src/HybridVelocity.o
- .group         0x00000000        0xc ./Core/Src/HybridVelocity.o
- .group         0x00000000        0xc ./Core/Src/HybridVelocity.o
- .group         0x00000000        0xc ./Core/Src/HybridVelocity.o
- .group         0x00000000        0xc ./Core/Src/HybridVelocity.o
- .group         0x00000000        0xc ./Core/Src/HybridVelocity.o
- .group         0x00000000        0xc ./Core/Src/HybridVelocity.o
- .group         0x00000000        0xc ./Core/Src/HybridVelocity.o
- .group         0x00000000        0xc ./Core/Src/HybridVelocity.o
- .group         0x00000000        0xc ./Core/Src/HybridVelocity.o
- .group         0x00000000        0xc ./Core/Src/HybridVelocity.o
- .group         0x00000000        0xc ./Core/Src/HybridVelocity.o
- .group         0x00000000        0xc ./Core/Src/HybridVelocity.o
- .group         0x00000000        0xc ./Core/Src/HybridVelocity.o
- .group         0x00000000        0xc ./Core/Src/HybridVelocity.o
- .group         0x00000000        0xc ./Core/Src/HybridVelocity.o
- .group         0x00000000        0xc ./Core/Src/HybridVelocity.o
- .group         0x00000000        0xc ./Core/Src/HybridVelocity.o
- .group         0x00000000        0xc ./Core/Src/HybridVelocity.o
- .group         0x00000000        0xc ./Core/Src/HybridVelocity.o
- .group         0x00000000        0xc ./Core/Src/HybridVelocity.o
- .group         0x00000000        0xc ./Core/Src/HybridVelocity.o
- .group         0x00000000        0xc ./Core/Src/HybridVelocity.o
- .group         0x00000000        0xc ./Core/Src/HybridVelocity.o
- .group         0x00000000        0xc ./Core/Src/HybridVelocity.o
- .group         0x00000000        0xc ./Core/Src/HybridVelocity.o
- .group         0x00000000        0xc ./Core/Src/HybridVelocity.o
- .text          0x00000000        0x0 ./Core/Src/HybridVelocity.o
- .data          0x00000000        0x0 ./Core/Src/HybridVelocity.o
- .bss           0x00000000        0x0 ./Core/Src/HybridVelocity.o
+                0x00000000        0x7 ./App/Src/Ease_of_life.o
+ .group         0x00000000        0xc ./App/Src/HybridVelocity.o
+ .group         0x00000000        0xc ./App/Src/HybridVelocity.o
+ .group         0x00000000        0xc ./App/Src/HybridVelocity.o
+ .group         0x00000000        0xc ./App/Src/HybridVelocity.o
+ .group         0x00000000        0xc ./App/Src/HybridVelocity.o
+ .group         0x00000000        0xc ./App/Src/HybridVelocity.o
+ .group         0x00000000        0xc ./App/Src/HybridVelocity.o
+ .group         0x00000000        0xc ./App/Src/HybridVelocity.o
+ .group         0x00000000        0xc ./App/Src/HybridVelocity.o
+ .group         0x00000000        0xc ./App/Src/HybridVelocity.o
+ .group         0x00000000        0xc ./App/Src/HybridVelocity.o
+ .group         0x00000000        0xc ./App/Src/HybridVelocity.o
+ .group         0x00000000        0xc ./App/Src/HybridVelocity.o
+ .group         0x00000000        0xc ./App/Src/HybridVelocity.o
+ .group         0x00000000        0xc ./App/Src/HybridVelocity.o
+ .group         0x00000000        0xc ./App/Src/HybridVelocity.o
+ .group         0x00000000        0xc ./App/Src/HybridVelocity.o
+ .group         0x00000000        0xc ./App/Src/HybridVelocity.o
+ .group         0x00000000        0xc ./App/Src/HybridVelocity.o
+ .group         0x00000000        0xc ./App/Src/HybridVelocity.o
+ .group         0x00000000        0xc ./App/Src/HybridVelocity.o
+ .group         0x00000000        0xc ./App/Src/HybridVelocity.o
+ .group         0x00000000        0xc ./App/Src/HybridVelocity.o
+ .group         0x00000000        0xc ./App/Src/HybridVelocity.o
+ .group         0x00000000        0xc ./App/Src/HybridVelocity.o
+ .group         0x00000000        0xc ./App/Src/HybridVelocity.o
+ .group         0x00000000        0xc ./App/Src/HybridVelocity.o
+ .text          0x00000000        0x0 ./App/Src/HybridVelocity.o
+ .data          0x00000000        0x0 ./App/Src/HybridVelocity.o
+ .bss           0x00000000        0x0 ./App/Src/HybridVelocity.o
  .rodata.aRCC_PLLSAIDIVRPrescTable
-                0x00000000        0x4 ./Core/Src/HybridVelocity.o
+                0x00000000        0x4 ./App/Src/HybridVelocity.o
  .rodata.STREAM_OFFSET_TAB
-                0x00000000        0x8 ./Core/Src/HybridVelocity.o
+                0x00000000        0x8 ./App/Src/HybridVelocity.o
  .rodata.OFFSET_TAB_CCMRx
-                0x00000000        0x7 ./Core/Src/HybridVelocity.o
+                0x00000000        0x7 ./App/Src/HybridVelocity.o
  .rodata.SHIFT_TAB_OCxx
-                0x00000000        0x7 ./Core/Src/HybridVelocity.o
+                0x00000000        0x7 ./App/Src/HybridVelocity.o
  .rodata.SHIFT_TAB_ICxx
-                0x00000000        0x7 ./Core/Src/HybridVelocity.o
+                0x00000000        0x7 ./App/Src/HybridVelocity.o
  .rodata.SHIFT_TAB_CCxP
-                0x00000000        0x7 ./Core/Src/HybridVelocity.o
+                0x00000000        0x7 ./App/Src/HybridVelocity.o
  .rodata.SHIFT_TAB_OISx
-                0x00000000        0x7 ./Core/Src/HybridVelocity.o
+                0x00000000        0x7 ./App/Src/HybridVelocity.o
  .text.LL_TIM_EnableCounter
-                0x00000000       0x20 ./Core/Src/HybridVelocity.o
+                0x00000000       0x20 ./App/Src/HybridVelocity.o
  .text.LL_TIM_SetCounter
-                0x00000000       0x1c ./Core/Src/HybridVelocity.o
+                0x00000000       0x1c ./App/Src/HybridVelocity.o
  .text.LL_TIM_CC_EnableChannel
-                0x00000000       0x22 ./Core/Src/HybridVelocity.o
+                0x00000000       0x22 ./App/Src/HybridVelocity.o
  .text.LL_TIM_IC_GetCaptureCH1
-                0x00000000       0x18 ./Core/Src/HybridVelocity.o
+                0x00000000       0x18 ./App/Src/HybridVelocity.o
  .text.LL_TIM_IC_GetCaptureCH2
-                0x00000000       0x18 ./Core/Src/HybridVelocity.o
+                0x00000000       0x18 ./App/Src/HybridVelocity.o
  .text.LL_TIM_ClearFlag_UPDATE
-                0x00000000       0x1c ./Core/Src/HybridVelocity.o
+                0x00000000       0x1c ./App/Src/HybridVelocity.o
  .text.LL_TIM_ClearFlag_CC1
-                0x00000000       0x1c ./Core/Src/HybridVelocity.o
+                0x00000000       0x1c ./App/Src/HybridVelocity.o
  .text.LL_TIM_IsActiveFlag_CC1
-                0x00000000       0x26 ./Core/Src/HybridVelocity.o
+                0x00000000       0x26 ./App/Src/HybridVelocity.o
  .text.LL_TIM_ClearFlag_CC2
-                0x00000000       0x1c ./Core/Src/HybridVelocity.o
+                0x00000000       0x1c ./App/Src/HybridVelocity.o
  .text.LL_TIM_IsActiveFlag_CC2
-                0x00000000       0x26 ./Core/Src/HybridVelocity.o
+                0x00000000       0x26 ./App/Src/HybridVelocity.o
  .text.LL_TIM_EnableIT_UPDATE
-                0x00000000       0x20 ./Core/Src/HybridVelocity.o
+                0x00000000       0x20 ./App/Src/HybridVelocity.o
  .text.LL_TIM_EnableIT_CC1
-                0x00000000       0x20 ./Core/Src/HybridVelocity.o
+                0x00000000       0x20 ./App/Src/HybridVelocity.o
  .text.LL_TIM_EnableIT_CC2
-                0x00000000       0x20 ./Core/Src/HybridVelocity.o
+                0x00000000       0x20 ./App/Src/HybridVelocity.o
  .text.LL_TIM_GenerateEvent_UPDATE
-                0x00000000       0x20 ./Core/Src/HybridVelocity.o
+                0x00000000       0x20 ./App/Src/HybridVelocity.o
  .rodata.Clock_Freq
-                0x00000000        0x4 ./Core/Src/HybridVelocity.o
+                0x00000000        0x4 ./App/Src/HybridVelocity.o
  .rodata.capture_compare_timer
-                0x00000000        0x4 ./Core/Src/HybridVelocity.o
+                0x00000000        0x4 ./App/Src/HybridVelocity.o
  .rodata.capture_compare_channelA
-                0x00000000        0x4 ./Core/Src/HybridVelocity.o
+                0x00000000        0x4 ./App/Src/HybridVelocity.o
  .rodata.capture_compare_channelB
-                0x00000000        0x4 ./Core/Src/HybridVelocity.o
+                0x00000000        0x4 ./App/Src/HybridVelocity.o
  .rodata.Encoder_Poles
-                0x00000000        0x1 ./Core/Src/HybridVelocity.o
+                0x00000000        0x1 ./App/Src/HybridVelocity.o
  .rodata.Encoder_Edges_Counted
-                0x00000000        0x1 ./Core/Src/HybridVelocity.o
+                0x00000000        0x1 ./App/Src/HybridVelocity.o
  .rodata.Encoder_Channels_Counted
-                0x00000000        0x1 ./Core/Src/HybridVelocity.o
+                0x00000000        0x1 ./App/Src/HybridVelocity.o
  .rodata.PulsesPerRevolution
-                0x00000000        0x2 ./Core/Src/HybridVelocity.o
+                0x00000000        0x2 ./App/Src/HybridVelocity.o
  .rodata.measurement_factor
-                0x00000000        0x2 ./Core/Src/HybridVelocity.o
+                0x00000000        0x2 ./App/Src/HybridVelocity.o
  .rodata.Measurement_Frequency
-                0x00000000        0x4 ./Core/Src/HybridVelocity.o
+                0x00000000        0x4 ./App/Src/HybridVelocity.o
  .rodata.MeasurementFrame_Timer
-                0x00000000        0x4 ./Core/Src/HybridVelocity.o
+                0x00000000        0x4 ./App/Src/HybridVelocity.o
  .rodata.Encoder_Timer
-                0x00000000        0x4 ./Core/Src/HybridVelocity.o
+                0x00000000        0x4 ./App/Src/HybridVelocity.o
  .text.HV_Start
-                0x00000000       0x98 ./Core/Src/HybridVelocity.o
+                0x00000000       0x98 ./App/Src/HybridVelocity.o
  .bss.lastcapture
-                0x00000000        0x2 ./Core/Src/HybridVelocity.o
+                0x00000000        0x2 ./App/Src/HybridVelocity.o
  .text.HV_CaptureCompare_ISR
-                0x00000000       0x5c ./Core/Src/HybridVelocity.o
+                0x00000000       0x5c ./App/Src/HybridVelocity.o
  .text.HV_CalculateVelocity
-                0x00000000       0x10 ./Core/Src/HybridVelocity.o
- .debug_info    0x00000000      0x61a ./Core/Src/HybridVelocity.o
- .debug_abbrev  0x00000000      0x14d ./Core/Src/HybridVelocity.o
+                0x00000000       0x10 ./App/Src/HybridVelocity.o
+ .debug_info    0x00000000      0x61a ./App/Src/HybridVelocity.o
+ .debug_abbrev  0x00000000      0x14d ./App/Src/HybridVelocity.o
  .debug_aranges
-                0x00000000       0xa0 ./Core/Src/HybridVelocity.o
+                0x00000000       0xa0 ./App/Src/HybridVelocity.o
  .debug_rnglists
-                0x00000000       0x74 ./Core/Src/HybridVelocity.o
- .debug_macro   0x00000000      0x13d ./Core/Src/HybridVelocity.o
- .debug_macro   0x00000000      0xb1a ./Core/Src/HybridVelocity.o
- .debug_macro   0x00000000       0x2e ./Core/Src/HybridVelocity.o
- .debug_macro   0x00000000       0x28 ./Core/Src/HybridVelocity.o
- .debug_macro   0x00000000       0x22 ./Core/Src/HybridVelocity.o
- .debug_macro   0x00000000       0x8e ./Core/Src/HybridVelocity.o
- .debug_macro   0x00000000       0x51 ./Core/Src/HybridVelocity.o
- .debug_macro   0x00000000      0x103 ./Core/Src/HybridVelocity.o
- .debug_macro   0x00000000       0x6a ./Core/Src/HybridVelocity.o
- .debug_macro   0x00000000      0x1df ./Core/Src/HybridVelocity.o
- .debug_macro   0x00000000       0x1c ./Core/Src/HybridVelocity.o
- .debug_macro   0x00000000       0x22 ./Core/Src/HybridVelocity.o
- .debug_macro   0x00000000       0xfb ./Core/Src/HybridVelocity.o
- .debug_macro   0x00000000     0x1011 ./Core/Src/HybridVelocity.o
- .debug_macro   0x00000000      0x11f ./Core/Src/HybridVelocity.o
- .debug_macro   0x00000000    0x1863b ./Core/Src/HybridVelocity.o
- .debug_macro   0x00000000       0x6d ./Core/Src/HybridVelocity.o
- .debug_macro   0x00000000      0xc6e ./Core/Src/HybridVelocity.o
- .debug_macro   0x00000000      0x22d ./Core/Src/HybridVelocity.o
- .debug_macro   0x00000000      0x22a ./Core/Src/HybridVelocity.o
- .debug_macro   0x00000000       0xe8 ./Core/Src/HybridVelocity.o
- .debug_macro   0x00000000      0x1a6 ./Core/Src/HybridVelocity.o
- .debug_macro   0x00000000       0x61 ./Core/Src/HybridVelocity.o
- .debug_macro   0x00000000       0xc8 ./Core/Src/HybridVelocity.o
- .debug_macro   0x00000000      0x1e6 ./Core/Src/HybridVelocity.o
- .debug_macro   0x00000000      0x5f3 ./Core/Src/HybridVelocity.o
- .debug_macro   0x00000000      0x149 ./Core/Src/HybridVelocity.o
- .debug_macro   0x00000000      0x16b ./Core/Src/HybridVelocity.o
- .debug_line    0x00000000      0x7ee ./Core/Src/HybridVelocity.o
- .debug_str     0x00000000    0xa597d ./Core/Src/HybridVelocity.o
- .comment       0x00000000       0x44 ./Core/Src/HybridVelocity.o
- .debug_frame   0x00000000      0x298 ./Core/Src/HybridVelocity.o
+                0x00000000       0x74 ./App/Src/HybridVelocity.o
+ .debug_macro   0x00000000      0x13d ./App/Src/HybridVelocity.o
+ .debug_macro   0x00000000      0xb1a ./App/Src/HybridVelocity.o
+ .debug_macro   0x00000000       0x2e ./App/Src/HybridVelocity.o
+ .debug_macro   0x00000000       0x28 ./App/Src/HybridVelocity.o
+ .debug_macro   0x00000000       0x22 ./App/Src/HybridVelocity.o
+ .debug_macro   0x00000000       0x8e ./App/Src/HybridVelocity.o
+ .debug_macro   0x00000000       0x51 ./App/Src/HybridVelocity.o
+ .debug_macro   0x00000000      0x103 ./App/Src/HybridVelocity.o
+ .debug_macro   0x00000000       0x6a ./App/Src/HybridVelocity.o
+ .debug_macro   0x00000000      0x1df ./App/Src/HybridVelocity.o
+ .debug_macro   0x00000000       0x1c ./App/Src/HybridVelocity.o
+ .debug_macro   0x00000000       0x22 ./App/Src/HybridVelocity.o
+ .debug_macro   0x00000000       0xfb ./App/Src/HybridVelocity.o
+ .debug_macro   0x00000000     0x1011 ./App/Src/HybridVelocity.o
+ .debug_macro   0x00000000      0x11f ./App/Src/HybridVelocity.o
+ .debug_macro   0x00000000    0x1863b ./App/Src/HybridVelocity.o
+ .debug_macro   0x00000000       0x6d ./App/Src/HybridVelocity.o
+ .debug_macro   0x00000000      0xc6e ./App/Src/HybridVelocity.o
+ .debug_macro   0x00000000      0x22d ./App/Src/HybridVelocity.o
+ .debug_macro   0x00000000      0x22a ./App/Src/HybridVelocity.o
+ .debug_macro   0x00000000       0xe8 ./App/Src/HybridVelocity.o
+ .debug_macro   0x00000000      0x1a6 ./App/Src/HybridVelocity.o
+ .debug_macro   0x00000000       0x61 ./App/Src/HybridVelocity.o
+ .debug_macro   0x00000000       0xc8 ./App/Src/HybridVelocity.o
+ .debug_macro   0x00000000      0x1e6 ./App/Src/HybridVelocity.o
+ .debug_macro   0x00000000      0x5f3 ./App/Src/HybridVelocity.o
+ .debug_macro   0x00000000      0x149 ./App/Src/HybridVelocity.o
+ .debug_macro   0x00000000      0x16b ./App/Src/HybridVelocity.o
+ .debug_line    0x00000000      0x7ed ./App/Src/HybridVelocity.o
+ .debug_str     0x00000000    0xa597c ./App/Src/HybridVelocity.o
+ .comment       0x00000000       0x44 ./App/Src/HybridVelocity.o
+ .debug_frame   0x00000000      0x298 ./App/Src/HybridVelocity.o
  .ARM.attributes
-                0x00000000       0x34 ./Core/Src/HybridVelocity.o
- .group         0x00000000        0xc ./Core/Src/PulseCountVelocity_object.o
- .group         0x00000000        0xc ./Core/Src/PulseCountVelocity_object.o
- .group         0x00000000        0xc ./Core/Src/PulseCountVelocity_object.o
- .group         0x00000000        0xc ./Core/Src/PulseCountVelocity_object.o
- .group         0x00000000        0xc ./Core/Src/PulseCountVelocity_object.o
- .group         0x00000000        0xc ./Core/Src/PulseCountVelocity_object.o
- .group         0x00000000        0xc ./Core/Src/PulseCountVelocity_object.o
- .group         0x00000000        0xc ./Core/Src/PulseCountVelocity_object.o
- .group         0x00000000        0xc ./Core/Src/PulseCountVelocity_object.o
- .group         0x00000000        0xc ./Core/Src/PulseCountVelocity_object.o
- .group         0x00000000        0xc ./Core/Src/PulseCountVelocity_object.o
- .group         0x00000000        0xc ./Core/Src/PulseCountVelocity_object.o
- .group         0x00000000        0xc ./Core/Src/PulseCountVelocity_object.o
- .group         0x00000000        0xc ./Core/Src/PulseCountVelocity_object.o
- .group         0x00000000        0xc ./Core/Src/PulseCountVelocity_object.o
- .group         0x00000000        0xc ./Core/Src/PulseCountVelocity_object.o
- .group         0x00000000        0xc ./Core/Src/PulseCountVelocity_object.o
- .group         0x00000000        0xc ./Core/Src/PulseCountVelocity_object.o
- .group         0x00000000        0xc ./Core/Src/PulseCountVelocity_object.o
- .group         0x00000000        0xc ./Core/Src/PulseCountVelocity_object.o
- .group         0x00000000        0xc ./Core/Src/PulseCountVelocity_object.o
- .group         0x00000000        0xc ./Core/Src/PulseCountVelocity_object.o
- .group         0x00000000        0xc ./Core/Src/PulseCountVelocity_object.o
- .group         0x00000000        0xc ./Core/Src/PulseCountVelocity_object.o
- .group         0x00000000        0xc ./Core/Src/PulseCountVelocity_object.o
- .group         0x00000000        0xc ./Core/Src/PulseCountVelocity_object.o
- .group         0x00000000        0xc ./Core/Src/PulseCountVelocity_object.o
- .text          0x00000000        0x0 ./Core/Src/PulseCountVelocity_object.o
- .data          0x00000000        0x0 ./Core/Src/PulseCountVelocity_object.o
- .bss           0x00000000        0x0 ./Core/Src/PulseCountVelocity_object.o
+                0x00000000       0x34 ./App/Src/HybridVelocity.o
+ .group         0x00000000        0xc ./App/Src/PulseCountVelocity_object.o
+ .group         0x00000000        0xc ./App/Src/PulseCountVelocity_object.o
+ .group         0x00000000        0xc ./App/Src/PulseCountVelocity_object.o
+ .group         0x00000000        0xc ./App/Src/PulseCountVelocity_object.o
+ .group         0x00000000        0xc ./App/Src/PulseCountVelocity_object.o
+ .group         0x00000000        0xc ./App/Src/PulseCountVelocity_object.o
+ .group         0x00000000        0xc ./App/Src/PulseCountVelocity_object.o
+ .group         0x00000000        0xc ./App/Src/PulseCountVelocity_object.o
+ .group         0x00000000        0xc ./App/Src/PulseCountVelocity_object.o
+ .group         0x00000000        0xc ./App/Src/PulseCountVelocity_object.o
+ .group         0x00000000        0xc ./App/Src/PulseCountVelocity_object.o
+ .group         0x00000000        0xc ./App/Src/PulseCountVelocity_object.o
+ .group         0x00000000        0xc ./App/Src/PulseCountVelocity_object.o
+ .group         0x00000000        0xc ./App/Src/PulseCountVelocity_object.o
+ .group         0x00000000        0xc ./App/Src/PulseCountVelocity_object.o
+ .group         0x00000000        0xc ./App/Src/PulseCountVelocity_object.o
+ .group         0x00000000        0xc ./App/Src/PulseCountVelocity_object.o
+ .group         0x00000000        0xc ./App/Src/PulseCountVelocity_object.o
+ .group         0x00000000        0xc ./App/Src/PulseCountVelocity_object.o
+ .group         0x00000000        0xc ./App/Src/PulseCountVelocity_object.o
+ .group         0x00000000        0xc ./App/Src/PulseCountVelocity_object.o
+ .group         0x00000000        0xc ./App/Src/PulseCountVelocity_object.o
+ .group         0x00000000        0xc ./App/Src/PulseCountVelocity_object.o
+ .group         0x00000000        0xc ./App/Src/PulseCountVelocity_object.o
+ .group         0x00000000        0xc ./App/Src/PulseCountVelocity_object.o
+ .group         0x00000000        0xc ./App/Src/PulseCountVelocity_object.o
+ .group         0x00000000        0xc ./App/Src/PulseCountVelocity_object.o
+ .text          0x00000000        0x0 ./App/Src/PulseCountVelocity_object.o
+ .data          0x00000000        0x0 ./App/Src/PulseCountVelocity_object.o
+ .bss           0x00000000        0x0 ./App/Src/PulseCountVelocity_object.o
  .rodata.aRCC_PLLSAIDIVRPrescTable
-                0x00000000        0x4 ./Core/Src/PulseCountVelocity_object.o
+                0x00000000        0x4 ./App/Src/PulseCountVelocity_object.o
  .rodata.STREAM_OFFSET_TAB
-                0x00000000        0x8 ./Core/Src/PulseCountVelocity_object.o
+                0x00000000        0x8 ./App/Src/PulseCountVelocity_object.o
  .rodata.OFFSET_TAB_CCMRx
-                0x00000000        0x7 ./Core/Src/PulseCountVelocity_object.o
+                0x00000000        0x7 ./App/Src/PulseCountVelocity_object.o
  .rodata.SHIFT_TAB_OCxx
-                0x00000000        0x7 ./Core/Src/PulseCountVelocity_object.o
+                0x00000000        0x7 ./App/Src/PulseCountVelocity_object.o
  .rodata.SHIFT_TAB_ICxx
-                0x00000000        0x7 ./Core/Src/PulseCountVelocity_object.o
+                0x00000000        0x7 ./App/Src/PulseCountVelocity_object.o
  .rodata.SHIFT_TAB_CCxP
-                0x00000000        0x7 ./Core/Src/PulseCountVelocity_object.o
+                0x00000000        0x7 ./App/Src/PulseCountVelocity_object.o
  .rodata.SHIFT_TAB_OISx
-                0x00000000        0x7 ./Core/Src/PulseCountVelocity_object.o
+                0x00000000        0x7 ./App/Src/PulseCountVelocity_object.o
  .text.LL_TIM_EnableCounter
-                0x00000000       0x20 ./Core/Src/PulseCountVelocity_object.o
+                0x00000000       0x20 ./App/Src/PulseCountVelocity_object.o
  .text.LL_TIM_SetCounter
-                0x00000000       0x1c ./Core/Src/PulseCountVelocity_object.o
+                0x00000000       0x1c ./App/Src/PulseCountVelocity_object.o
  .text.LL_TIM_GetCounter
-                0x00000000       0x18 ./Core/Src/PulseCountVelocity_object.o
+                0x00000000       0x18 ./App/Src/PulseCountVelocity_object.o
  .text.LL_TIM_ClearFlag_UPDATE
-                0x00000000       0x1c ./Core/Src/PulseCountVelocity_object.o
+                0x00000000       0x1c ./App/Src/PulseCountVelocity_object.o
  .text.LL_TIM_GenerateEvent_UPDATE
-                0x00000000       0x20 ./Core/Src/PulseCountVelocity_object.o
+                0x00000000       0x20 ./App/Src/PulseCountVelocity_object.o
  .text.Calculate_pulsesPerRevolution
-                0x00000000       0x2e ./Core/Src/PulseCountVelocity_object.o
+                0x00000000       0x2e ./App/Src/PulseCountVelocity_object.o
  .text.Calculate_measurementFactor
-                0x00000000       0x22 ./Core/Src/PulseCountVelocity_object.o
+                0x00000000       0x22 ./App/Src/PulseCountVelocity_object.o
  .text.PCVo_CalculateVelocity
-                0x00000000       0x42 ./Core/Src/PulseCountVelocity_object.o
+                0x00000000       0x42 ./App/Src/PulseCountVelocity_object.o
  .text.PCVo_Init
-                0x00000000       0x4e ./Core/Src/PulseCountVelocity_object.o
+                0x00000000       0x4e ./App/Src/PulseCountVelocity_object.o
  .text.PCVo_Start
-                0x00000000       0x66 ./Core/Src/PulseCountVelocity_object.o
- .debug_info    0x00000000      0x576 ./Core/Src/PulseCountVelocity_object.o
- .debug_abbrev  0x00000000      0x1be ./Core/Src/PulseCountVelocity_object.o
+                0x00000000       0x66 ./App/Src/PulseCountVelocity_object.o
+ .debug_info    0x00000000      0x576 ./App/Src/PulseCountVelocity_object.o
+ .debug_abbrev  0x00000000      0x1be ./App/Src/PulseCountVelocity_object.o
  .debug_aranges
-                0x00000000       0x68 ./Core/Src/PulseCountVelocity_object.o
+                0x00000000       0x68 ./App/Src/PulseCountVelocity_object.o
  .debug_rnglists
-                0x00000000       0x49 ./Core/Src/PulseCountVelocity_object.o
- .debug_macro   0x00000000      0x147 ./Core/Src/PulseCountVelocity_object.o
- .debug_macro   0x00000000      0xb1a ./Core/Src/PulseCountVelocity_object.o
- .debug_macro   0x00000000       0x2e ./Core/Src/PulseCountVelocity_object.o
- .debug_macro   0x00000000       0x28 ./Core/Src/PulseCountVelocity_object.o
- .debug_macro   0x00000000       0x22 ./Core/Src/PulseCountVelocity_object.o
- .debug_macro   0x00000000       0x8e ./Core/Src/PulseCountVelocity_object.o
- .debug_macro   0x00000000       0x51 ./Core/Src/PulseCountVelocity_object.o
- .debug_macro   0x00000000      0x103 ./Core/Src/PulseCountVelocity_object.o
- .debug_macro   0x00000000       0x6a ./Core/Src/PulseCountVelocity_object.o
- .debug_macro   0x00000000      0x1df ./Core/Src/PulseCountVelocity_object.o
- .debug_macro   0x00000000       0x1c ./Core/Src/PulseCountVelocity_object.o
- .debug_macro   0x00000000       0x22 ./Core/Src/PulseCountVelocity_object.o
- .debug_macro   0x00000000       0xfb ./Core/Src/PulseCountVelocity_object.o
- .debug_macro   0x00000000     0x1011 ./Core/Src/PulseCountVelocity_object.o
- .debug_macro   0x00000000      0x11f ./Core/Src/PulseCountVelocity_object.o
- .debug_macro   0x00000000    0x1863b ./Core/Src/PulseCountVelocity_object.o
- .debug_macro   0x00000000       0x6d ./Core/Src/PulseCountVelocity_object.o
- .debug_macro   0x00000000      0xc6e ./Core/Src/PulseCountVelocity_object.o
- .debug_macro   0x00000000      0x22d ./Core/Src/PulseCountVelocity_object.o
- .debug_macro   0x00000000      0x22a ./Core/Src/PulseCountVelocity_object.o
- .debug_macro   0x00000000       0xe8 ./Core/Src/PulseCountVelocity_object.o
- .debug_macro   0x00000000      0x1a6 ./Core/Src/PulseCountVelocity_object.o
- .debug_macro   0x00000000       0x61 ./Core/Src/PulseCountVelocity_object.o
- .debug_macro   0x00000000       0xc8 ./Core/Src/PulseCountVelocity_object.o
- .debug_macro   0x00000000      0x1e6 ./Core/Src/PulseCountVelocity_object.o
- .debug_macro   0x00000000      0x5f3 ./Core/Src/PulseCountVelocity_object.o
- .debug_macro   0x00000000      0x149 ./Core/Src/PulseCountVelocity_object.o
- .debug_macro   0x00000000      0x16b ./Core/Src/PulseCountVelocity_object.o
- .debug_line    0x00000000      0x78d ./Core/Src/PulseCountVelocity_object.o
- .debug_str     0x00000000    0xa591f ./Core/Src/PulseCountVelocity_object.o
- .comment       0x00000000       0x44 ./Core/Src/PulseCountVelocity_object.o
- .debug_frame   0x00000000      0x190 ./Core/Src/PulseCountVelocity_object.o
+                0x00000000       0x49 ./App/Src/PulseCountVelocity_object.o
+ .debug_macro   0x00000000      0x147 ./App/Src/PulseCountVelocity_object.o
+ .debug_macro   0x00000000      0xb1a ./App/Src/PulseCountVelocity_object.o
+ .debug_macro   0x00000000       0x2e ./App/Src/PulseCountVelocity_object.o
+ .debug_macro   0x00000000       0x28 ./App/Src/PulseCountVelocity_object.o
+ .debug_macro   0x00000000       0x22 ./App/Src/PulseCountVelocity_object.o
+ .debug_macro   0x00000000       0x8e ./App/Src/PulseCountVelocity_object.o
+ .debug_macro   0x00000000       0x51 ./App/Src/PulseCountVelocity_object.o
+ .debug_macro   0x00000000      0x103 ./App/Src/PulseCountVelocity_object.o
+ .debug_macro   0x00000000       0x6a ./App/Src/PulseCountVelocity_object.o
+ .debug_macro   0x00000000      0x1df ./App/Src/PulseCountVelocity_object.o
+ .debug_macro   0x00000000       0x1c ./App/Src/PulseCountVelocity_object.o
+ .debug_macro   0x00000000       0x22 ./App/Src/PulseCountVelocity_object.o
+ .debug_macro   0x00000000       0xfb ./App/Src/PulseCountVelocity_object.o
+ .debug_macro   0x00000000     0x1011 ./App/Src/PulseCountVelocity_object.o
+ .debug_macro   0x00000000      0x11f ./App/Src/PulseCountVelocity_object.o
+ .debug_macro   0x00000000    0x1863b ./App/Src/PulseCountVelocity_object.o
+ .debug_macro   0x00000000       0x6d ./App/Src/PulseCountVelocity_object.o
+ .debug_macro   0x00000000      0xc6e ./App/Src/PulseCountVelocity_object.o
+ .debug_macro   0x00000000      0x22d ./App/Src/PulseCountVelocity_object.o
+ .debug_macro   0x00000000      0x22a ./App/Src/PulseCountVelocity_object.o
+ .debug_macro   0x00000000       0xe8 ./App/Src/PulseCountVelocity_object.o
+ .debug_macro   0x00000000      0x1a6 ./App/Src/PulseCountVelocity_object.o
+ .debug_macro   0x00000000       0x61 ./App/Src/PulseCountVelocity_object.o
+ .debug_macro   0x00000000       0xc8 ./App/Src/PulseCountVelocity_object.o
+ .debug_macro   0x00000000      0x1e6 ./App/Src/PulseCountVelocity_object.o
+ .debug_macro   0x00000000      0x5f3 ./App/Src/PulseCountVelocity_object.o
+ .debug_macro   0x00000000      0x149 ./App/Src/PulseCountVelocity_object.o
+ .debug_macro   0x00000000      0x16b ./App/Src/PulseCountVelocity_object.o
+ .debug_line    0x00000000      0x7c8 ./App/Src/PulseCountVelocity_object.o
+ .debug_str     0x00000000    0xa591e ./App/Src/PulseCountVelocity_object.o
+ .comment       0x00000000       0x44 ./App/Src/PulseCountVelocity_object.o
+ .debug_frame   0x00000000      0x190 ./App/Src/PulseCountVelocity_object.o
  .ARM.attributes
-                0x00000000       0x34 ./Core/Src/PulseCountVelocity_object.o
- .group         0x00000000        0xc ./Core/Src/PulseCountVelocity_static.o
- .group         0x00000000        0xc ./Core/Src/PulseCountVelocity_static.o
- .group         0x00000000        0xc ./Core/Src/PulseCountVelocity_static.o
- .group         0x00000000        0xc ./Core/Src/PulseCountVelocity_static.o
- .group         0x00000000        0xc ./Core/Src/PulseCountVelocity_static.o
- .group         0x00000000        0xc ./Core/Src/PulseCountVelocity_static.o
- .group         0x00000000        0xc ./Core/Src/PulseCountVelocity_static.o
- .group         0x00000000        0xc ./Core/Src/PulseCountVelocity_static.o
- .group         0x00000000        0xc ./Core/Src/PulseCountVelocity_static.o
- .group         0x00000000        0xc ./Core/Src/PulseCountVelocity_static.o
- .group         0x00000000        0xc ./Core/Src/PulseCountVelocity_static.o
- .group         0x00000000        0xc ./Core/Src/PulseCountVelocity_static.o
- .group         0x00000000        0xc ./Core/Src/PulseCountVelocity_static.o
- .group         0x00000000        0xc ./Core/Src/PulseCountVelocity_static.o
- .group         0x00000000        0xc ./Core/Src/PulseCountVelocity_static.o
- .group         0x00000000        0xc ./Core/Src/PulseCountVelocity_static.o
- .group         0x00000000        0xc ./Core/Src/PulseCountVelocity_static.o
- .group         0x00000000        0xc ./Core/Src/PulseCountVelocity_static.o
- .group         0x00000000        0xc ./Core/Src/PulseCountVelocity_static.o
- .group         0x00000000        0xc ./Core/Src/PulseCountVelocity_static.o
- .group         0x00000000        0xc ./Core/Src/PulseCountVelocity_static.o
- .group         0x00000000        0xc ./Core/Src/PulseCountVelocity_static.o
- .group         0x00000000        0xc ./Core/Src/PulseCountVelocity_static.o
- .group         0x00000000        0xc ./Core/Src/PulseCountVelocity_static.o
- .group         0x00000000        0xc ./Core/Src/PulseCountVelocity_static.o
- .group         0x00000000        0xc ./Core/Src/PulseCountVelocity_static.o
- .group         0x00000000        0xc ./Core/Src/PulseCountVelocity_static.o
- .text          0x00000000        0x0 ./Core/Src/PulseCountVelocity_static.o
- .data          0x00000000        0x0 ./Core/Src/PulseCountVelocity_static.o
- .bss           0x00000000        0x0 ./Core/Src/PulseCountVelocity_static.o
+                0x00000000       0x34 ./App/Src/PulseCountVelocity_object.o
+ .group         0x00000000        0xc ./App/Src/PulseCountVelocity_static.o
+ .group         0x00000000        0xc ./App/Src/PulseCountVelocity_static.o
+ .group         0x00000000        0xc ./App/Src/PulseCountVelocity_static.o
+ .group         0x00000000        0xc ./App/Src/PulseCountVelocity_static.o
+ .group         0x00000000        0xc ./App/Src/PulseCountVelocity_static.o
+ .group         0x00000000        0xc ./App/Src/PulseCountVelocity_static.o
+ .group         0x00000000        0xc ./App/Src/PulseCountVelocity_static.o
+ .group         0x00000000        0xc ./App/Src/PulseCountVelocity_static.o
+ .group         0x00000000        0xc ./App/Src/PulseCountVelocity_static.o
+ .group         0x00000000        0xc ./App/Src/PulseCountVelocity_static.o
+ .group         0x00000000        0xc ./App/Src/PulseCountVelocity_static.o
+ .group         0x00000000        0xc ./App/Src/PulseCountVelocity_static.o
+ .group         0x00000000        0xc ./App/Src/PulseCountVelocity_static.o
+ .group         0x00000000        0xc ./App/Src/PulseCountVelocity_static.o
+ .group         0x00000000        0xc ./App/Src/PulseCountVelocity_static.o
+ .group         0x00000000        0xc ./App/Src/PulseCountVelocity_static.o
+ .group         0x00000000        0xc ./App/Src/PulseCountVelocity_static.o
+ .group         0x00000000        0xc ./App/Src/PulseCountVelocity_static.o
+ .group         0x00000000        0xc ./App/Src/PulseCountVelocity_static.o
+ .group         0x00000000        0xc ./App/Src/PulseCountVelocity_static.o
+ .group         0x00000000        0xc ./App/Src/PulseCountVelocity_static.o
+ .group         0x00000000        0xc ./App/Src/PulseCountVelocity_static.o
+ .group         0x00000000        0xc ./App/Src/PulseCountVelocity_static.o
+ .group         0x00000000        0xc ./App/Src/PulseCountVelocity_static.o
+ .group         0x00000000        0xc ./App/Src/PulseCountVelocity_static.o
+ .group         0x00000000        0xc ./App/Src/PulseCountVelocity_static.o
+ .group         0x00000000        0xc ./App/Src/PulseCountVelocity_static.o
+ .text          0x00000000        0x0 ./App/Src/PulseCountVelocity_static.o
+ .data          0x00000000        0x0 ./App/Src/PulseCountVelocity_static.o
+ .bss           0x00000000        0x0 ./App/Src/PulseCountVelocity_static.o
  .rodata.aRCC_PLLSAIDIVRPrescTable
-                0x00000000        0x4 ./Core/Src/PulseCountVelocity_static.o
+                0x00000000        0x4 ./App/Src/PulseCountVelocity_static.o
  .rodata.STREAM_OFFSET_TAB
-                0x00000000        0x8 ./Core/Src/PulseCountVelocity_static.o
+                0x00000000        0x8 ./App/Src/PulseCountVelocity_static.o
  .rodata.OFFSET_TAB_CCMRx
-                0x00000000        0x7 ./Core/Src/PulseCountVelocity_static.o
+                0x00000000        0x7 ./App/Src/PulseCountVelocity_static.o
  .rodata.SHIFT_TAB_OCxx
-                0x00000000        0x7 ./Core/Src/PulseCountVelocity_static.o
+                0x00000000        0x7 ./App/Src/PulseCountVelocity_static.o
  .rodata.SHIFT_TAB_ICxx
-                0x00000000        0x7 ./Core/Src/PulseCountVelocity_static.o
+                0x00000000        0x7 ./App/Src/PulseCountVelocity_static.o
  .rodata.SHIFT_TAB_CCxP
-                0x00000000        0x7 ./Core/Src/PulseCountVelocity_static.o
+                0x00000000        0x7 ./App/Src/PulseCountVelocity_static.o
  .rodata.SHIFT_TAB_OISx
-                0x00000000        0x7 ./Core/Src/PulseCountVelocity_static.o
+                0x00000000        0x7 ./App/Src/PulseCountVelocity_static.o
  .rodata.Encoder_Poles
-                0x00000000        0x1 ./Core/Src/PulseCountVelocity_static.o
+                0x00000000        0x1 ./App/Src/PulseCountVelocity_static.o
  .rodata.Encoder_Edges_Counted
-                0x00000000        0x1 ./Core/Src/PulseCountVelocity_static.o
+                0x00000000        0x1 ./App/Src/PulseCountVelocity_static.o
  .rodata.Encoder_Channels_Counted
-                0x00000000        0x1 ./Core/Src/PulseCountVelocity_static.o
+                0x00000000        0x1 ./App/Src/PulseCountVelocity_static.o
  .rodata.Measurement_Frequency
-                0x00000000        0x4 ./Core/Src/PulseCountVelocity_static.o
+                0x00000000        0x4 ./App/Src/PulseCountVelocity_static.o
  .rodata.Encoder_Timer
-                0x00000000        0x4 ./Core/Src/PulseCountVelocity_static.o
+                0x00000000        0x4 ./App/Src/PulseCountVelocity_static.o
  .rodata.MeasurementFrame_Timer
-                0x00000000        0x4 ./Core/Src/PulseCountVelocity_static.o
+                0x00000000        0x4 ./App/Src/PulseCountVelocity_static.o
  .rodata.timeout_cycles_goal
-                0x00000000        0x1 ./Core/Src/PulseCountVelocity_static.o
+                0x00000000        0x1 ./App/Src/PulseCountVelocity_static.o
  .rodata.Encoder_PulsesPerRevolution
-                0x00000000        0x2 ./Core/Src/PulseCountVelocity_static.o
+                0x00000000        0x2 ./App/Src/PulseCountVelocity_static.o
  .rodata.Measurement_Factor
-                0x00000000        0x4 ./Core/Src/PulseCountVelocity_static.o
+                0x00000000        0x4 ./App/Src/PulseCountVelocity_static.o
  .text.PCVs_CalculateVelocity
-                0x00000000       0x5c ./Core/Src/PulseCountVelocity_static.o
- .debug_macro   0x00000000      0xb1a ./Core/Src/PulseCountVelocity_static.o
- .debug_macro   0x00000000       0x2e ./Core/Src/PulseCountVelocity_static.o
- .debug_macro   0x00000000       0x28 ./Core/Src/PulseCountVelocity_static.o
- .debug_macro   0x00000000       0x22 ./Core/Src/PulseCountVelocity_static.o
- .debug_macro   0x00000000       0x8e ./Core/Src/PulseCountVelocity_static.o
- .debug_macro   0x00000000       0x51 ./Core/Src/PulseCountVelocity_static.o
- .debug_macro   0x00000000      0x103 ./Core/Src/PulseCountVelocity_static.o
- .debug_macro   0x00000000       0x6a ./Core/Src/PulseCountVelocity_static.o
- .debug_macro   0x00000000      0x1df ./Core/Src/PulseCountVelocity_static.o
- .debug_macro   0x00000000       0x1c ./Core/Src/PulseCountVelocity_static.o
- .debug_macro   0x00000000       0x22 ./Core/Src/PulseCountVelocity_static.o
- .debug_macro   0x00000000       0xfb ./Core/Src/PulseCountVelocity_static.o
- .debug_macro   0x00000000     0x1011 ./Core/Src/PulseCountVelocity_static.o
- .debug_macro   0x00000000      0x11f ./Core/Src/PulseCountVelocity_static.o
- .debug_macro   0x00000000    0x1863b ./Core/Src/PulseCountVelocity_static.o
- .debug_macro   0x00000000       0x6d ./Core/Src/PulseCountVelocity_static.o
- .debug_macro   0x00000000      0xc6e ./Core/Src/PulseCountVelocity_static.o
- .debug_macro   0x00000000      0x22d ./Core/Src/PulseCountVelocity_static.o
- .debug_macro   0x00000000      0x22a ./Core/Src/PulseCountVelocity_static.o
- .debug_macro   0x00000000       0xe8 ./Core/Src/PulseCountVelocity_static.o
- .debug_macro   0x00000000      0x1a6 ./Core/Src/PulseCountVelocity_static.o
- .debug_macro   0x00000000       0x61 ./Core/Src/PulseCountVelocity_static.o
- .debug_macro   0x00000000       0xc8 ./Core/Src/PulseCountVelocity_static.o
- .debug_macro   0x00000000      0x1e6 ./Core/Src/PulseCountVelocity_static.o
- .debug_macro   0x00000000      0x5f3 ./Core/Src/PulseCountVelocity_static.o
- .debug_macro   0x00000000      0x149 ./Core/Src/PulseCountVelocity_static.o
- .debug_macro   0x00000000      0x16b ./Core/Src/PulseCountVelocity_static.o
- .group         0x00000000        0xc ./Core/Src/TimeIntervalVelocity_static.o
- .group         0x00000000        0xc ./Core/Src/TimeIntervalVelocity_static.o
- .group         0x00000000        0xc ./Core/Src/TimeIntervalVelocity_static.o
- .group         0x00000000        0xc ./Core/Src/TimeIntervalVelocity_static.o
- .group         0x00000000        0xc ./Core/Src/TimeIntervalVelocity_static.o
- .group         0x00000000        0xc ./Core/Src/TimeIntervalVelocity_static.o
- .group         0x00000000        0xc ./Core/Src/TimeIntervalVelocity_static.o
- .group         0x00000000        0xc ./Core/Src/TimeIntervalVelocity_static.o
- .group         0x00000000        0xc ./Core/Src/TimeIntervalVelocity_static.o
- .group         0x00000000        0xc ./Core/Src/TimeIntervalVelocity_static.o
- .group         0x00000000        0xc ./Core/Src/TimeIntervalVelocity_static.o
- .group         0x00000000        0xc ./Core/Src/TimeIntervalVelocity_static.o
- .group         0x00000000        0xc ./Core/Src/TimeIntervalVelocity_static.o
- .group         0x00000000        0xc ./Core/Src/TimeIntervalVelocity_static.o
- .group         0x00000000        0xc ./Core/Src/TimeIntervalVelocity_static.o
- .group         0x00000000        0xc ./Core/Src/TimeIntervalVelocity_static.o
- .group         0x00000000        0xc ./Core/Src/TimeIntervalVelocity_static.o
- .group         0x00000000        0xc ./Core/Src/TimeIntervalVelocity_static.o
- .group         0x00000000        0xc ./Core/Src/TimeIntervalVelocity_static.o
- .group         0x00000000        0xc ./Core/Src/TimeIntervalVelocity_static.o
- .group         0x00000000        0xc ./Core/Src/TimeIntervalVelocity_static.o
- .group         0x00000000        0xc ./Core/Src/TimeIntervalVelocity_static.o
- .group         0x00000000        0xc ./Core/Src/TimeIntervalVelocity_static.o
- .group         0x00000000        0xc ./Core/Src/TimeIntervalVelocity_static.o
- .group         0x00000000        0xc ./Core/Src/TimeIntervalVelocity_static.o
- .group         0x00000000        0xc ./Core/Src/TimeIntervalVelocity_static.o
- .group         0x00000000        0xc ./Core/Src/TimeIntervalVelocity_static.o
- .text          0x00000000        0x0 ./Core/Src/TimeIntervalVelocity_static.o
- .data          0x00000000        0x0 ./Core/Src/TimeIntervalVelocity_static.o
- .bss           0x00000000        0x0 ./Core/Src/TimeIntervalVelocity_static.o
+                0x00000000       0x5c ./App/Src/PulseCountVelocity_static.o
+ .debug_macro   0x00000000      0xb1a ./App/Src/PulseCountVelocity_static.o
+ .debug_macro   0x00000000       0x2e ./App/Src/PulseCountVelocity_static.o
+ .debug_macro   0x00000000       0x28 ./App/Src/PulseCountVelocity_static.o
+ .debug_macro   0x00000000       0x22 ./App/Src/PulseCountVelocity_static.o
+ .debug_macro   0x00000000       0x8e ./App/Src/PulseCountVelocity_static.o
+ .debug_macro   0x00000000       0x51 ./App/Src/PulseCountVelocity_static.o
+ .debug_macro   0x00000000      0x103 ./App/Src/PulseCountVelocity_static.o
+ .debug_macro   0x00000000       0x6a ./App/Src/PulseCountVelocity_static.o
+ .debug_macro   0x00000000      0x1df ./App/Src/PulseCountVelocity_static.o
+ .debug_macro   0x00000000       0x1c ./App/Src/PulseCountVelocity_static.o
+ .debug_macro   0x00000000       0x22 ./App/Src/PulseCountVelocity_static.o
+ .debug_macro   0x00000000       0xfb ./App/Src/PulseCountVelocity_static.o
+ .debug_macro   0x00000000     0x1011 ./App/Src/PulseCountVelocity_static.o
+ .debug_macro   0x00000000      0x11f ./App/Src/PulseCountVelocity_static.o
+ .debug_macro   0x00000000    0x1863b ./App/Src/PulseCountVelocity_static.o
+ .debug_macro   0x00000000       0x6d ./App/Src/PulseCountVelocity_static.o
+ .debug_macro   0x00000000      0xc6e ./App/Src/PulseCountVelocity_static.o
+ .debug_macro   0x00000000      0x22d ./App/Src/PulseCountVelocity_static.o
+ .debug_macro   0x00000000      0x22a ./App/Src/PulseCountVelocity_static.o
+ .debug_macro   0x00000000       0xe8 ./App/Src/PulseCountVelocity_static.o
+ .debug_macro   0x00000000      0x1a6 ./App/Src/PulseCountVelocity_static.o
+ .debug_macro   0x00000000       0x61 ./App/Src/PulseCountVelocity_static.o
+ .debug_macro   0x00000000       0xc8 ./App/Src/PulseCountVelocity_static.o
+ .debug_macro   0x00000000      0x1e6 ./App/Src/PulseCountVelocity_static.o
+ .debug_macro   0x00000000      0x5f3 ./App/Src/PulseCountVelocity_static.o
+ .debug_macro   0x00000000      0x149 ./App/Src/PulseCountVelocity_static.o
+ .debug_macro   0x00000000      0x16b ./App/Src/PulseCountVelocity_static.o
+ .group         0x00000000        0xc ./App/Src/TimeIntervalVelocity_static.o
+ .group         0x00000000        0xc ./App/Src/TimeIntervalVelocity_static.o
+ .group         0x00000000        0xc ./App/Src/TimeIntervalVelocity_static.o
+ .group         0x00000000        0xc ./App/Src/TimeIntervalVelocity_static.o
+ .group         0x00000000        0xc ./App/Src/TimeIntervalVelocity_static.o
+ .group         0x00000000        0xc ./App/Src/TimeIntervalVelocity_static.o
+ .group         0x00000000        0xc ./App/Src/TimeIntervalVelocity_static.o
+ .group         0x00000000        0xc ./App/Src/TimeIntervalVelocity_static.o
+ .group         0x00000000        0xc ./App/Src/TimeIntervalVelocity_static.o
+ .group         0x00000000        0xc ./App/Src/TimeIntervalVelocity_static.o
+ .group         0x00000000        0xc ./App/Src/TimeIntervalVelocity_static.o
+ .group         0x00000000        0xc ./App/Src/TimeIntervalVelocity_static.o
+ .group         0x00000000        0xc ./App/Src/TimeIntervalVelocity_static.o
+ .group         0x00000000        0xc ./App/Src/TimeIntervalVelocity_static.o
+ .group         0x00000000        0xc ./App/Src/TimeIntervalVelocity_static.o
+ .group         0x00000000        0xc ./App/Src/TimeIntervalVelocity_static.o
+ .group         0x00000000        0xc ./App/Src/TimeIntervalVelocity_static.o
+ .group         0x00000000        0xc ./App/Src/TimeIntervalVelocity_static.o
+ .group         0x00000000        0xc ./App/Src/TimeIntervalVelocity_static.o
+ .group         0x00000000        0xc ./App/Src/TimeIntervalVelocity_static.o
+ .group         0x00000000        0xc ./App/Src/TimeIntervalVelocity_static.o
+ .group         0x00000000        0xc ./App/Src/TimeIntervalVelocity_static.o
+ .group         0x00000000        0xc ./App/Src/TimeIntervalVelocity_static.o
+ .group         0x00000000        0xc ./App/Src/TimeIntervalVelocity_static.o
+ .group         0x00000000        0xc ./App/Src/TimeIntervalVelocity_static.o
+ .group         0x00000000        0xc ./App/Src/TimeIntervalVelocity_static.o
+ .group         0x00000000        0xc ./App/Src/TimeIntervalVelocity_static.o
+ .text          0x00000000        0x0 ./App/Src/TimeIntervalVelocity_static.o
+ .data          0x00000000        0x0 ./App/Src/TimeIntervalVelocity_static.o
+ .bss           0x00000000        0x0 ./App/Src/TimeIntervalVelocity_static.o
  .rodata.aRCC_PLLSAIDIVRPrescTable
-                0x00000000        0x4 ./Core/Src/TimeIntervalVelocity_static.o
+                0x00000000        0x4 ./App/Src/TimeIntervalVelocity_static.o
  .rodata.STREAM_OFFSET_TAB
-                0x00000000        0x8 ./Core/Src/TimeIntervalVelocity_static.o
+                0x00000000        0x8 ./App/Src/TimeIntervalVelocity_static.o
  .rodata.OFFSET_TAB_CCMRx
-                0x00000000        0x7 ./Core/Src/TimeIntervalVelocity_static.o
+                0x00000000        0x7 ./App/Src/TimeIntervalVelocity_static.o
  .rodata.SHIFT_TAB_OCxx
-                0x00000000        0x7 ./Core/Src/TimeIntervalVelocity_static.o
+                0x00000000        0x7 ./App/Src/TimeIntervalVelocity_static.o
  .rodata.SHIFT_TAB_ICxx
-                0x00000000        0x7 ./Core/Src/TimeIntervalVelocity_static.o
+                0x00000000        0x7 ./App/Src/TimeIntervalVelocity_static.o
  .rodata.SHIFT_TAB_CCxP
-                0x00000000        0x7 ./Core/Src/TimeIntervalVelocity_static.o
+                0x00000000        0x7 ./App/Src/TimeIntervalVelocity_static.o
  .rodata.SHIFT_TAB_OISx
-                0x00000000        0x7 ./Core/Src/TimeIntervalVelocity_static.o
+                0x00000000        0x7 ./App/Src/TimeIntervalVelocity_static.o
  .rodata.Clock_Freq
-                0x00000000        0x4 ./Core/Src/TimeIntervalVelocity_static.o
+                0x00000000        0x4 ./App/Src/TimeIntervalVelocity_static.o
  .rodata.Timer_Used
-                0x00000000        0x4 ./Core/Src/TimeIntervalVelocity_static.o
+                0x00000000        0x4 ./App/Src/TimeIntervalVelocity_static.o
  .rodata.capture_compare_channelA
-                0x00000000        0x4 ./Core/Src/TimeIntervalVelocity_static.o
+                0x00000000        0x4 ./App/Src/TimeIntervalVelocity_static.o
  .rodata.capture_compare_channelB
-                0x00000000        0x4 ./Core/Src/TimeIntervalVelocity_static.o
+                0x00000000        0x4 ./App/Src/TimeIntervalVelocity_static.o
  .rodata.cc_ChannelA_gpio_port
-                0x00000000        0x4 ./Core/Src/TimeIntervalVelocity_static.o
+                0x00000000        0x4 ./App/Src/TimeIntervalVelocity_static.o
  .rodata.cc_ChannelA_pin
-                0x00000000        0x4 ./Core/Src/TimeIntervalVelocity_static.o
+                0x00000000        0x4 ./App/Src/TimeIntervalVelocity_static.o
  .rodata.cc_ChannelB_gpio_port
-                0x00000000        0x4 ./Core/Src/TimeIntervalVelocity_static.o
+                0x00000000        0x4 ./App/Src/TimeIntervalVelocity_static.o
  .rodata.cc_ChannelB_pin
-                0x00000000        0x4 ./Core/Src/TimeIntervalVelocity_static.o
+                0x00000000        0x4 ./App/Src/TimeIntervalVelocity_static.o
  .rodata.Encoder_Poles
-                0x00000000        0x1 ./Core/Src/TimeIntervalVelocity_static.o
+                0x00000000        0x1 ./App/Src/TimeIntervalVelocity_static.o
  .rodata.Encoder_Edges_Counted
-                0x00000000        0x1 ./Core/Src/TimeIntervalVelocity_static.o
+                0x00000000        0x1 ./App/Src/TimeIntervalVelocity_static.o
  .rodata.Encoder_Channels_Counted
-                0x00000000        0x1 ./Core/Src/TimeIntervalVelocity_static.o
+                0x00000000        0x1 ./App/Src/TimeIntervalVelocity_static.o
  .rodata.timeout_cycles_goal
-                0x00000000        0x1 ./Core/Src/TimeIntervalVelocity_static.o
+                0x00000000        0x1 ./App/Src/TimeIntervalVelocity_static.o
  .rodata.PulsesPerRevolution
-                0x00000000        0x2 ./Core/Src/TimeIntervalVelocity_static.o
+                0x00000000        0x2 ./App/Src/TimeIntervalVelocity_static.o
  .bss.prev_num_pulses
-                0x00000000        0x2 ./Core/Src/TimeIntervalVelocity_static.o
- .debug_macro   0x00000000      0xb1a ./Core/Src/TimeIntervalVelocity_static.o
- .debug_macro   0x00000000       0x2e ./Core/Src/TimeIntervalVelocity_static.o
- .debug_macro   0x00000000       0x28 ./Core/Src/TimeIntervalVelocity_static.o
- .debug_macro   0x00000000       0x22 ./Core/Src/TimeIntervalVelocity_static.o
- .debug_macro   0x00000000       0x8e ./Core/Src/TimeIntervalVelocity_static.o
- .debug_macro   0x00000000       0x51 ./Core/Src/TimeIntervalVelocity_static.o
- .debug_macro   0x00000000      0x103 ./Core/Src/TimeIntervalVelocity_static.o
- .debug_macro   0x00000000       0x6a ./Core/Src/TimeIntervalVelocity_static.o
- .debug_macro   0x00000000      0x1df ./Core/Src/TimeIntervalVelocity_static.o
- .debug_macro   0x00000000       0x1c ./Core/Src/TimeIntervalVelocity_static.o
- .debug_macro   0x00000000       0x22 ./Core/Src/TimeIntervalVelocity_static.o
- .debug_macro   0x00000000       0xfb ./Core/Src/TimeIntervalVelocity_static.o
- .debug_macro   0x00000000     0x1011 ./Core/Src/TimeIntervalVelocity_static.o
- .debug_macro   0x00000000      0x11f ./Core/Src/TimeIntervalVelocity_static.o
- .debug_macro   0x00000000    0x1863b ./Core/Src/TimeIntervalVelocity_static.o
- .debug_macro   0x00000000       0x6d ./Core/Src/TimeIntervalVelocity_static.o
- .debug_macro   0x00000000      0xc6e ./Core/Src/TimeIntervalVelocity_static.o
- .debug_macro   0x00000000      0x22d ./Core/Src/TimeIntervalVelocity_static.o
- .debug_macro   0x00000000      0x22a ./Core/Src/TimeIntervalVelocity_static.o
- .debug_macro   0x00000000       0xe8 ./Core/Src/TimeIntervalVelocity_static.o
- .debug_macro   0x00000000      0x1a6 ./Core/Src/TimeIntervalVelocity_static.o
- .debug_macro   0x00000000       0x61 ./Core/Src/TimeIntervalVelocity_static.o
- .debug_macro   0x00000000       0xc8 ./Core/Src/TimeIntervalVelocity_static.o
- .debug_macro   0x00000000      0x1e6 ./Core/Src/TimeIntervalVelocity_static.o
- .debug_macro   0x00000000      0x5f3 ./Core/Src/TimeIntervalVelocity_static.o
- .debug_macro   0x00000000      0x149 ./Core/Src/TimeIntervalVelocity_static.o
- .debug_macro   0x00000000      0x16b ./Core/Src/TimeIntervalVelocity_static.o
+                0x00000000        0x2 ./App/Src/TimeIntervalVelocity_static.o
+ .debug_macro   0x00000000      0xb1a ./App/Src/TimeIntervalVelocity_static.o
+ .debug_macro   0x00000000       0x2e ./App/Src/TimeIntervalVelocity_static.o
+ .debug_macro   0x00000000       0x28 ./App/Src/TimeIntervalVelocity_static.o
+ .debug_macro   0x00000000       0x22 ./App/Src/TimeIntervalVelocity_static.o
+ .debug_macro   0x00000000       0x8e ./App/Src/TimeIntervalVelocity_static.o
+ .debug_macro   0x00000000       0x51 ./App/Src/TimeIntervalVelocity_static.o
+ .debug_macro   0x00000000      0x103 ./App/Src/TimeIntervalVelocity_static.o
+ .debug_macro   0x00000000       0x6a ./App/Src/TimeIntervalVelocity_static.o
+ .debug_macro   0x00000000      0x1df ./App/Src/TimeIntervalVelocity_static.o
+ .debug_macro   0x00000000       0x1c ./App/Src/TimeIntervalVelocity_static.o
+ .debug_macro   0x00000000       0x22 ./App/Src/TimeIntervalVelocity_static.o
+ .debug_macro   0x00000000       0xfb ./App/Src/TimeIntervalVelocity_static.o
+ .debug_macro   0x00000000     0x1011 ./App/Src/TimeIntervalVelocity_static.o
+ .debug_macro   0x00000000      0x11f ./App/Src/TimeIntervalVelocity_static.o
+ .debug_macro   0x00000000    0x1863b ./App/Src/TimeIntervalVelocity_static.o
+ .debug_macro   0x00000000       0x6d ./App/Src/TimeIntervalVelocity_static.o
+ .debug_macro   0x00000000      0xc6e ./App/Src/TimeIntervalVelocity_static.o
+ .debug_macro   0x00000000      0x22d ./App/Src/TimeIntervalVelocity_static.o
+ .debug_macro   0x00000000      0x22a ./App/Src/TimeIntervalVelocity_static.o
+ .debug_macro   0x00000000       0xe8 ./App/Src/TimeIntervalVelocity_static.o
+ .debug_macro   0x00000000      0x1a6 ./App/Src/TimeIntervalVelocity_static.o
+ .debug_macro   0x00000000       0x61 ./App/Src/TimeIntervalVelocity_static.o
+ .debug_macro   0x00000000       0xc8 ./App/Src/TimeIntervalVelocity_static.o
+ .debug_macro   0x00000000      0x1e6 ./App/Src/TimeIntervalVelocity_static.o
+ .debug_macro   0x00000000      0x5f3 ./App/Src/TimeIntervalVelocity_static.o
+ .debug_macro   0x00000000      0x149 ./App/Src/TimeIntervalVelocity_static.o
+ .debug_macro   0x00000000      0x16b ./App/Src/TimeIntervalVelocity_static.o
  .group         0x00000000        0xc ./Core/Src/gpio.o
  .group         0x00000000        0xc ./Core/Src/gpio.o
  .group         0x00000000        0xc ./Core/Src/gpio.o
@@ -1793,11 +1793,11 @@ Linker script and memory map
 LOAD X:/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crti.o
 LOAD X:/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crtbegin.o
 LOAD X:/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
-LOAD ./Core/Src/Ease_of_life.o
-LOAD ./Core/Src/HybridVelocity.o
-LOAD ./Core/Src/PulseCountVelocity_object.o
-LOAD ./Core/Src/PulseCountVelocity_static.o
-LOAD ./Core/Src/TimeIntervalVelocity_static.o
+LOAD ./App/Src/Ease_of_life.o
+LOAD ./App/Src/HybridVelocity.o
+LOAD ./App/Src/PulseCountVelocity_object.o
+LOAD ./App/Src/PulseCountVelocity_static.o
+LOAD ./App/Src/TimeIntervalVelocity_static.o
 LOAD ./Core/Src/gpio.o
 LOAD ./Core/Src/main.o
 LOAD ./Core/Src/stm32f4xx_it.o
@@ -1849,70 +1849,70 @@ LOAD X:/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.extern
  .text          0x080001ac       0x40 X:/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crtbegin.o
  *(.text*)
  .text.LL_TIM_EnableIT_CC1
-                0x080001ec       0x20 ./Core/Src/Ease_of_life.o
+                0x080001ec       0x20 ./App/Src/Ease_of_life.o
  .text.LL_TIM_EnableIT_CC2
-                0x0800020c       0x20 ./Core/Src/Ease_of_life.o
+                0x0800020c       0x20 ./App/Src/Ease_of_life.o
  .text.LL_TIM_EnableIT_CC3
-                0x0800022c       0x20 ./Core/Src/Ease_of_life.o
+                0x0800022c       0x20 ./App/Src/Ease_of_life.o
  .text.LL_TIM_EnableIT_CC4
-                0x0800024c       0x20 ./Core/Src/Ease_of_life.o
+                0x0800024c       0x20 ./App/Src/Ease_of_life.o
  .text.LL_TIM_EnableIT_CC
-                0x0800026c       0x46 ./Core/Src/Ease_of_life.o
+                0x0800026c       0x46 ./App/Src/Ease_of_life.o
                 0x0800026c                LL_TIM_EnableIT_CC
  .text.LL_TIM_EnableCounter
-                0x080002b2       0x20 ./Core/Src/PulseCountVelocity_static.o
+                0x080002b2       0x20 ./App/Src/PulseCountVelocity_static.o
  .text.LL_TIM_SetCounter
-                0x080002d2       0x1c ./Core/Src/PulseCountVelocity_static.o
+                0x080002d2       0x1c ./App/Src/PulseCountVelocity_static.o
  .text.LL_TIM_GetCounter
-                0x080002ee       0x18 ./Core/Src/PulseCountVelocity_static.o
+                0x080002ee       0x18 ./App/Src/PulseCountVelocity_static.o
  .text.LL_TIM_ClearFlag_UPDATE
-                0x08000306       0x1c ./Core/Src/PulseCountVelocity_static.o
+                0x08000306       0x1c ./App/Src/PulseCountVelocity_static.o
  .text.LL_TIM_EnableIT_UPDATE
-                0x08000322       0x20 ./Core/Src/PulseCountVelocity_static.o
+                0x08000322       0x20 ./App/Src/PulseCountVelocity_static.o
  .text.LL_TIM_GenerateEvent_UPDATE
-                0x08000342       0x20 ./Core/Src/PulseCountVelocity_static.o
+                0x08000342       0x20 ./App/Src/PulseCountVelocity_static.o
  *fill*         0x08000362        0x2 
  .text.PCVs_CalculateVelocity1
-                0x08000364       0xb4 ./Core/Src/PulseCountVelocity_static.o
+                0x08000364       0xb4 ./App/Src/PulseCountVelocity_static.o
                 0x08000364                PCVs_CalculateVelocity1
  .text.PCVs_EncoderTimer_Start
-                0x08000418       0x20 ./Core/Src/PulseCountVelocity_static.o
+                0x08000418       0x20 ./App/Src/PulseCountVelocity_static.o
  .text.PCVs_MeasFrameTimer_Start
-                0x08000438       0x2c ./Core/Src/PulseCountVelocity_static.o
+                0x08000438       0x2c ./App/Src/PulseCountVelocity_static.o
  .text.PCVs_Start
-                0x08000464       0x1c ./Core/Src/PulseCountVelocity_static.o
+                0x08000464       0x1c ./App/Src/PulseCountVelocity_static.o
                 0x08000464                PCVs_Start
  .text.LL_TIM_EnableCounter
-                0x08000480       0x20 ./Core/Src/TimeIntervalVelocity_static.o
+                0x08000480       0x20 ./App/Src/TimeIntervalVelocity_static.o
  .text.LL_TIM_SetCounter
-                0x080004a0       0x1c ./Core/Src/TimeIntervalVelocity_static.o
+                0x080004a0       0x1c ./App/Src/TimeIntervalVelocity_static.o
  .text.LL_TIM_CC_EnableChannel
-                0x080004bc       0x22 ./Core/Src/TimeIntervalVelocity_static.o
+                0x080004bc       0x22 ./App/Src/TimeIntervalVelocity_static.o
  .text.LL_TIM_IC_GetCaptureCH1
-                0x080004de       0x18 ./Core/Src/TimeIntervalVelocity_static.o
+                0x080004de       0x18 ./App/Src/TimeIntervalVelocity_static.o
  .text.LL_TIM_IC_GetCaptureCH2
-                0x080004f6       0x18 ./Core/Src/TimeIntervalVelocity_static.o
+                0x080004f6       0x18 ./App/Src/TimeIntervalVelocity_static.o
  .text.LL_TIM_ClearFlag_UPDATE
-                0x0800050e       0x1c ./Core/Src/TimeIntervalVelocity_static.o
+                0x0800050e       0x1c ./App/Src/TimeIntervalVelocity_static.o
  .text.LL_TIM_EnableIT_UPDATE
-                0x0800052a       0x20 ./Core/Src/TimeIntervalVelocity_static.o
+                0x0800052a       0x20 ./App/Src/TimeIntervalVelocity_static.o
  .text.LL_TIM_GenerateEvent_UPDATE
-                0x0800054a       0x20 ./Core/Src/TimeIntervalVelocity_static.o
+                0x0800054a       0x20 ./App/Src/TimeIntervalVelocity_static.o
  .text.LL_GPIO_GetState
-                0x0800056a       0x2a ./Core/Src/TimeIntervalVelocity_static.o
+                0x0800056a       0x2a ./App/Src/TimeIntervalVelocity_static.o
  .text.TIVs_Start
-                0x08000594       0x6c ./Core/Src/TimeIntervalVelocity_static.o
+                0x08000594       0x6c ./App/Src/TimeIntervalVelocity_static.o
                 0x08000594                TIVs_Start
  .text.TIVs_TimerOverflowISR
-                0x08000600       0x40 ./Core/Src/TimeIntervalVelocity_static.o
+                0x08000600       0x40 ./App/Src/TimeIntervalVelocity_static.o
                 0x08000600                TIVs_TimerOverflowISR
  .text.Are_pin_states_equal
-                0x08000640       0x38 ./Core/Src/TimeIntervalVelocity_static.o
+                0x08000640       0x38 ./App/Src/TimeIntervalVelocity_static.o
  .text.TIVs_GetSign
-                0x08000678       0x4e ./Core/Src/TimeIntervalVelocity_static.o
+                0x08000678       0x4e ./App/Src/TimeIntervalVelocity_static.o
  *fill*         0x080006c6        0x2 
  .text.TIVs_CalculateVelocity
-                0x080006c8       0xcc ./Core/Src/TimeIntervalVelocity_static.o
+                0x080006c8       0xcc ./App/Src/TimeIntervalVelocity_static.o
                 0x080006c8                TIVs_CalculateVelocity
  .text.LL_AHB1_GRP1_EnableClock
                 0x08000794       0x30 ./Core/Src/gpio.o
@@ -2392,19 +2392,19 @@ LOAD X:/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.extern
  .bss           0x20000004       0x1c X:/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crtbegin.o
  *(.bss*)
  .bss.old_num_pulses
-                0x20000020        0x2 ./Core/Src/PulseCountVelocity_static.o
+                0x20000020        0x2 ./App/Src/PulseCountVelocity_static.o
  .bss.timeout_cycles
-                0x20000022        0x1 ./Core/Src/PulseCountVelocity_static.o
+                0x20000022        0x1 ./App/Src/PulseCountVelocity_static.o
  *fill*         0x20000023        0x1 
  .bss.prev_velocity
-                0x20000024        0x4 ./Core/Src/PulseCountVelocity_static.o
+                0x20000024        0x4 ./App/Src/PulseCountVelocity_static.o
  .bss.prev_capture
-                0x20000028        0x2 ./Core/Src/TimeIntervalVelocity_static.o
+                0x20000028        0x2 ./App/Src/TimeIntervalVelocity_static.o
  *fill*         0x2000002a        0x2 
  .bss.prev_velocity
-                0x2000002c        0x4 ./Core/Src/TimeIntervalVelocity_static.o
+                0x2000002c        0x4 ./App/Src/TimeIntervalVelocity_static.o
  .bss.timeout_cycles
-                0x20000030        0x1 ./Core/Src/TimeIntervalVelocity_static.o
+                0x20000030        0x1 ./App/Src/TimeIntervalVelocity_static.o
  *fill*         0x20000031        0x3 
  .bss.PCV_result
                 0x20000034        0x4 ./Core/Src/main.o
@@ -2444,11 +2444,11 @@ LOAD X:/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.extern
  .ARM.attributes
                 0x00000022       0x34 X:/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/crtbegin.o
  .ARM.attributes
-                0x00000056       0x34 ./Core/Src/Ease_of_life.o
+                0x00000056       0x34 ./App/Src/Ease_of_life.o
  .ARM.attributes
-                0x0000008a       0x34 ./Core/Src/PulseCountVelocity_static.o
+                0x0000008a       0x34 ./App/Src/PulseCountVelocity_static.o
  .ARM.attributes
-                0x000000be       0x34 ./Core/Src/TimeIntervalVelocity_static.o
+                0x000000be       0x34 ./App/Src/TimeIntervalVelocity_static.o
  .ARM.attributes
                 0x000000f2       0x34 ./Core/Src/gpio.o
  .ARM.attributes
@@ -2482,9 +2482,9 @@ LOAD X:/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.extern
 LOAD X:/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard\libgcc.a
 
 .debug_info     0x00000000     0x6633
- .debug_info    0x00000000      0x338 ./Core/Src/Ease_of_life.o
- .debug_info    0x00000338      0x576 ./Core/Src/PulseCountVelocity_static.o
- .debug_info    0x000008ae      0x753 ./Core/Src/TimeIntervalVelocity_static.o
+ .debug_info    0x00000000      0x338 ./App/Src/Ease_of_life.o
+ .debug_info    0x00000338      0x576 ./App/Src/PulseCountVelocity_static.o
+ .debug_info    0x000008ae      0x753 ./App/Src/TimeIntervalVelocity_static.o
  .debug_info    0x00001001      0x824 ./Core/Src/gpio.o
  .debug_info    0x00001825      0xbba ./Core/Src/main.o
  .debug_info    0x000023df      0x4e3 ./Core/Src/stm32f4xx_it.o
@@ -2497,9 +2497,9 @@ LOAD X:/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.extern
  .debug_info    0x00005ce5      0x94e ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.o
 
 .debug_abbrev   0x00000000     0x15b2
- .debug_abbrev  0x00000000      0x12d ./Core/Src/Ease_of_life.o
- .debug_abbrev  0x0000012d      0x164 ./Core/Src/PulseCountVelocity_static.o
- .debug_abbrev  0x00000291      0x202 ./Core/Src/TimeIntervalVelocity_static.o
+ .debug_abbrev  0x00000000      0x12d ./App/Src/Ease_of_life.o
+ .debug_abbrev  0x0000012d      0x164 ./App/Src/PulseCountVelocity_static.o
+ .debug_abbrev  0x00000291      0x202 ./App/Src/TimeIntervalVelocity_static.o
  .debug_abbrev  0x00000493      0x216 ./Core/Src/gpio.o
  .debug_abbrev  0x000006a9      0x212 ./Core/Src/main.o
  .debug_abbrev  0x000008bb      0x1bc ./Core/Src/stm32f4xx_it.o
@@ -2513,11 +2513,11 @@ LOAD X:/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.extern
 
 .debug_aranges  0x00000000      0x770
  .debug_aranges
-                0x00000000       0x40 ./Core/Src/Ease_of_life.o
+                0x00000000       0x40 ./App/Src/Ease_of_life.o
  .debug_aranges
-                0x00000040       0x70 ./Core/Src/PulseCountVelocity_static.o
+                0x00000040       0x70 ./App/Src/PulseCountVelocity_static.o
  .debug_aranges
-                0x000000b0       0x88 ./Core/Src/TimeIntervalVelocity_static.o
+                0x000000b0       0x88 ./App/Src/TimeIntervalVelocity_static.o
  .debug_aranges
                 0x00000138       0x48 ./Core/Src/gpio.o
  .debug_aranges
@@ -2542,11 +2542,11 @@ LOAD X:/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.extern
 .debug_rnglists
                 0x00000000      0x574
  .debug_rnglists
-                0x00000000       0x2b ./Core/Src/Ease_of_life.o
+                0x00000000       0x2b ./App/Src/Ease_of_life.o
  .debug_rnglists
-                0x0000002b       0x50 ./Core/Src/PulseCountVelocity_static.o
+                0x0000002b       0x50 ./App/Src/PulseCountVelocity_static.o
  .debug_rnglists
-                0x0000007b       0x62 ./Core/Src/TimeIntervalVelocity_static.o
+                0x0000007b       0x62 ./App/Src/TimeIntervalVelocity_static.o
  .debug_rnglists
                 0x000000dd       0x32 ./Core/Src/gpio.o
  .debug_rnglists
@@ -2568,88 +2568,88 @@ LOAD X:/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.extern
  .debug_rnglists
                 0x000004b6       0xbe ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.o
 
-.debug_macro    0x00000000    0x1ebe9
- .debug_macro   0x00000000      0x147 ./Core/Src/Ease_of_life.o
- .debug_macro   0x00000147      0xb1a ./Core/Src/Ease_of_life.o
- .debug_macro   0x00000c61       0x2e ./Core/Src/Ease_of_life.o
- .debug_macro   0x00000c8f       0x28 ./Core/Src/Ease_of_life.o
- .debug_macro   0x00000cb7       0x22 ./Core/Src/Ease_of_life.o
- .debug_macro   0x00000cd9       0x8e ./Core/Src/Ease_of_life.o
- .debug_macro   0x00000d67       0x51 ./Core/Src/Ease_of_life.o
- .debug_macro   0x00000db8      0x103 ./Core/Src/Ease_of_life.o
- .debug_macro   0x00000ebb       0x6a ./Core/Src/Ease_of_life.o
- .debug_macro   0x00000f25      0x1df ./Core/Src/Ease_of_life.o
- .debug_macro   0x00001104       0x1c ./Core/Src/Ease_of_life.o
- .debug_macro   0x00001120       0x22 ./Core/Src/Ease_of_life.o
- .debug_macro   0x00001142       0xfb ./Core/Src/Ease_of_life.o
- .debug_macro   0x0000123d     0x1011 ./Core/Src/Ease_of_life.o
- .debug_macro   0x0000224e      0x11f ./Core/Src/Ease_of_life.o
- .debug_macro   0x0000236d    0x1863b ./Core/Src/Ease_of_life.o
- .debug_macro   0x0001a9a8       0x6d ./Core/Src/Ease_of_life.o
- .debug_macro   0x0001aa15      0xc6e ./Core/Src/Ease_of_life.o
- .debug_macro   0x0001b683      0x22d ./Core/Src/Ease_of_life.o
- .debug_macro   0x0001b8b0      0x22a ./Core/Src/Ease_of_life.o
- .debug_macro   0x0001bada       0xe8 ./Core/Src/Ease_of_life.o
- .debug_macro   0x0001bbc2      0x1a6 ./Core/Src/Ease_of_life.o
- .debug_macro   0x0001bd68       0x61 ./Core/Src/Ease_of_life.o
- .debug_macro   0x0001bdc9       0xc8 ./Core/Src/Ease_of_life.o
- .debug_macro   0x0001be91      0x1e6 ./Core/Src/Ease_of_life.o
- .debug_macro   0x0001c077      0x5f3 ./Core/Src/Ease_of_life.o
- .debug_macro   0x0001c66a      0x149 ./Core/Src/Ease_of_life.o
- .debug_macro   0x0001c7b3      0x16b ./Core/Src/Ease_of_life.o
- .debug_macro   0x0001c91e      0x147 ./Core/Src/PulseCountVelocity_static.o
- .debug_macro   0x0001ca65      0x155 ./Core/Src/TimeIntervalVelocity_static.o
- .debug_macro   0x0001cbba      0x147 ./Core/Src/gpio.o
- .debug_macro   0x0001cd01      0x169 ./Core/Src/main.o
- .debug_macro   0x0001ce6a      0x15f ./Core/Src/stm32f4xx_it.o
- .debug_macro   0x0001cfc9       0xce ./Core/Src/system_stm32f4xx.o
- .debug_macro   0x0001d097      0x147 ./Core/Src/tim.o
- .debug_macro   0x0001d1de       0xf5 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.o
- .debug_macro   0x0001d2d3       0xe2 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.o
- .debug_macro   0x0001d3b5      0x110 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.o
- .debug_macro   0x0001d4c5      0x143 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.o
- .debug_macro   0x0001d608      0x159 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_tim.o
- .debug_macro   0x0001d761      0x5ed ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_tim.o
- .debug_macro   0x0001dd4e      0x1cc ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.o
- .debug_macro   0x0001df1a       0x5b ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.o
- .debug_macro   0x0001df75      0xc74 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.o
+.debug_macro    0x00000000    0x1ebe1
+ .debug_macro   0x00000000      0x147 ./App/Src/Ease_of_life.o
+ .debug_macro   0x00000147      0xb1a ./App/Src/Ease_of_life.o
+ .debug_macro   0x00000c61       0x2e ./App/Src/Ease_of_life.o
+ .debug_macro   0x00000c8f       0x28 ./App/Src/Ease_of_life.o
+ .debug_macro   0x00000cb7       0x22 ./App/Src/Ease_of_life.o
+ .debug_macro   0x00000cd9       0x8e ./App/Src/Ease_of_life.o
+ .debug_macro   0x00000d67       0x51 ./App/Src/Ease_of_life.o
+ .debug_macro   0x00000db8      0x103 ./App/Src/Ease_of_life.o
+ .debug_macro   0x00000ebb       0x6a ./App/Src/Ease_of_life.o
+ .debug_macro   0x00000f25      0x1df ./App/Src/Ease_of_life.o
+ .debug_macro   0x00001104       0x1c ./App/Src/Ease_of_life.o
+ .debug_macro   0x00001120       0x22 ./App/Src/Ease_of_life.o
+ .debug_macro   0x00001142       0xfb ./App/Src/Ease_of_life.o
+ .debug_macro   0x0000123d     0x1011 ./App/Src/Ease_of_life.o
+ .debug_macro   0x0000224e      0x11f ./App/Src/Ease_of_life.o
+ .debug_macro   0x0000236d    0x1863b ./App/Src/Ease_of_life.o
+ .debug_macro   0x0001a9a8       0x6d ./App/Src/Ease_of_life.o
+ .debug_macro   0x0001aa15      0xc6e ./App/Src/Ease_of_life.o
+ .debug_macro   0x0001b683      0x22d ./App/Src/Ease_of_life.o
+ .debug_macro   0x0001b8b0      0x22a ./App/Src/Ease_of_life.o
+ .debug_macro   0x0001bada       0xe8 ./App/Src/Ease_of_life.o
+ .debug_macro   0x0001bbc2      0x1a6 ./App/Src/Ease_of_life.o
+ .debug_macro   0x0001bd68       0x61 ./App/Src/Ease_of_life.o
+ .debug_macro   0x0001bdc9       0xc8 ./App/Src/Ease_of_life.o
+ .debug_macro   0x0001be91      0x1e6 ./App/Src/Ease_of_life.o
+ .debug_macro   0x0001c077      0x5f3 ./App/Src/Ease_of_life.o
+ .debug_macro   0x0001c66a      0x149 ./App/Src/Ease_of_life.o
+ .debug_macro   0x0001c7b3      0x16b ./App/Src/Ease_of_life.o
+ .debug_macro   0x0001c91e      0x147 ./App/Src/PulseCountVelocity_static.o
+ .debug_macro   0x0001ca65      0x151 ./App/Src/TimeIntervalVelocity_static.o
+ .debug_macro   0x0001cbb6      0x147 ./Core/Src/gpio.o
+ .debug_macro   0x0001ccfd      0x169 ./Core/Src/main.o
+ .debug_macro   0x0001ce66      0x15b ./Core/Src/stm32f4xx_it.o
+ .debug_macro   0x0001cfc1       0xce ./Core/Src/system_stm32f4xx.o
+ .debug_macro   0x0001d08f      0x147 ./Core/Src/tim.o
+ .debug_macro   0x0001d1d6       0xf5 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.o
+ .debug_macro   0x0001d2cb       0xe2 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.o
+ .debug_macro   0x0001d3ad      0x110 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.o
+ .debug_macro   0x0001d4bd      0x143 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.o
+ .debug_macro   0x0001d600      0x159 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_tim.o
+ .debug_macro   0x0001d759      0x5ed ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_tim.o
+ .debug_macro   0x0001dd46      0x1cc ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.o
+ .debug_macro   0x0001df12       0x5b ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.o
+ .debug_macro   0x0001df6d      0xc74 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.o
 
-.debug_line     0x00000000     0x6868
- .debug_line    0x00000000      0x693 ./Core/Src/Ease_of_life.o
- .debug_line    0x00000693      0x797 ./Core/Src/PulseCountVelocity_static.o
- .debug_line    0x00000e2a      0x82d ./Core/Src/TimeIntervalVelocity_static.o
- .debug_line    0x00001657      0x836 ./Core/Src/gpio.o
- .debug_line    0x00001e8d      0x9cb ./Core/Src/main.o
- .debug_line    0x00002858      0x881 ./Core/Src/stm32f4xx_it.o
- .debug_line    0x000030d9      0x55a ./Core/Src/system_stm32f4xx.o
- .debug_line    0x00003633      0xc4f ./Core/Src/tim.o
- .debug_line    0x00004282       0x7a ./Core/Startup/startup_stm32f439zitx.o
- .debug_line    0x000042fc      0x681 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.o
- .debug_line    0x0000497d      0x8e3 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.o
- .debug_line    0x00005260      0xb75 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_tim.o
- .debug_line    0x00005dd5      0xa93 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.o
+.debug_line     0x00000000     0x6991
+ .debug_line    0x00000000      0x6ce ./App/Src/Ease_of_life.o
+ .debug_line    0x000006ce      0x7d2 ./App/Src/PulseCountVelocity_static.o
+ .debug_line    0x00000ea0      0x868 ./App/Src/TimeIntervalVelocity_static.o
+ .debug_line    0x00001708      0x836 ./Core/Src/gpio.o
+ .debug_line    0x00001f3e      0xa07 ./Core/Src/main.o
+ .debug_line    0x00002945      0x8bd ./Core/Src/stm32f4xx_it.o
+ .debug_line    0x00003202      0x55a ./Core/Src/system_stm32f4xx.o
+ .debug_line    0x0000375c      0xc4f ./Core/Src/tim.o
+ .debug_line    0x000043ab       0x7a ./Core/Startup/startup_stm32f439zitx.o
+ .debug_line    0x00004425      0x681 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.o
+ .debug_line    0x00004aa6      0x8e3 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.o
+ .debug_line    0x00005389      0xb75 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_tim.o
+ .debug_line    0x00005efe      0xa93 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.o
 
-.debug_str      0x00000000    0xa9f03
- .debug_str     0x00000000    0xa9f03 ./Core/Src/Ease_of_life.o
-                              0xa5761 (size before relaxing)
- .debug_str     0x000a9f03    0xa5934 ./Core/Src/PulseCountVelocity_static.o
- .debug_str     0x000a9f03    0xa5a72 ./Core/Src/TimeIntervalVelocity_static.o
- .debug_str     0x000a9f03    0xa5997 ./Core/Src/gpio.o
- .debug_str     0x000a9f03    0xa5c80 ./Core/Src/main.o
- .debug_str     0x000a9f03    0xa5939 ./Core/Src/stm32f4xx_it.o
- .debug_str     0x000a9f03    0x958b4 ./Core/Src/system_stm32f4xx.o
- .debug_str     0x000a9f03    0xa62cd ./Core/Src/tim.o
- .debug_str     0x000a9f03       0x7e ./Core/Startup/startup_stm32f439zitx.o
- .debug_str     0x000a9f03    0x95f47 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.o
- .debug_str     0x000a9f03    0x97524 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.o
- .debug_str     0x000a9f03    0x9ac2e ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_tim.o
- .debug_str     0x000a9f03    0x9fbf6 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.o
+.debug_str      0x00000000    0xa9f00
+ .debug_str     0x00000000    0xa9f00 ./App/Src/Ease_of_life.o
+                              0xa5760 (size before relaxing)
+ .debug_str     0x000a9f00    0xa5933 ./App/Src/PulseCountVelocity_static.o
+ .debug_str     0x000a9f00    0xa5a71 ./App/Src/TimeIntervalVelocity_static.o
+ .debug_str     0x000a9f00    0xa5997 ./Core/Src/gpio.o
+ .debug_str     0x000a9f00    0xa5c80 ./Core/Src/main.o
+ .debug_str     0x000a9f00    0xa5939 ./Core/Src/stm32f4xx_it.o
+ .debug_str     0x000a9f00    0x958b4 ./Core/Src/system_stm32f4xx.o
+ .debug_str     0x000a9f00    0xa62cd ./Core/Src/tim.o
+ .debug_str     0x000a9f00       0x7e ./Core/Startup/startup_stm32f439zitx.o
+ .debug_str     0x000a9f00    0x95f47 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.o
+ .debug_str     0x000a9f00    0x97524 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.o
+ .debug_str     0x000a9f00    0x9ac2e ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_tim.o
+ .debug_str     0x000a9f00    0x9fbf6 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.o
 
 .comment        0x00000000       0x43
- .comment       0x00000000       0x43 ./Core/Src/Ease_of_life.o
+ .comment       0x00000000       0x43 ./App/Src/Ease_of_life.o
                                  0x44 (size before relaxing)
- .comment       0x00000043       0x44 ./Core/Src/PulseCountVelocity_static.o
- .comment       0x00000043       0x44 ./Core/Src/TimeIntervalVelocity_static.o
+ .comment       0x00000043       0x44 ./App/Src/PulseCountVelocity_static.o
+ .comment       0x00000043       0x44 ./App/Src/TimeIntervalVelocity_static.o
  .comment       0x00000043       0x44 ./Core/Src/gpio.o
  .comment       0x00000043       0x44 ./Core/Src/main.o
  .comment       0x00000043       0x44 ./Core/Src/stm32f4xx_it.o
@@ -2661,9 +2661,9 @@ LOAD X:/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.extern
  .comment       0x00000043       0x44 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.o
 
 .debug_frame    0x00000000     0x1d9c
- .debug_frame   0x00000000       0xd4 ./Core/Src/Ease_of_life.o
- .debug_frame   0x000000d4      0x19c ./Core/Src/PulseCountVelocity_static.o
- .debug_frame   0x00000270      0x21c ./Core/Src/TimeIntervalVelocity_static.o
+ .debug_frame   0x00000000       0xd4 ./App/Src/Ease_of_life.o
+ .debug_frame   0x000000d4      0x19c ./App/Src/PulseCountVelocity_static.o
+ .debug_frame   0x00000270      0x21c ./App/Src/TimeIntervalVelocity_static.o
  .debug_frame   0x0000048c       0xfc ./Core/Src/gpio.o
  .debug_frame   0x00000588      0x400 ./Core/Src/main.o
  .debug_frame   0x00000988      0x278 ./Core/Src/stm32f4xx_it.o

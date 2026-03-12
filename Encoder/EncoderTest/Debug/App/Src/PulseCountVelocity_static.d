@@ -1,6 +1,7 @@
-Core/Src/TimeIntervalVelocity_static.o: \
- ../Core/Src/TimeIntervalVelocity_static.c \
- ../Core/Inc/TimeIntervalVelocity_static.h ../Core/Inc/main.h \
+App/Src/PulseCountVelocity_static.o: \
+ ../App/Src/PulseCountVelocity_static.c \
+ X:/Projects/Encoder/Encoder_LIB/Encoder/EncoderTest/App/Inc/PulseCountVelocity_static.h \
+ ../Core/Inc/main.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_rcc.h \
  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f439xx.h \
@@ -18,9 +19,8 @@ Core/Src/TimeIntervalVelocity_static.o: \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_pwr.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h \
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_gpio.h \
- ../Core/Inc/main.h ../Core/Inc/Ease_of_life.h
-../Core/Inc/TimeIntervalVelocity_static.h:
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_gpio.h
+X:/Projects/Encoder/Encoder_LIB/Encoder/EncoderTest/App/Inc/PulseCountVelocity_static.h:
 ../Core/Inc/main.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_rcc.h:
 ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:
@@ -40,5 +40,3 @@ Core/Src/TimeIntervalVelocity_static.o: \
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_gpio.h:
-../Core/Inc/main.h:
-../Core/Inc/Ease_of_life.h:

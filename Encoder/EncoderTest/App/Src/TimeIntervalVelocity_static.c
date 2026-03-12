@@ -88,7 +88,7 @@ static inline int32_t TIVs_GetSign(uint32_t cc_channelx)
     if(cc_channelx == cc_ChannelB_pin)
         return equal ? -1 : 1;
 
-    return 1;
+    return 0;
 }
 
 int32_t TIVs_CalculateVelocity(TIV_Channel_t channel)
