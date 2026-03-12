@@ -212,7 +212,7 @@ void MX_TIM4_Init(void)
   PD12   ------> TIM4_CH1
   PD13   ------> TIM4_CH2
   */
-  GPIO_InitStruct.Pin = TIM4_CH1_Pin|LL_GPIO_PIN_13;
+  GPIO_InitStruct.Pin = TIM4_CH1_Pin|TIM4_CH2_Pin;
   GPIO_InitStruct.Mode = LL_GPIO_MODE_ALTERNATE;
   GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_LOW;
   GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
