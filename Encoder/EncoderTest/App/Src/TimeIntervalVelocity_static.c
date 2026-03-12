@@ -94,7 +94,7 @@ static inline int32_t TIVs_GetSign(uint32_t cc_channelx)
 int32_t TIVs_CalculateVelocity(TIV_Channel_t channel)
 {
 	uint16_t current_capture = 0;
-	const uint8_t timeout_num = timeout_cycles;
+	uint8_t timeout_num = timeout_cycles; //const?
 
 	int32_t sign;
 	if(channel == TIV_CHANNEL_A) sign = TIVs_GetSign(cc_ChannelA_pin);

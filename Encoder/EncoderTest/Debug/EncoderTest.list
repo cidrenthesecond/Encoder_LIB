@@ -739,7 +739,7 @@ int32_t TIVs_CalculateVelocity(TIV_Channel_t channel)
 	uint16_t current_capture = 0;
  80005d2:	2300      	movs	r3, #0
  80005d4:	83fb      	strh	r3, [r7, #30]
-	const uint8_t timeout_num = timeout_cycles;
+	uint8_t timeout_num = timeout_cycles; //const?
  80005d6:	4b2a      	ldr	r3, [pc, #168]	@ (8000680 <TIVs_CalculateVelocity+0xb8>)
  80005d8:	781b      	ldrb	r3, [r3, #0]
  80005da:	75fb      	strb	r3, [r7, #23]
