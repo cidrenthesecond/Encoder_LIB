@@ -71,8 +71,8 @@ int32_t TIVs_CalculateVelocity(TIV_Channel_t channel)
 	if(channel == TIV_CHANNEL_A) current_capture = LL_TIM_IC_GetCaptureCH1(Timer_Used);
 	else current_capture = LL_TIM_IC_GetCaptureCH2(Timer_Used);
 
-	//uint16_t delta = current_capture - prev_capture;
-	uint32_t delta = 65535*timeout_num - prev_capture + current_capture;
+
+	uint32_t delta = 65535*timeout_num  + current_capture - prev_capture;
 
 	prev_capture = current_capture;
 
