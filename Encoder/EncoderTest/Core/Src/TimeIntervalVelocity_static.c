@@ -6,7 +6,9 @@
  */
 
 //TO DO
-//dodanie sprawdzania kierunku
+//Adidtion of low pass filter
+//Problems
+//at irregular intervals Tivs_calculatevelocity returns near 0 or 0 value
 
 #include <TimeIntervalVelocity_static.h>
 #include "main.h"
@@ -86,7 +88,7 @@ static inline int32_t TIVs_GetSign(uint32_t cc_channelx)
     if(cc_channelx == cc_ChannelB_pin)
         return equal ? -1 : 1;
 
-    return 0;
+    return 1;
 }
 
 int32_t TIVs_CalculateVelocity(TIV_Channel_t channel)
@@ -108,7 +110,7 @@ int32_t TIVs_CalculateVelocity(TIV_Channel_t channel)
 
 	if(delta == 0 )
 	{
-		return 0;
+		return prev_velocity;
 	}
 
 	int32_t result;

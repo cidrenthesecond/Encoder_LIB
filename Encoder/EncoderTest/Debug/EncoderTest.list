@@ -880,8 +880,8 @@ static inline int32_t TIVs_GetSign(uint32_t cc_channelx)
  80006b8:	2301      	movs	r3, #1
  80006ba:	e000      	b.n	80006be <TIVs_GetSign+0x46>
 
-    return 0;
- 80006bc:	2300      	movs	r3, #0
+    return 1;
+ 80006bc:	2301      	movs	r3, #1
 }
  80006be:	4618      	mov	r0, r3
  80006c0:	3710      	adds	r7, #16
@@ -961,57 +961,57 @@ int32_t TIVs_CalculateVelocity(TIV_Channel_t channel)
 	if(delta == 0 )
  8000738:	693b      	ldr	r3, [r7, #16]
  800073a:	2b00      	cmp	r3, #0
- 800073c:	d101      	bne.n	8000742 <TIVs_CalculateVelocity+0x7a>
+ 800073c:	d102      	bne.n	8000744 <TIVs_CalculateVelocity+0x7c>
 	{
-		return 0;
- 800073e:	2300      	movs	r3, #0
- 8000740:	e019      	b.n	8000776 <TIVs_CalculateVelocity+0xae>
+		return prev_velocity;
+ 800073e:	4b13      	ldr	r3, [pc, #76]	@ (800078c <TIVs_CalculateVelocity+0xc4>)
+ 8000740:	681b      	ldr	r3, [r3, #0]
+ 8000742:	e019      	b.n	8000778 <TIVs_CalculateVelocity+0xb0>
 	}
 
 	int32_t result;
 
 	result = 60*Clock_Freq/(PulsesPerRevolution * delta);
- 8000742:	4a12      	ldr	r2, [pc, #72]	@ (800078c <TIVs_CalculateVelocity+0xc4>)
- 8000744:	4613      	mov	r3, r2
- 8000746:	011b      	lsls	r3, r3, #4
- 8000748:	1a9b      	subs	r3, r3, r2
- 800074a:	009b      	lsls	r3, r3, #2
- 800074c:	461a      	mov	r2, r3
- 800074e:	230c      	movs	r3, #12
- 8000750:	4619      	mov	r1, r3
- 8000752:	693b      	ldr	r3, [r7, #16]
- 8000754:	fb01 f303 	mul.w	r3, r1, r3
- 8000758:	fbb2 f3f3 	udiv	r3, r2, r3
- 800075c:	60fb      	str	r3, [r7, #12]
+ 8000744:	4a12      	ldr	r2, [pc, #72]	@ (8000790 <TIVs_CalculateVelocity+0xc8>)
+ 8000746:	4613      	mov	r3, r2
+ 8000748:	011b      	lsls	r3, r3, #4
+ 800074a:	1a9b      	subs	r3, r3, r2
+ 800074c:	009b      	lsls	r3, r3, #2
+ 800074e:	461a      	mov	r2, r3
+ 8000750:	230c      	movs	r3, #12
+ 8000752:	4619      	mov	r1, r3
+ 8000754:	693b      	ldr	r3, [r7, #16]
+ 8000756:	fb01 f303 	mul.w	r3, r1, r3
+ 800075a:	fbb2 f3f3 	udiv	r3, r2, r3
+ 800075e:	60fb      	str	r3, [r7, #12]
 
 	result = sign*result;
- 800075e:	68fb      	ldr	r3, [r7, #12]
- 8000760:	69ba      	ldr	r2, [r7, #24]
- 8000762:	fb02 f303 	mul.w	r3, r2, r3
- 8000766:	60fb      	str	r3, [r7, #12]
+ 8000760:	68fb      	ldr	r3, [r7, #12]
+ 8000762:	69ba      	ldr	r2, [r7, #24]
+ 8000764:	fb02 f303 	mul.w	r3, r2, r3
+ 8000768:	60fb      	str	r3, [r7, #12]
 
 	prev_velocity = result;
- 8000768:	4a09      	ldr	r2, [pc, #36]	@ (8000790 <TIVs_CalculateVelocity+0xc8>)
- 800076a:	68fb      	ldr	r3, [r7, #12]
- 800076c:	6013      	str	r3, [r2, #0]
+ 800076a:	4a08      	ldr	r2, [pc, #32]	@ (800078c <TIVs_CalculateVelocity+0xc4>)
+ 800076c:	68fb      	ldr	r3, [r7, #12]
+ 800076e:	6013      	str	r3, [r2, #0]
 	timeout_cycles = 0;
- 800076e:	4b04      	ldr	r3, [pc, #16]	@ (8000780 <TIVs_CalculateVelocity+0xb8>)
- 8000770:	2200      	movs	r2, #0
- 8000772:	701a      	strb	r2, [r3, #0]
+ 8000770:	4b03      	ldr	r3, [pc, #12]	@ (8000780 <TIVs_CalculateVelocity+0xb8>)
+ 8000772:	2200      	movs	r2, #0
+ 8000774:	701a      	strb	r2, [r3, #0]
 
 	return result;
- 8000774:	68fb      	ldr	r3, [r7, #12]
+ 8000776:	68fb      	ldr	r3, [r7, #12]
 }
- 8000776:	4618      	mov	r0, r3
- 8000778:	3720      	adds	r7, #32
- 800077a:	46bd      	mov	sp, r7
- 800077c:	bd80      	pop	{r7, pc}
- 800077e:	bf00      	nop
+ 8000778:	4618      	mov	r0, r3
+ 800077a:	3720      	adds	r7, #32
+ 800077c:	46bd      	mov	sp, r7
+ 800077e:	bd80      	pop	{r7, pc}
  8000780:	20000030 	.word	0x20000030
  8000784:	40000800 	.word	0x40000800
  8000788:	20000028 	.word	0x20000028
- 800078c:	000f4240 	.word	0x000f4240
- 8000790:	2000002c 	.word	0x2000002c
+ 800078c:	2000002c 	.word	0x2000002c
+ 8000790:	000f4240 	.word	0x000f4240
 
 08000794 <LL_AHB1_GRP1_EnableClock>:
   *
