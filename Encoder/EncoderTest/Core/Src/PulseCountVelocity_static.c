@@ -6,23 +6,24 @@
  */
 
 
-//TO DO:
-//cleanup startu
-//dodanie oblusgi ISR
-
 #include <PulseCountVelocity_static.h>
 
+//CONFIG START
 static const uint8_t Encoder_Poles = 3;
 static const uint8_t Encoder_Edges_Counted = 2;
 static const uint8_t Encoder_Channels_Counted = 1;
-static const uint16_t Encoder_PulsesPerRevolution = Encoder_Poles*Encoder_Edges_Counted*Encoder_Channels_Counted;
+
 
 static const uint32_t Measurement_Frequency = 10;
+
 static TIM_TypeDef* const Encoder_Timer = TIM1;
 static TIM_TypeDef* const MeasurementFrame_Timer = TIM6;
 
 static const uint8_t timeout_cycles_goal = 10;
 
+//CONFIG END
+
+static const uint16_t Encoder_PulsesPerRevolution = Encoder_Poles*Encoder_Edges_Counted*Encoder_Channels_Counted;
 static const uint32_t Measurement_Factor = (60*Measurement_Frequency)/Encoder_PulsesPerRevolution;
 
 static volatile uint16_t old_num_pulses = 0;
@@ -79,22 +80,42 @@ int32_t PCVs_CalculateVelocity1()
 	return result;
 }
 
-void PCVs_Start()
+static void PCVs_EncoderTimer_Start()
 {
 	LL_TIM_SetCounter(Encoder_Timer, 0);
-
 	LL_TIM_EnableCounter(Encoder_Timer);
+}
+
+static void PCVs_MeasFrameTimer_Start()
+{
 	LL_TIM_EnableCounter(MeasurementFrame_Timer);
 
 	LL_TIM_GenerateEvent_UPDATE(MeasurementFrame_Timer);
 	LL_TIM_ClearFlag_UPDATE(MeasurementFrame_Timer);
 
 	LL_TIM_EnableIT_UPDATE(MeasurementFrame_Timer);
+}
 
+void PCVs_Start()
+{
+	PCVs_EncoderTimer_Start();
+	PCVs_MeasFrameTimer_Start();
 	old_num_pulses = 0;
 }
 
-static void PCVs_EncoderTimer_Start()
-{
+/* ISR implementation example
+ *
 
-}
+
+	void TIMx_IRQHandler(void)
+	{
+		if(LL_TIM_IsActiveFlag_UPDATE(MeasurementFrame_Timer))
+		{
+			LL_TIM_ClearFlag_UPDATE(MeasurementFrame_Timer);
+			PCV_result = PCVs_CalculateVelocity1();
+		}
+	}
+
+*/
+
+
