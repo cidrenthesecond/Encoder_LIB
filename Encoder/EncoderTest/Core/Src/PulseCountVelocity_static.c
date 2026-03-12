@@ -6,9 +6,6 @@
  */
 
 
-//TO DO:
-//dodanie oblusgi ISR
-
 #include <PulseCountVelocity_static.h>
 
 //CONFIG START
@@ -110,7 +107,7 @@ void PCVs_Start()
  *
 
 
-	void TIM6_DAC_IRQHandler(void)
+	void TIMx_IRQHandler(void)
 	{
 		if(LL_TIM_IsActiveFlag_UPDATE(MeasurementFrame_Timer))
 		{
