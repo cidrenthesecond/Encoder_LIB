@@ -20,6 +20,6 @@
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:1612:22:LL_TIM_CC_EnableChannel	1
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:3185:22:LL_TIM_ClearFlag_UPDATE	1
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:3969:22:LL_TIM_GenerateEvent_UPDATE	1
-../Core/Src/main.c:72:5:main	1
-../Core/Src/main.c:141:6:SystemClock_Config	7
-../Core/Src/main.c:196:6:Error_Handler	1
+../Core/Src/main.c:76:5:main	2
+../Core/Src/main.c:147:6:SystemClock_Config	7
+../Core/Src/main.c:202:6:Error_Handler	1

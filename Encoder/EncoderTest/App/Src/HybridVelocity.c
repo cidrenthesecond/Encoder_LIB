@@ -9,7 +9,7 @@
 
 //TO DO :mozna zmniejszyc do jednego timera pomyslec nad tym
 
-static const uint32_t Clock_Freq = 1000000;
+static const uint32_t Clock_Freq = 100000;
 static TIM_TypeDef* const capture_compare_timer = TIM4;
 static const uint32_t capture_compare_channelA = LL_TIM_CHANNEL_CH1;
 static const uint32_t capture_compare_channelB = LL_TIM_CHANNEL_CH2; // | LL_TIM_CHANNEL_CH2
@@ -50,10 +50,10 @@ static volatile uint16_t lastcapture = 0;
 static volatile uint16_t lastcapture_previous = 0;
 static volatile uint8_t timeout_cycles = 0;
 static volatile uint8_t timeout_flag = 0;
-static volatile uint8_t old_num_pulses = 0;
+static volatile uint16_t old_num_pulses = 0;
 static volatile int32_t prev_velocity = 0;
 
-void HV_CaptureCompare_ISR()
+static inline void HV_CaptureCompare_ISR()
 {
 	if(LL_TIM_IsActiveFlag_CC1(capture_compare_timer))
 	{
@@ -69,23 +69,25 @@ void HV_CaptureCompare_ISR()
 	{
 		LL_TIM_ClearFlag_UPDATE(capture_compare_timer);
 
-		timeout_cycles++;
-		if(timeout_cycles >= timeout_cycles_goal)
-		{
-			timeout_cycles = 0;
-			timeout_flag = 1;
-		}
+		//(void)HV_CalculateVelocity();
 	}
+}
+
+void HV_Update_lastcapture(uint32_t cc_channelx)
+{
+	if(cc_channelx == capture_compare_channelA) lastcapture = LL_TIM_IC_GetCaptureCH1(capture_compare_timer);
+	else lastcapture = LL_TIM_IC_GetCaptureCH2(capture_compare_timer);
 }
 
 
 
 int32_t HV_CalculateVelocity()
 {
-
+	uint16_t capture = lastcapture; //trzeba przechowac przed zmiana
 	uint16_t num_pulses = LL_TIM_GetCounter(Encoder_timer);
 	int16_t delta = (int16_t)(num_pulses - old_num_pulses);
-	uint16_t capture = lastcapture; //trzeba przechowac przed zmiana
+
+	timeout_cycles++;
 
 	if(delta == 0)
 	{
@@ -100,11 +102,12 @@ int32_t HV_CalculateVelocity()
 
 	if(prev_velocity == 0) timeout_cycles = 0;
 
-	uint32_t time_frame = 65536*timeout_cycles + lastcapture_previous - capture;
+	//uint32_t time_frame = 65536*timeout_cycles - lastcapture_previous + capture;
+	uint32_t time_frame = 65536 + lastcapture_previous - capture;
 
-	int32_t result = delta * measurement_factor / time_frame;
+	int32_t result = (int32_t)((int64_t)delta * measurement_factor / time_frame);
 
-	lastcapture_previous = lastcapture;
+	lastcapture_previous = capture;
 	prev_velocity = result;
 	old_num_pulses = num_pulses;
 

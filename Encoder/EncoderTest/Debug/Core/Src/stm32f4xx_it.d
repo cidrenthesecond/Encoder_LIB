@@ -39,6 +39,7 @@ Core/Src/stm32f4xx_it.o: ../Core/Src/stm32f4xx_it.c ../Core/Inc/main.h \
  ../Core/Inc/stm32f4xx_it.h \
  X:/Projects/Encoder/Encoder_LIB/Encoder/EncoderTest/App/Inc/PulseCountVelocity_static.h \
  X:/Projects/Encoder/Encoder_LIB/Encoder/EncoderTest/App/Inc/TimeIntervalVelocity_static.h \
+ X:/Projects/Encoder/Encoder_LIB/Encoder/EncoderTest/App/Inc/HybridVelocity.h \
  X:/Projects/Encoder/Encoder_LIB/Encoder/EncoderTest/App/Inc/Algorithm_profiler.h
 ../Core/Inc/main.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:
@@ -81,4 +82,5 @@ Core/Src/stm32f4xx_it.o: ../Core/Src/stm32f4xx_it.c ../Core/Inc/main.h \
 ../Core/Inc/stm32f4xx_it.h:
 X:/Projects/Encoder/Encoder_LIB/Encoder/EncoderTest/App/Inc/PulseCountVelocity_static.h:
 X:/Projects/Encoder/Encoder_LIB/Encoder/EncoderTest/App/Inc/TimeIntervalVelocity_static.h:
+X:/Projects/Encoder/Encoder_LIB/Encoder/EncoderTest/App/Inc/HybridVelocity.h:
 X:/Projects/Encoder/Encoder_LIB/Encoder/EncoderTest/App/Inc/Algorithm_profiler.h:

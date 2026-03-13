@@ -38,7 +38,8 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_gpio.h \
  ../Core/Inc/tim.h ../Core/Inc/main.h ../Core/Inc/gpio.h \
  X:/Projects/Encoder/Encoder_LIB/Encoder/EncoderTest/App/Inc/PulseCountVelocity_static.h \
- X:/Projects/Encoder/Encoder_LIB/Encoder/EncoderTest/App/Inc/TimeIntervalVelocity_static.h
+ X:/Projects/Encoder/Encoder_LIB/Encoder/EncoderTest/App/Inc/TimeIntervalVelocity_static.h \
+ X:/Projects/Encoder/Encoder_LIB/Encoder/EncoderTest/App/Inc/HybridVelocity.h
 ../Core/Inc/main.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:
 ../Core/Inc/stm32f4xx_hal_conf.h:
@@ -82,3 +83,4 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Core/Inc/gpio.h:
 X:/Projects/Encoder/Encoder_LIB/Encoder/EncoderTest/App/Inc/PulseCountVelocity_static.h:
 X:/Projects/Encoder/Encoder_LIB/Encoder/EncoderTest/App/Inc/TimeIntervalVelocity_static.h:
+X:/Projects/Encoder/Encoder_LIB/Encoder/EncoderTest/App/Inc/HybridVelocity.h:
