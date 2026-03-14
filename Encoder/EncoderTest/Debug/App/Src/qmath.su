@@ -1,0 +1,11 @@
+X:/Projects/Encoder/Encoder_LIB/Encoder/EncoderTest/App/Inc/qmath.h:196:22:_qceil	24	static
+../App/Src/qmath.c:25:8:qsqrt	88	static
+../App/Src/qmath.c:53:8:qlog	104	static
+../App/Src/qmath.c:89:8:qlog10	32	static
+../App/Src/qmath.c:99:8:qexp	80	static
+../App/Src/qmath.c:117:8:qpow	64	static
+../App/Src/qmath.c:128:15:sinx	136	static
+../App/Src/qmath.c:162:8:qsin	32	static
+../App/Src/qmath.c:194:8:qcos	16	static
+../App/Src/qmath.c:202:8:qtan	40	static
+../App/Src/qmath.c:210:7:q2a	56	static

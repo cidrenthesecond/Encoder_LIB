@@ -10,7 +10,8 @@ C_SRCS += \
 ../App/Src/HybridVelocity.c \
 ../App/Src/PulseCountVelocity_object.c \
 ../App/Src/PulseCountVelocity_static.c \
-../App/Src/TimeIntervalVelocity_static.c 
+../App/Src/TimeIntervalVelocity_static.c \
+../App/Src/qmath.c 
 
 OBJS += \
 ./App/Src/Algorithm_profiler.o \
@@ -18,7 +19,8 @@ OBJS += \
 ./App/Src/HybridVelocity.o \
 ./App/Src/PulseCountVelocity_object.o \
 ./App/Src/PulseCountVelocity_static.o \
-./App/Src/TimeIntervalVelocity_static.o 
+./App/Src/TimeIntervalVelocity_static.o \
+./App/Src/qmath.o 
 
 C_DEPS += \
 ./App/Src/Algorithm_profiler.d \
@@ -26,7 +28,8 @@ C_DEPS += \
 ./App/Src/HybridVelocity.d \
 ./App/Src/PulseCountVelocity_object.d \
 ./App/Src/PulseCountVelocity_static.d \
-./App/Src/TimeIntervalVelocity_static.d 
+./App/Src/TimeIntervalVelocity_static.d \
+./App/Src/qmath.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
@@ -36,7 +39,7 @@ App/Src/%.o App/Src/%.su App/Src/%.cyclo: ../App/Src/%.c App/Src/subdir.mk
 clean: clean-App-2f-Src
 
 clean-App-2f-Src:
-	-$(RM) ./App/Src/Algorithm_profiler.cyclo ./App/Src/Algorithm_profiler.d ./App/Src/Algorithm_profiler.o ./App/Src/Algorithm_profiler.su ./App/Src/Ease_of_life.cyclo ./App/Src/Ease_of_life.d ./App/Src/Ease_of_life.o ./App/Src/Ease_of_life.su ./App/Src/HybridVelocity.cyclo ./App/Src/HybridVelocity.d ./App/Src/HybridVelocity.o ./App/Src/HybridVelocity.su ./App/Src/PulseCountVelocity_object.cyclo ./App/Src/PulseCountVelocity_object.d ./App/Src/PulseCountVelocity_object.o ./App/Src/PulseCountVelocity_object.su ./App/Src/PulseCountVelocity_static.cyclo ./App/Src/PulseCountVelocity_static.d ./App/Src/PulseCountVelocity_static.o ./App/Src/PulseCountVelocity_static.su ./App/Src/TimeIntervalVelocity_static.cyclo ./App/Src/TimeIntervalVelocity_static.d ./App/Src/TimeIntervalVelocity_static.o ./App/Src/TimeIntervalVelocity_static.su
+	-$(RM) ./App/Src/Algorithm_profiler.cyclo ./App/Src/Algorithm_profiler.d ./App/Src/Algorithm_profiler.o ./App/Src/Algorithm_profiler.su ./App/Src/Ease_of_life.cyclo ./App/Src/Ease_of_life.d ./App/Src/Ease_of_life.o ./App/Src/Ease_of_life.su ./App/Src/HybridVelocity.cyclo ./App/Src/HybridVelocity.d ./App/Src/HybridVelocity.o ./App/Src/HybridVelocity.su ./App/Src/PulseCountVelocity_object.cyclo ./App/Src/PulseCountVelocity_object.d ./App/Src/PulseCountVelocity_object.o ./App/Src/PulseCountVelocity_object.su ./App/Src/PulseCountVelocity_static.cyclo ./App/Src/PulseCountVelocity_static.d ./App/Src/PulseCountVelocity_static.o ./App/Src/PulseCountVelocity_static.su ./App/Src/TimeIntervalVelocity_static.cyclo ./App/Src/TimeIntervalVelocity_static.d ./App/Src/TimeIntervalVelocity_static.o ./App/Src/TimeIntervalVelocity_static.su ./App/Src/qmath.cyclo ./App/Src/qmath.d ./App/Src/qmath.o ./App/Src/qmath.su
 
 .PHONY: clean-App-2f-Src
 

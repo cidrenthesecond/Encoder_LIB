@@ -7,7 +7,7 @@
 
 #include "main.h"
 
-//TO DO :mozna zmniejszyc do jednego timera pomyslec nad tym
+//TO DO :dodac mozliwosc aktualizacji predkosci po wiecej jak jednym przeladniwaniu
 
 static const uint32_t Clock_Freq = 100000;
 static TIM_TypeDef* const capture_compare_timer = TIM4;
@@ -120,8 +120,8 @@ int32_t HV_CalculateVelocity()
 
 	if(time_frame == 0) time_frame = 1;
 
-	int32_t result = (int32_t)(((int64_t)delta * (int64_t)measurement_factor) / (int64_t)time_frame);
-	//int32_t result = (int32_t)delta*(measurement_factor/time_frame);
+	int32_t result = (int32_t)(((int64_t)delta * (int64_t)measurement_factor) / (int64_t)time_frame); // to dziala dobrze ale dlugo 4000ns
+	//int32_t result = (int32_t)delta*(measurement_factor/time_frame); // to wprowadza blad ale krotko 2000ns
 
 	lastcapture_previous = capture;
 	prev_velocity = result;

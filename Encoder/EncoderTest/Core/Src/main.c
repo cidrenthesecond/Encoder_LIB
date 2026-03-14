@@ -120,10 +120,10 @@ int main(void)
 
   LL_TIM_EnableCounter(TIM2);
 
-
-  PCVs_Start();
+  Profiler_Calibration();
+  //PCVs_Start();
   //TIVs_Start();
-  //HV_Start();
+  HV_Start();
 
   /* USER CODE END 2 */
 
