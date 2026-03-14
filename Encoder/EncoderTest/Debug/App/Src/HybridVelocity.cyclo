@@ -9,6 +9,6 @@
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:3493:22:LL_TIM_EnableIT_CC1	1
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:3526:22:LL_TIM_EnableIT_CC2	1
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:3969:22:LL_TIM_GenerateEvent_UPDATE	1
-../App/Src/HybridVelocity.c:27:6:HV_Start	2
-../App/Src/HybridVelocity.c:76:6:HV_Update_lastcapture	2
-../App/Src/HybridVelocity.c:85:9:HV_CalculateVelocity	5
+../App/Src/HybridVelocity.c:44:6:HV_Start	2
+../App/Src/HybridVelocity.c:86:6:HV_Update_lastcapture	2
+../App/Src/HybridVelocity.c:95:9:HV_CalculateVelocity	5

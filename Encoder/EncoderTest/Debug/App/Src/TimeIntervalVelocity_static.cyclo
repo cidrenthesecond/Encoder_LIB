@@ -7,8 +7,8 @@
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:3460:22:LL_TIM_EnableIT_UPDATE	1
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:3969:22:LL_TIM_GenerateEvent_UPDATE	1
 X:/Projects/Encoder/Encoder_LIB/Encoder/EncoderTest/App/Inc/Ease_of_life.h:13:23:LL_GPIO_GetState	1
-../App/Src/TimeIntervalVelocity_static.c:46:6:TIVs_Start	2
-../App/Src/TimeIntervalVelocity_static.c:66:9:TIVs_TimerOverflowISR	2
-../App/Src/TimeIntervalVelocity_static.c:80:9:TIVs_CalculateVelocity	3
-../App/Src/TimeIntervalVelocity_static.c:107:23:TIVs_GetSign	5
-../App/Src/TimeIntervalVelocity_static.c:120:23:Are_pin_states_equal	1
+../App/Src/TimeIntervalVelocity_static.c:48:6:TIVs_Start	2
+../App/Src/TimeIntervalVelocity_static.c:68:9:TIVs_TimerOverflowISR	2
+../App/Src/TimeIntervalVelocity_static.c:82:9:TIVs_CalculateVelocity	3
+../App/Src/TimeIntervalVelocity_static.c:109:23:TIVs_GetSign	5
+../App/Src/TimeIntervalVelocity_static.c:122:23:Are_pin_states_equal	1

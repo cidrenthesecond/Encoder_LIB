@@ -7,22 +7,39 @@
 
 #include "main.h"
 
-//TO DO :dodac mozliwosc aktualizacji predkosci po wiecej jak jednym przeladniwaniu
+//TO DO :
+//dodanie matematyki staloprzecinkowej dla optymalizacji
+//dodac mozliwosc aktualizacji predkosci po wiecej jak jednym przeladniwaniu
+//ISR update potrzebny
+//HV_Update zmienic na inline
 
-static const uint32_t Clock_Freq = 100000;
-static TIM_TypeDef* const capture_compare_timer = TIM4;
-static const uint32_t capture_compare_channelA = LL_TIM_CHANNEL_CH1;
-static const uint32_t capture_compare_channelB = LL_TIM_CHANNEL_CH2; // | LL_TIM_CHANNEL_CH2
+
+//Config Start
+static const uint32_t     Clock_Freq               = 100000;
+static TIM_TypeDef* const capture_compare_timer    = TIM4;
+static const uint32_t     capture_compare_channelA = LL_TIM_CHANNEL_CH1;
+static const uint32_t     capture_compare_channelB = LL_TIM_CHANNEL_CH2; // | LL_TIM_CHANNEL_CH2
 
 static TIM_TypeDef* Encoder_timer = TIM1;
 
-static const uint8_t Encoder_Poles = 3;
-static const uint8_t Encoder_Edges_Counted = 2;
-static const uint8_t Encoder_Channels_Counted = 2;
-static const uint16_t PulsesPerRevolution = Encoder_Poles*Encoder_Edges_Counted*Encoder_Channels_Counted;
-static const uint32_t measurement_factor = 60 * Clock_Freq / PulsesPerRevolution;
+static const uint8_t  Encoder_Poles            = 3;
+static const uint8_t  Encoder_Edges_Counted    = 2;
+static const uint8_t  Encoder_Channels_Counted = 2;
 
 static const uint8_t timeout_cycles_goal = 10;
+//Config End
+
+//Private constants
+static const uint16_t PulsesPerRevolution = Encoder_Poles*Encoder_Edges_Counted*Encoder_Channels_Counted;
+static const uint32_t measurement_factor  = 60 * Clock_Freq / PulsesPerRevolution;
+
+//Private variables
+static volatile uint16_t lastcapture = 0;
+static volatile uint16_t lastcapture_previous = 0;
+static volatile uint8_t  timeout_cycles = 0;
+static volatile uint16_t old_num_pulses = 0;
+static volatile int32_t  prev_velocity = 0;
+static volatile uint8_t  first_run = 1;
 
 void HV_Start()
 {
@@ -46,15 +63,13 @@ void HV_Start()
 	LL_TIM_EnableIT_UPDATE(capture_compare_timer);
 }
 
-static volatile uint16_t lastcapture = 0;
-static volatile uint16_t lastcapture_previous = 0;
-static volatile uint8_t timeout_cycles = 0;
-static volatile uint8_t timeout_flag = 0;
-static volatile uint16_t old_num_pulses = 0;
-static volatile int32_t prev_velocity = 0;
-
 static inline void HV_CaptureCompare_ISR()
 {
+	if(LL_TIM_IsActiveFlag_UPDATE(capture_compare_timer) && LL_TIM_IsEnabledIT_UPDATE(capture_compare_timer))
+	{
+		LL_TIM_ClearFlag_UPDATE(capture_compare_timer);
+		//result = HV_CalculateVelocity();
+	}
 	if(LL_TIM_IsActiveFlag_CC1(capture_compare_timer))
 	{
 		LL_TIM_ClearFlag_CC1(capture_compare_timer);
@@ -65,12 +80,7 @@ static inline void HV_CaptureCompare_ISR()
 		LL_TIM_ClearFlag_CC2(capture_compare_timer);
 		lastcapture = LL_TIM_IC_GetCaptureCH2(capture_compare_timer);
 	}
-	if(LL_TIM_IsActiveFlag_UPDATE(capture_compare_timer) && LL_TIM_IsEnabledIT_UPDATE(capture_compare_timer))
-	{
-		LL_TIM_ClearFlag_UPDATE(capture_compare_timer);
 
-		//(void)HV_CalculateVelocity();
-	}
 }
 
 void HV_Update_lastcapture(uint32_t cc_channelx)
@@ -79,7 +89,7 @@ void HV_Update_lastcapture(uint32_t cc_channelx)
 	else lastcapture = LL_TIM_IC_GetCaptureCH2(capture_compare_timer);
 }
 
-static volatile uint8_t first_run = 1;
+
 
 __attribute__((optimize("O3")))
 int32_t HV_CalculateVelocity()

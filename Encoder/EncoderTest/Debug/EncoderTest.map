@@ -353,14 +353,12 @@ Discarded input sections
                 0x00000000        0x1 ./App/Src/HybridVelocity.o
  .rodata.Encoder_Channels_Counted
                 0x00000000        0x1 ./App/Src/HybridVelocity.o
+ .rodata.timeout_cycles_goal
+                0x00000000        0x1 ./App/Src/HybridVelocity.o
  .rodata.PulsesPerRevolution
                 0x00000000        0x2 ./App/Src/HybridVelocity.o
  .rodata.measurement_factor
                 0x00000000        0x4 ./App/Src/HybridVelocity.o
- .rodata.timeout_cycles_goal
-                0x00000000        0x1 ./App/Src/HybridVelocity.o
- .bss.timeout_flag
-                0x00000000        0x1 ./App/Src/HybridVelocity.o
  .debug_macro   0x00000000      0xade ./App/Src/HybridVelocity.o
  .debug_macro   0x00000000      0x295 ./App/Src/HybridVelocity.o
  .debug_macro   0x00000000       0x2e ./App/Src/HybridVelocity.o
@@ -5602,25 +5600,25 @@ LOAD X:/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.extern
 LOAD X:/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a
 LOAD X:/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard\libgcc.a
 
-.debug_info     0x00000000     0xc5ca
+.debug_info     0x00000000     0xc5b8
  .debug_info    0x00000000      0x473 ./App/Src/Algorithm_profiler.o
- .debug_info    0x00000473      0x6f4 ./App/Src/HybridVelocity.o
- .debug_info    0x00000b67      0x5e0 ./App/Src/PulseCountVelocity_static.o
- .debug_info    0x00001147      0x82b ./Core/Src/gpio.o
- .debug_info    0x00001972      0x926 ./Core/Src/main.o
- .debug_info    0x00002298      0x35f ./Core/Src/stm32f4xx_hal_msp.o
- .debug_info    0x000025f7      0x671 ./Core/Src/stm32f4xx_it.o
- .debug_info    0x00002c68      0x52e ./Core/Src/system_stm32f4xx.o
- .debug_info    0x00003196     0x18d6 ./Core/Src/tim.o
- .debug_info    0x00004a6c       0x30 ./Core/Startup/startup_stm32f439zitx.o
- .debug_info    0x00004a9c      0x9c0 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o
- .debug_info    0x0000545c      0xdc8 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o
- .debug_info    0x00006224     0x299d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o
- .debug_info    0x00008bc1     0x14db ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o
- .debug_info    0x0000a09c      0x337 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.o
- .debug_info    0x0000a3d3      0x93f ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.o
- .debug_info    0x0000ad12      0xf63 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_tim.o
- .debug_info    0x0000bc75      0x955 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.o
+ .debug_info    0x00000473      0x6e2 ./App/Src/HybridVelocity.o
+ .debug_info    0x00000b55      0x5e0 ./App/Src/PulseCountVelocity_static.o
+ .debug_info    0x00001135      0x82b ./Core/Src/gpio.o
+ .debug_info    0x00001960      0x926 ./Core/Src/main.o
+ .debug_info    0x00002286      0x35f ./Core/Src/stm32f4xx_hal_msp.o
+ .debug_info    0x000025e5      0x671 ./Core/Src/stm32f4xx_it.o
+ .debug_info    0x00002c56      0x52e ./Core/Src/system_stm32f4xx.o
+ .debug_info    0x00003184     0x18d6 ./Core/Src/tim.o
+ .debug_info    0x00004a5a       0x30 ./Core/Startup/startup_stm32f439zitx.o
+ .debug_info    0x00004a8a      0x9c0 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o
+ .debug_info    0x0000544a      0xdc8 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o
+ .debug_info    0x00006212     0x299d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o
+ .debug_info    0x00008baf     0x14db ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o
+ .debug_info    0x0000a08a      0x337 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.o
+ .debug_info    0x0000a3c1      0x93f ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.o
+ .debug_info    0x0000ad00      0xf63 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_tim.o
+ .debug_info    0x0000bc63      0x955 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.o
 
 .debug_abbrev   0x00000000     0x21de
  .debug_abbrev  0x00000000      0x160 ./App/Src/Algorithm_profiler.o
@@ -5811,26 +5809,26 @@ LOAD X:/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.extern
  .debug_line    0x0000db0d      0xd8f ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_tim.o
  .debug_line    0x0000e89c      0xcad ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.o
 
-.debug_str      0x00000000    0xe905f
- .debug_str     0x00000000    0xe905f ./App/Src/Algorithm_profiler.o
+.debug_str      0x00000000    0xe9052
+ .debug_str     0x00000000    0xe9052 ./App/Src/Algorithm_profiler.o
                               0xe3410 (size before relaxing)
- .debug_str     0x000e905f    0xe35f3 ./App/Src/HybridVelocity.o
- .debug_str     0x000e905f    0xe3543 ./App/Src/PulseCountVelocity_static.o
- .debug_str     0x000e905f    0xe3591 ./Core/Src/gpio.o
- .debug_str     0x000e905f    0xe3842 ./Core/Src/main.o
- .debug_str     0x000e905f    0xe33ad ./Core/Src/stm32f4xx_hal_msp.o
- .debug_str     0x000e905f    0xe3627 ./Core/Src/stm32f4xx_it.o
- .debug_str     0x000e905f    0xd358a ./Core/Src/system_stm32f4xx.o
- .debug_str     0x000e905f    0xe4476 ./Core/Src/tim.o
- .debug_str     0x000e905f       0x7e ./Core/Startup/startup_stm32f439zitx.o
- .debug_str     0x000e905f    0xd41b7 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o
- .debug_str     0x000e905f    0xd3ee5 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o
- .debug_str     0x000e905f    0xd4901 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o
- .debug_str     0x000e905f    0xd410d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o
- .debug_str     0x000e905f    0xd3bff ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.o
- .debug_str     0x000e905f    0xd51dc ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.o
- .debug_str     0x000e905f    0xd88e6 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_tim.o
- .debug_str     0x000e905f    0xdd8ae ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.o
+ .debug_str     0x000e9052    0xe35e6 ./App/Src/HybridVelocity.o
+ .debug_str     0x000e9052    0xe3543 ./App/Src/PulseCountVelocity_static.o
+ .debug_str     0x000e9052    0xe3591 ./Core/Src/gpio.o
+ .debug_str     0x000e9052    0xe3842 ./Core/Src/main.o
+ .debug_str     0x000e9052    0xe33ad ./Core/Src/stm32f4xx_hal_msp.o
+ .debug_str     0x000e9052    0xe3627 ./Core/Src/stm32f4xx_it.o
+ .debug_str     0x000e9052    0xd358a ./Core/Src/system_stm32f4xx.o
+ .debug_str     0x000e9052    0xe4476 ./Core/Src/tim.o
+ .debug_str     0x000e9052       0x7e ./Core/Startup/startup_stm32f439zitx.o
+ .debug_str     0x000e9052    0xd41b7 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o
+ .debug_str     0x000e9052    0xd3ee5 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o
+ .debug_str     0x000e9052    0xd4901 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o
+ .debug_str     0x000e9052    0xd410d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o
+ .debug_str     0x000e9052    0xd3bff ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.o
+ .debug_str     0x000e9052    0xd51dc ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.o
+ .debug_str     0x000e9052    0xd88e6 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_tim.o
+ .debug_str     0x000e9052    0xdd8ae ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.o
 
 .comment        0x00000000       0x43
  .comment       0x00000000       0x43 ./App/Src/Algorithm_profiler.o

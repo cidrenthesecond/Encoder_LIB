@@ -29,27 +29,27 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   ALLOC
  12 .ARM.attributes 00000030  00000000  00000000  00005014  2**0
                   CONTENTS, READONLY
- 13 .debug_info   0000c5ca  00000000  00000000  00005044  2**0
+ 13 .debug_info   0000c5b8  00000000  00000000  00005044  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 14 .debug_abbrev 000021de  00000000  00000000  0001160e  2**0
+ 14 .debug_abbrev 000021de  00000000  00000000  000115fc  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 15 .debug_aranges 00000f40  00000000  00000000  000137f0  2**3
+ 15 .debug_aranges 00000f40  00000000  00000000  000137e0  2**3
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 16 .debug_rnglists 00000b97  00000000  00000000  00014730  2**0
+ 16 .debug_rnglists 00000b97  00000000  00000000  00014720  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 17 .debug_macro  000262f3  00000000  00000000  000152c7  2**0
+ 17 .debug_macro  000262f3  00000000  00000000  000152b7  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_line   0000f549  00000000  00000000  0003b5ba  2**0
+ 18 .debug_line   0000f549  00000000  00000000  0003b5aa  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .debug_str    000e905f  00000000  00000000  0004ab03  2**0
+ 19 .debug_str    000e9052  00000000  00000000  0004aaf3  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 20 .comment      00000043  00000000  00000000  00133b62  2**0
+ 20 .comment      00000043  00000000  00000000  00133b45  2**0
                   CONTENTS, READONLY
- 21 .debug_frame  00004044  00000000  00000000  00133ba8  2**2
+ 21 .debug_frame  00004044  00000000  00000000  00133b88  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 22 .debug_loclists 000000a1  00000000  00000000  00137bec  2**0
+ 22 .debug_loclists 000000a1  00000000  00000000  00137bcc  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 23 .debug_line_str 00000062  00000000  00000000  00137c8d  2**0
+ 23 .debug_line_str 00000062  00000000  00000000  00137c6d  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -846,9 +846,9 @@ uint32_t Profiler_End()
  800080e:	4770      	bx	lr
 
 08000810 <HV_Start>:
-static const uint32_t measurement_factor = 60 * Clock_Freq / PulsesPerRevolution;
-
-static const uint8_t timeout_cycles_goal = 10;
+static volatile uint16_t old_num_pulses = 0;
+static volatile int32_t  prev_velocity = 0;
+static volatile uint8_t  first_run = 1;
 
 void HV_Start()
 {
@@ -924,8 +924,8 @@ void HV_Start()
  800088c:	40000800 	.word	0x40000800
 
 08000890 <HV_Update_lastcapture>:
-		//(void)HV_CalculateVelocity();
 	}
+
 }
 
 void HV_Update_lastcapture(uint32_t cc_channelx)
@@ -968,7 +968,7 @@ void HV_Update_lastcapture(uint32_t cc_channelx)
 
 080008d4 <HV_CalculateVelocity>:
 
-static volatile uint8_t first_run = 1;
+
 
 __attribute__((optimize("O3")))
 int32_t HV_CalculateVelocity()

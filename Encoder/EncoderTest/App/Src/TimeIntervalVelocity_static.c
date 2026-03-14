@@ -5,8 +5,7 @@
  *      Author: 1
  */
 
-//TO DO
-//Adidtion of low pass filter
+//TO DO:
 //Problems
 //at irregular intervals Tivs_calculatevelocity returns near 0 or 0 value
 
@@ -16,32 +15,35 @@
 
 
 //CONFIG START:
-static const uint32_t Clock_Freq = 1000000;
-static TIM_TypeDef* const Timer_Used = TIM4;
-static const uint32_t capture_compare_channelA = LL_TIM_CHANNEL_CH1;
-static const uint32_t capture_compare_channelB = LL_TIM_CHANNEL_CH2; // | LL_TIM_CHANNEL_CH2
-static GPIO_TypeDef* const cc_ChannelA_gpio_port = TIM4_CH1_GPIO_Port;
-static const uint32_t cc_ChannelA_pin = TIM4_CH1_Pin;
-static GPIO_TypeDef* const cc_ChannelB_gpio_port = TIM4_CH2_GPIO_Port;
-static const uint32_t cc_ChannelB_pin = TIM4_CH2_Pin;
+static const uint32_t      Clock_Freq               = 1000000;
+static TIM_TypeDef* const  Timer_Used               = TIM4;
+static const uint32_t      capture_compare_channelA = LL_TIM_CHANNEL_CH1;
+static const uint32_t      capture_compare_channelB = LL_TIM_CHANNEL_CH2; // | LL_TIM_CHANNEL_CH2
+static GPIO_TypeDef* const cc_ChannelA_gpio_port    = TIM4_CH1_GPIO_Port;
+static const uint32_t      cc_ChannelA_pin          = TIM4_CH1_Pin;
+static GPIO_TypeDef* const cc_ChannelB_gpio_port    = TIM4_CH2_GPIO_Port;
+static const uint32_t      cc_ChannelB_pin          = TIM4_CH2_Pin;
 
-static const uint8_t Encoder_Poles = 3;
-static const uint8_t Encoder_Edges_Counted = 2;
+static const uint8_t Encoder_Poles            = 3;
+static const uint8_t Encoder_Edges_Counted    = 2;
 static const uint8_t Encoder_Channels_Counted = 2;
 
 static const uint8_t timeout_cycles_goal = 10;
 //CONFIG END
 
 static const uint16_t PulsesPerRevolution = Encoder_Poles*Encoder_Edges_Counted*Encoder_Channels_Counted;
-static const uint32_t measurement_factor = 60*Clock_Freq/PulsesPerRevolution;
+static const uint32_t measurement_factor  = 60*Clock_Freq/PulsesPerRevolution;
 
-static volatile uint16_t prev_capture = 0;
-static volatile int32_t prev_velocity = 0;
-static volatile uint16_t prev_num_pulses = 0;
-static volatile uint8_t timeout_cycles = 0;
-
+//Private functions
 static inline uint8_t Are_pin_states_equal();
 static inline int32_t TIVs_GetSign(uint32_t cc_channelx);
+
+//Implementation private variables
+static volatile uint16_t prev_capture    = 0;
+static volatile int32_t prev_velocity    = 0;
+static volatile uint16_t prev_num_pulses = 0;
+static volatile uint8_t timeout_cycles   = 0;
+
 
 void TIVs_Start()
 {
