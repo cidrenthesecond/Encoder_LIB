@@ -25,6 +25,8 @@
 /* USER CODE BEGIN Includes */
 #include "PulseCountVelocity_static.h"
 #include "TimeIntervalVelocity_static.h"
+#include "HybridVelocity.h"
+#include "Algorithm_profiler.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -58,9 +60,14 @@ void SystemClock_Config(void);
 /* USER CODE BEGIN 0 */
 volatile int32_t PCV_result = 0;
 volatile int32_t TIV_result = 0;
+volatile int32_t HV_result = 0;
+
+
 
 volatile uint32_t encoder_counter;
-volatile uint32_t Is_Pin_Set = 0;
+volatile uint16_t timer_counter = 0;
+
+volatile uint32_t Nanoseconds = 0;
 /* USER CODE END 0 */
 
 /**
@@ -77,11 +84,7 @@ int main(void)
   /* MCU Configuration--------------------------------------------------------*/
 
   /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
-  LL_APB2_GRP1_EnableClock(LL_APB2_GRP1_PERIPH_SYSCFG);
-  LL_APB1_GRP1_EnableClock(LL_APB1_GRP1_PERIPH_PWR);
-
-  /* System interrupt init*/
-  NVIC_SetPriorityGrouping(NVIC_PRIORITYGROUP_4);
+  HAL_Init();
 
   /* USER CODE BEGIN Init */
 
@@ -101,6 +104,7 @@ int main(void)
   MX_TIM3_Init();
   MX_TIM6_Init();
   MX_TIM4_Init();
+  MX_TIM7_Init();
   /* USER CODE BEGIN 2 */
 
   LL_TIM_GenerateEvent_UPDATE(TIM2);
@@ -116,9 +120,10 @@ int main(void)
 
   LL_TIM_EnableCounter(TIM2);
 
-
-  PCVs_Start();
-  TIVs_Start();
+  Profiler_Calibration();
+  //PCVs_Start();
+  //TIVs_Start();
+  HV_Start();
 
   /* USER CODE END 2 */
 
@@ -126,8 +131,6 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	encoder_counter = LL_TIM_GetCounter(TIM1);
-
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -176,8 +179,13 @@ void SystemClock_Config(void)
   {
 
   }
-  LL_Init1msTick(80000000);
   LL_SetSystemCoreClock(80000000);
+
+   /* Update the time base */
+  if (HAL_InitTick (TICK_INT_PRIORITY) != HAL_OK)
+  {
+    Error_Handler();
+  }
   LL_RCC_SetTIMPrescaler(LL_RCC_TIM_PRESCALER_TWICE);
 }
 

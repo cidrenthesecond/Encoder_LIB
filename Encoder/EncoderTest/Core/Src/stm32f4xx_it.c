@@ -24,6 +24,8 @@
 /* USER CODE BEGIN Includes */
 #include "PulseCountVelocity_static.h"
 #include "TimeIntervalVelocity_static.h"
+#include "HybridVelocity.h"
+#include "Algorithm_profiler.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -61,8 +63,10 @@
 /* USER CODE BEGIN EV */
 extern volatile int32_t PCV_result;
 extern volatile int32_t TIV_result;
+extern volatile int32_t HV_result;
+
 extern volatile uint8_t cc_event;
-extern volatile uint32_t Is_Pin_Set;
+extern volatile uint32_t Nanoseconds;
 /* USER CODE END EV */
 
 /******************************************************************************/
@@ -190,7 +194,7 @@ void SysTick_Handler(void)
   /* USER CODE BEGIN SysTick_IRQn 0 */
 
   /* USER CODE END SysTick_IRQn 0 */
-
+  HAL_IncTick();
   /* USER CODE BEGIN SysTick_IRQn 1 */
 
   /* USER CODE END SysTick_IRQn 1 */
@@ -222,20 +226,52 @@ void TIM1_UP_TIM10_IRQHandler(void)
 void TIM4_IRQHandler(void)
 {
   /* USER CODE BEGIN TIM4_IRQn 0 */
+
+//	if(LL_TIM_IsActiveFlag_CC1(TIM4))
+//	{
+//		Profiler_Start();
+//		LL_TIM_ClearFlag_CC1(TIM4);
+//		TIV_result = TIVs_CalculateVelocity(TIV_CHANNEL_A);
+//		Nanoseconds = Profiler_End();
+//	}
+//	if(LL_TIM_IsActiveFlag_CC2(TIM4))
+//	{
+//		Profiler_Start();
+//		LL_TIM_ClearFlag_CC2(TIM4);
+//		TIV_result = TIVs_CalculateVelocity(TIV_CHANNEL_B);
+//		Nanoseconds = Profiler_End();
+//	}
+//	if(LL_TIM_IsActiveFlag_UPDATE(TIM4) && LL_TIM_IsEnabledIT_UPDATE(TIM4))
+//	{
+//		LL_TIM_ClearFlag_UPDATE(TIM4);
+//		TIV_result = TIVs_TimerOverflowISR();
+//	}
+	if(LL_TIM_IsActiveFlag_UPDATE(TIM4) && LL_TIM_IsEnabledIT_UPDATE(TIM4))
+	{
+		Profiler_Start();
+		LL_TIM_ClearFlag_UPDATE(TIM4);
+		HV_result = HV_CalculateVelocity();
+		Nanoseconds = Profiler_End();
+	}
+	if(LL_TIM_IsActiveFlag_CC1OVR(TIM4))
+	{
+		LL_TIM_ClearFlag_CC1OVR(TIM4);
+		LL_GPIO_SetOutputPin(LD1_GPIO_Port, LD1_Pin);
+	}
+	if(LL_TIM_IsActiveFlag_CC2OVR(TIM4))
+	{
+		LL_TIM_ClearFlag_CC2OVR(TIM4);
+		LL_GPIO_SetOutputPin(LD1_GPIO_Port, LD1_Pin);
+	}
 	if(LL_TIM_IsActiveFlag_CC1(TIM4))
 	{
 		LL_TIM_ClearFlag_CC1(TIM4);
-		TIV_result = TIVs_CalculateVelocity(TIV_CHANNEL_A);
+		HV_Update_lastcapture(LL_TIM_CHANNEL_CH1);
 	}
 	if(LL_TIM_IsActiveFlag_CC2(TIM4))
 	{
 		LL_TIM_ClearFlag_CC2(TIM4);
-		TIV_result = TIVs_CalculateVelocity(TIV_CHANNEL_B);
-	}
-	if(LL_TIM_IsActiveFlag_UPDATE(TIM4) && LL_TIM_IsEnabledIT_UPDATE(TIM4))
-	{
-		LL_TIM_ClearFlag_UPDATE(TIM4);
-		TIV_result = TIVs_TimerOverflowISR();
+		HV_Update_lastcapture(LL_TIM_CHANNEL_CH2);
 	}
 
   /* USER CODE END TIM4_IRQn 0 */
@@ -250,10 +286,13 @@ void TIM4_IRQHandler(void)
 void TIM6_DAC_IRQHandler(void)
 {
   /* USER CODE BEGIN TIM6_DAC_IRQn 0 */
+
 	if(LL_TIM_IsActiveFlag_UPDATE(TIM6))
 	{
+		Profiler_Start();
 		LL_TIM_ClearFlag_UPDATE(TIM6);
 		PCV_result = PCVs_CalculateVelocity1();
+		Nanoseconds = Profiler_End();
 	}
   /* USER CODE END TIM6_DAC_IRQn 0 */
   /* USER CODE BEGIN TIM6_DAC_IRQn 1 */

@@ -1,0 +1,11 @@
+X:/Projects/Encoder/Encoder_LIB/Encoder/EncoderTest/App/Inc/qmath.h:196:22:_qceil	2
+../App/Src/qmath.c:25:8:qsqrt	4
+../App/Src/qmath.c:53:8:qlog	5
+../App/Src/qmath.c:89:8:qlog10	1
+../App/Src/qmath.c:99:8:qexp	2
+../App/Src/qmath.c:117:8:qpow	3
+../App/Src/qmath.c:128:15:sinx	3
+../App/Src/qmath.c:162:8:qsin	5
+../App/Src/qmath.c:194:8:qcos	1
+../App/Src/qmath.c:202:8:qtan	1
+../App/Src/qmath.c:210:7:q2a	9
