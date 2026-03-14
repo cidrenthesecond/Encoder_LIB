@@ -229,13 +229,17 @@ void TIM4_IRQHandler(void)
 
 //	if(LL_TIM_IsActiveFlag_CC1(TIM4))
 //	{
+//		Profiler_Start();
 //		LL_TIM_ClearFlag_CC1(TIM4);
 //		TIV_result = TIVs_CalculateVelocity(TIV_CHANNEL_A);
+//		Nanoseconds = Profiler_End();
 //	}
 //	if(LL_TIM_IsActiveFlag_CC2(TIM4))
 //	{
+//		Profiler_Start();
 //		LL_TIM_ClearFlag_CC2(TIM4);
 //		TIV_result = TIVs_CalculateVelocity(TIV_CHANNEL_B);
+//		Nanoseconds = Profiler_End();
 //	}
 //	if(LL_TIM_IsActiveFlag_UPDATE(TIM4) && LL_TIM_IsEnabledIT_UPDATE(TIM4))
 //	{

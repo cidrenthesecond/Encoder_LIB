@@ -10,6 +10,7 @@
 
 #include "main.h"
 
+void Profiler_Calibration();
 void Profiler_Start();
 uint32_t Profiler_End();
 
