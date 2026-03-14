@@ -121,9 +121,9 @@ int main(void)
   LL_TIM_EnableCounter(TIM2);
 
 
-  PCVs_Start();
+  //PCVs_Start();
   //TIVs_Start();
-//  HV_Start();
+  HV_Start();
 
   /* USER CODE END 2 */
 
@@ -131,7 +131,6 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

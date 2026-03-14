@@ -81,10 +81,14 @@ void HV_Update_lastcapture(uint32_t cc_channelx)
 
 static volatile uint8_t first_run = 1;
 
+__attribute__((optimize("O3")))
 int32_t HV_CalculateVelocity()
 {
-	uint16_t capture = lastcapture; //trzeba przechowac przed zmiana
+	__disable_irq();
+	uint16_t capture = lastcapture;
 	uint16_t num_pulses = LL_TIM_GetCounter(Encoder_timer);
+	__enable_irq();
+
 	int16_t delta = (int16_t)(num_pulses - old_num_pulses);
 
 	if(first_run)
@@ -103,6 +107,7 @@ int32_t HV_CalculateVelocity()
 		if(timeout_cycles >= timeout_cycles_goal)
 		{
 			prev_velocity = 0;
+			timeout_cycles = timeout_cycles_goal;
 			return 0;
 		}
 
@@ -113,11 +118,10 @@ int32_t HV_CalculateVelocity()
 
 	uint32_t time_frame = 65536*timeout_cycles + (uint32_t)65536 - (uint32_t)lastcapture_previous + (uint32_t)capture;
 
-	//uint32_t time_frame = (uint32_t)65536 - (uint32_t)lastcapture_previous + (uint32_t)capture;
-
 	if(time_frame == 0) time_frame = 1;
 
 	int32_t result = (int32_t)(((int64_t)delta * (int64_t)measurement_factor) / (int64_t)time_frame);
+	//int32_t result = (int32_t)delta*(measurement_factor/time_frame);
 
 	lastcapture_previous = capture;
 	prev_velocity = result;

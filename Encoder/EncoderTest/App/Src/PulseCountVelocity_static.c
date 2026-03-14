@@ -53,6 +53,7 @@ int32_t PCVs_CalculateVelocity()
 	return result;
 }
 
+__attribute__((optimize("O3")))
 int32_t PCVs_CalculateVelocity1()
 {
 	uint16_t num_pulses = LL_TIM_GetCounter(Encoder_Timer);

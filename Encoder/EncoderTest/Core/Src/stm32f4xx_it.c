@@ -244,8 +244,10 @@ void TIM4_IRQHandler(void)
 //	}
 	if(LL_TIM_IsActiveFlag_UPDATE(TIM4) && LL_TIM_IsEnabledIT_UPDATE(TIM4))
 	{
+		Profiler_Start();
 		LL_TIM_ClearFlag_UPDATE(TIM4);
 		HV_result = HV_CalculateVelocity();
+		Nanoseconds = Profiler_End();
 	}
 	if(LL_TIM_IsActiveFlag_CC1OVR(TIM4))
 	{
@@ -283,9 +285,9 @@ void TIM6_DAC_IRQHandler(void)
 
 	if(LL_TIM_IsActiveFlag_UPDATE(TIM6))
 	{
-	    Profiler_Start();
+		Profiler_Start();
 		LL_TIM_ClearFlag_UPDATE(TIM6);
-		PCV_result = PCVs_CalculateVelocity();
+		PCV_result = PCVs_CalculateVelocity1();
 		Nanoseconds = Profiler_End();
 	}
   /* USER CODE END TIM6_DAC_IRQn 0 */

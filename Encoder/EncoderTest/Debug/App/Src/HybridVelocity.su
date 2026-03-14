@@ -11,4 +11,4 @@
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:3969:22:LL_TIM_GenerateEvent_UPDATE	16	static
 ../App/Src/HybridVelocity.c:27:6:HV_Start	8	static
 ../App/Src/HybridVelocity.c:76:6:HV_Update_lastcapture	16	static
-../App/Src/HybridVelocity.c:84:9:HV_CalculateVelocity	56	static
+../App/Src/HybridVelocity.c:85:9:HV_CalculateVelocity	32	static,ignoring_inline_asm

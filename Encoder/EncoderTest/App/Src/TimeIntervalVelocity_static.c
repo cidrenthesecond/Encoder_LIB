@@ -33,7 +33,7 @@ static const uint8_t timeout_cycles_goal = 10;
 //CONFIG END
 
 static const uint16_t PulsesPerRevolution = Encoder_Poles*Encoder_Edges_Counted*Encoder_Channels_Counted;
-
+static const uint32_t measurement_factor = 60*Clock_Freq/PulsesPerRevolution;
 
 static volatile uint16_t prev_capture = 0;
 static volatile int32_t prev_velocity = 0;
@@ -41,6 +41,7 @@ static volatile uint16_t prev_num_pulses = 0;
 static volatile uint8_t timeout_cycles = 0;
 
 static inline uint8_t Are_pin_states_equal();
+static inline int32_t TIVs_GetSign(uint32_t cc_channelx);
 
 void TIVs_Start()
 {
@@ -67,6 +68,7 @@ int32_t TIVs_TimerOverflowISR() {
 
 	if(timeout_cycles >= timeout_cycles_goal)
 	{
+		timeout_cycles = timeout_cycles_goal;
 		prev_velocity = 0;
 		return 0;
 	}
@@ -74,7 +76,33 @@ int32_t TIVs_TimerOverflowISR() {
 	return prev_velocity;
 }
 
+__attribute__((optimize("O3")))
+int32_t TIVs_CalculateVelocity(TIV_Channel_t channel)
+{
+    __disable_irq();
+    uint8_t timeout_num = timeout_cycles;
 
+    uint16_t current_capture = 0;
+	if(channel == TIV_CHANNEL_A) current_capture = LL_TIM_IC_GetCaptureCH1(Timer_Used);
+	else current_capture = LL_TIM_IC_GetCaptureCH2(Timer_Used);
+	__enable_irq();
+
+	int32_t sign;
+	if(channel == TIV_CHANNEL_A) sign = TIVs_GetSign(cc_ChannelA_pin);
+	else sign = TIVs_GetSign(cc_ChannelB_pin);
+
+	uint32_t delta = 65536*timeout_num  + current_capture - prev_capture;
+
+	if(delta == 0 ) return prev_velocity;
+
+	int32_t result =  sign * (int32_t)measurement_factor / delta;
+
+	prev_capture = current_capture;
+	prev_velocity = result;
+	timeout_cycles = 0;
+
+	return result;
+}
 
 static inline int32_t TIVs_GetSign(uint32_t cc_channelx)
 {
@@ -93,40 +121,6 @@ static inline uint8_t Are_pin_states_equal()
 {
     return LL_GPIO_GetState(cc_ChannelA_gpio_port, cc_ChannelA_pin) ==
            LL_GPIO_GetState(cc_ChannelB_gpio_port, cc_ChannelB_pin);
-}
-
-int32_t TIVs_CalculateVelocity(TIV_Channel_t channel)
-{
-	uint16_t current_capture = 0;
-	uint8_t timeout_num = timeout_cycles; //const?
-
-	int32_t sign;
-	if(channel == TIV_CHANNEL_A) sign = TIVs_GetSign(cc_ChannelA_pin);
-	else sign = TIVs_GetSign(cc_ChannelB_pin);
-
-	if(channel == TIV_CHANNEL_A) current_capture = LL_TIM_IC_GetCaptureCH1(Timer_Used);
-	else current_capture = LL_TIM_IC_GetCaptureCH2(Timer_Used);
-
-
-	uint32_t delta = 65535*timeout_num  + current_capture - prev_capture;
-
-	prev_capture = current_capture;
-
-	if(delta == 0 )
-	{
-		return prev_velocity;
-	}
-
-	int32_t result;
-
-	result = 60*Clock_Freq/(PulsesPerRevolution * delta);
-
-	result = sign*result;
-
-	prev_velocity = result;
-	timeout_cycles = 0;
-
-	return result;
 }
 
 //	EXAMPLE OF ISR FUNCTION

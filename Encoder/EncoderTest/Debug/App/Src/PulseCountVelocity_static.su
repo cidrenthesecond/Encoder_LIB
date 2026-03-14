@@ -5,8 +5,8 @@
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:3460:22:LL_TIM_EnableIT_UPDATE	16	static
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:3969:22:LL_TIM_GenerateEvent_UPDATE	16	static
 ../App/Src/PulseCountVelocity_static.c:40:9:PCVs_CalculateVelocity	16	static
-../App/Src/PulseCountVelocity_static.c:56:9:PCVs_CalculateVelocity1	16	static
-../App/Src/PulseCountVelocity_static.c:85:6:PCVs_Start	8	static
-../App/Src/PulseCountVelocity_static.c:93:20:MF_LUT_INIT	16	static
-../App/Src/PulseCountVelocity_static.c:101:20:PCVs_EncoderTimer_Start	8	static
-../App/Src/PulseCountVelocity_static.c:107:20:PCVs_MeasFrameTimer_Start	8	static
+../App/Src/PulseCountVelocity_static.c:57:9:PCVs_CalculateVelocity1	16	static
+../App/Src/PulseCountVelocity_static.c:86:6:PCVs_Start	8	static
+../App/Src/PulseCountVelocity_static.c:94:20:MF_LUT_INIT	16	static
+../App/Src/PulseCountVelocity_static.c:102:20:PCVs_EncoderTimer_Start	8	static
+../App/Src/PulseCountVelocity_static.c:108:20:PCVs_MeasFrameTimer_Start	8	static
