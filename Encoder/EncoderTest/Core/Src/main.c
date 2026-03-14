@@ -26,6 +26,7 @@
 #include "PulseCountVelocity_static.h"
 #include "TimeIntervalVelocity_static.h"
 #include "HybridVelocity.h"
+#include "Algorithm_profiler.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -61,10 +62,10 @@ volatile int32_t PCV_result = 0;
 volatile int32_t TIV_result = 0;
 volatile int32_t HV_result = 0;
 
-volatile uint32_t UPDATE = 0;
+
 
 volatile uint32_t encoder_counter;
-volatile uint32_t Is_Pin_Set = 0;
+volatile uint16_t timer_counter = 0;
 
 volatile uint32_t Nanoseconds = 0;
 /* USER CODE END 0 */
@@ -120,9 +121,9 @@ int main(void)
   LL_TIM_EnableCounter(TIM2);
 
 
-  //PCVs_Start();
+  PCVs_Start();
   //TIVs_Start();
-  HV_Start();
+//  HV_Start();
 
   /* USER CODE END 2 */
 
@@ -130,9 +131,7 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	encoder_counter = LL_TIM_GetCounter(TIM1);
-	for(uint16_t delay = 0; delay <20000; delay++);
-	UPDATE = 0;
+
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

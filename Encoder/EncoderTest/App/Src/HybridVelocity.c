@@ -79,7 +79,7 @@ void HV_Update_lastcapture(uint32_t cc_channelx)
 	else lastcapture = LL_TIM_IC_GetCaptureCH2(capture_compare_timer);
 }
 
-
+static volatile uint8_t first_run = 1;
 
 int32_t HV_CalculateVelocity()
 {
@@ -87,7 +87,14 @@ int32_t HV_CalculateVelocity()
 	uint16_t num_pulses = LL_TIM_GetCounter(Encoder_timer);
 	int16_t delta = (int16_t)(num_pulses - old_num_pulses);
 
-	timeout_cycles++;
+	if(first_run)
+	{
+		old_num_pulses = num_pulses;
+		lastcapture_previous = capture;
+		prev_velocity = 0;
+		first_run = 0;
+		return 0;
+	}
 
 	if(delta == 0)
 	{
@@ -98,14 +105,19 @@ int32_t HV_CalculateVelocity()
 			prev_velocity = 0;
 			return 0;
 		}
+
+		return prev_velocity;
 	}
 
 	if(prev_velocity == 0) timeout_cycles = 0;
 
-	//uint32_t time_frame = 65536*timeout_cycles - lastcapture_previous + capture;
-	uint32_t time_frame = 65536 + lastcapture_previous - capture;
+	uint32_t time_frame = 65536*timeout_cycles + (uint32_t)65536 - (uint32_t)lastcapture_previous + (uint32_t)capture;
 
-	int32_t result = (int32_t)((int64_t)delta * measurement_factor / time_frame);
+	//uint32_t time_frame = (uint32_t)65536 - (uint32_t)lastcapture_previous + (uint32_t)capture;
+
+	if(time_frame == 0) time_frame = 1;
+
+	int32_t result = (int32_t)(((int64_t)delta * (int64_t)measurement_factor) / (int64_t)time_frame);
 
 	lastcapture_previous = capture;
 	prev_velocity = result;

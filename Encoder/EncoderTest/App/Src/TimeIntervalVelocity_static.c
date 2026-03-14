@@ -40,6 +40,8 @@ static volatile int32_t prev_velocity = 0;
 static volatile uint16_t prev_num_pulses = 0;
 static volatile uint8_t timeout_cycles = 0;
 
+static inline uint8_t Are_pin_states_equal();
+
 void TIVs_Start()
 {
 	LL_TIM_SetCounter(Timer_Used, 0);
@@ -72,11 +74,7 @@ int32_t TIVs_TimerOverflowISR() {
 	return prev_velocity;
 }
 
-static inline uint8_t Are_pin_states_equal()
-{
-    return LL_GPIO_GetState(cc_ChannelA_gpio_port, cc_ChannelA_pin) ==
-           LL_GPIO_GetState(cc_ChannelB_gpio_port, cc_ChannelB_pin);
-}
+
 
 static inline int32_t TIVs_GetSign(uint32_t cc_channelx)
 {
@@ -89,6 +87,12 @@ static inline int32_t TIVs_GetSign(uint32_t cc_channelx)
         return equal ? -1 : 1;
 
     return 0;
+}
+
+static inline uint8_t Are_pin_states_equal()
+{
+    return LL_GPIO_GetState(cc_ChannelA_gpio_port, cc_ChannelA_pin) ==
+           LL_GPIO_GetState(cc_ChannelB_gpio_port, cc_ChannelB_pin);
 }
 
 int32_t TIVs_CalculateVelocity(TIV_Channel_t channel)
